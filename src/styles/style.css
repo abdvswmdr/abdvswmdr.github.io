@@ -389,8 +389,8 @@ a {
 	background:#0A0A0A url(img/DrexelHyperloop_Tint.png) no-repeat center center;
 }
 #page4 {
-	/*background:#0A0A0A url(img/DrexelHyperloopExpo.png) no-repeat center center; */
-	background:#0A0A0A url(img/swinburne_logo.png) no-repeat center center;
+	background:#0A0A0A url(img/swinburne_logo.png) no-repeat; 
+	/*background:#0A0A0A url(img/swinburne_logo.png) no-repeat center center; */
 }
 #page1, #page2, #page3, #page4 {
 	height:100%;
@@ -458,7 +458,7 @@ a {
 	background:url(img/platforms/THOR.jpg) no-repeat center center;
 }
 #platform_background_hyperloop {
-	background:url(img/platforms/Hyperloop.png) no-repeat center center;
+	background:url(img/platforms/swinburne_logo.png) no-repeat center center;
 }
 #platform_background_yumi {
 	background:url(img/platforms/YuMi.png) no-repeat center center;
@@ -613,7 +613,7 @@ a {
 /* -------------------- Project Experience -------------------- */
 /* -------------------- ------------------ -------------------- */
 #project_background_Hyperloop {
-	background:url(img/projects/Hyperloop.png) no-repeat center center;
+	background:url(img/projects/swinburne_logo.png) no-repeat center center;
 }
 #project_background_LIT {
 	background:url(img/projects/LIT.png) no-repeat center center;
