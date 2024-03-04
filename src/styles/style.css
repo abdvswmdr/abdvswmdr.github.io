@@ -390,7 +390,7 @@ a {
 }
 #page4 {
 	/*background:#0A0A0A url(img/DrexelHyperloopExpo.png) no-repeat center center; */
-	background:#0A0A0A url(img/swinburne_logo.png) no-repeat center center;
+	background:#0A0A0A url(img/swinburne_logo.png) no-repeat;
 }
 #page1, #page2, #page3, #page4 {
 	height:100%;
