@@ -466,8 +466,8 @@ a {
 #platform_background_dragon {
 	background:url(img/platforms/Dragon.jpg) no-repeat center center;
 }
-#platform_background_micromouse {
-	background:white url(img/platforms/Picture1.jpg) no-repeat center center;
+#platform_background_fan {
+	background:white url(img/projects/Picture1.jpg) no-repeat center center;
 }
 #platform_background_swerve {
 	background:white url(img/platforms/digital_calc.jpg) no-repeat center center;
@@ -478,18 +478,18 @@ a {
 #platform_background_auto_boat {
 	background:white url(img/platforms/chumbaka-with-tag.gif) no-repeat center center;
 }
-#platform_background_soccer {
-	background:white url(img/platforms/cybermask.png) no-repeat center center;
+#platform_background_cybermask {
+	background:white url(img/projects/cybermask.png) no-repeat center center;
 }
 #platform_background_hexcopter, #platform_background_tdmr, #platform_background_robot_arm, 
 #platform_background_thor, #platform_background_hyperloop, #platform_background_yumi, 
-#platform_background_dragon, #platform_background_micromouse, #platform_background_swerve,
-#platform_background_auto_flight, #platform_background_auto_boat, #platform_background_soccer {
+#platform_background_dragon, #platform_background_fan, #platform_background_swerve,
+#platform_background_auto_flight, #platform_background_auto_boat, #platform_background_cybermask {
 	height:100%;
 	width:100%;
 	background-size:cover;
 }
-#platform_background_micromouse, #platform_background_swerve, #platform_background_auto_flight, 
+#platform_background_fan, #platform_background_swerve, #platform_background_auto_flight, 
 #platform_background_auto_boat {
 	background-size:contain;
 }
@@ -556,10 +556,10 @@ a {
 #job_background_alphaswift {
 	background:url(img/work/asi-logo-portrait.png) no-repeat center center;
 }
-#job_background_PTW {
+#job_background_swin {
 	background:url(img/work/swin_logo_small.png) no-repeat center center;
 }
-#job_background_chumbaka, #job_background_alphaswift, #job_background_PTW {
+#job_background_chumbaka, #job_background_alphaswift, #job_background_swin {
 	height:100%;
 	width:100%;
 	background-size:contain;
