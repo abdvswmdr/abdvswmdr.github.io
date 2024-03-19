@@ -29,29 +29,29 @@ var projectIndexAdjust = $("#contentPage3").children().length - $(".project").le
 /* -------------------- ------------- -------------------- */
 windowResize();
 
-$(window).resize(function() {windowResize();});
+$(window).resize(function () { windowResize(); });
 function windowResize() {
-	var windowWidth  = $(window).width();
+	var windowWidth = $(window).width();
 	var windowHeight = $(window).height();
 
 	$("#intro").css({
-		"height":windowHeight + "px"
+		"height": windowHeight + "px"
 	});
 	$(".page").css({
-		"width":windowWidth + "px",
-		"height":windowHeight + "px"
+		"width": windowWidth + "px",
+		"height": windowHeight + "px"
 	});
 	$("#logo").css({
-		"top":(windowHeight / 2) + "px",
-		"left":(windowWidth / 2) + "px" 
+		"top": (windowHeight / 2) + "px",
+		"left": (windowWidth / 2) + "px"
 	});
 
 	if ((resumeButtonDisplayFlag) && (windowWidth < 875)) {
 		$("#resumeButton").addClass("hidden");
 		resumeButtonDisplayFlag = 0;
-	} else if ((!resumeButtonDisplayFlag) && windowWidth >= 875) { 
+	} else if ((!resumeButtonDisplayFlag) && windowWidth >= 875) {
 		$("#resumeButton").removeClass("hidden");
-		resumeButtonDisplayFlag = 1;	
+		resumeButtonDisplayFlag = 1;
 	}
 
 	if ((windowHeight < 800) && (pageTwoScrollFlag == 0)) {
@@ -62,59 +62,59 @@ function windowResize() {
 		pageTwoScrollFlag = 0;
 	}
 
-	var lastJob = $(".job").eq($(".job").length-1);
+	var lastJob = $(".job").eq($(".job").length - 1);
 	var jobBottomPosition = lastJob.offset().top + lastJob.height();
 	if ((windowHeight - jobBottomPosition - 200) < 0) {
 		$("#page2").addClass("scroll");
 	}
 
-	offsetPages(pageIndex,windowWidth);
-	setIconLocation(null,pageIndex,1);
+	offsetPages(pageIndex, windowWidth);
+	setIconLocation(null, pageIndex, 1);
 	adjustVideoSize_Page1(windowWidth);
 }
 
 /* -------------------- -------- -------------------- */
 /* -------------------- Function -------------------- */
 /* -------------------- -------- -------------------- */
-function offsetPages(index,windowWidth) {
+function offsetPages(index, windowWidth) {
 	var offset = (-index) * windowWidth;
 	for (var i = 0; i < totalPages; i++) {
 		$(".page").eq(i).css({
-			"left":offset + (windowWidth * i) + "px"
+			"left": offset + (windowWidth * i) + "px"
 		});
 	}
 }
-function setIconLocation(previousIndex,currentIndex,windowResize) {
+function setIconLocation(previousIndex, currentIndex, windowResize) {
 	var windowHeight = $(window).height();
 	if ((windowResize == 1) && (currentIndex > 0)) {
 		$("#logo").css({
-			"top":windowHeight - 42 + "px"
+			"top": windowHeight - 42 + "px"
 		});
 	} else if ((previousIndex == 0) && (pageIndex > 0)) {
 		$("#logo").css({
-			"box-shadow":"none",
-			"margin-top":"-75px",
-			"margin-left":"-50px",
-			"top":windowHeight - 42 + "px",
-			"background-color":"rgba(0,0,0,0)"
+			"box-shadow": "none",
+			"margin-top": "-75px",
+			"margin-left": "-50px",
+			"top": windowHeight - 42 + "px",
+			"background-color": "rgba(0,0,0,0)"
 		});
 		$("#mainLogo").css({
-			"width":"100px"
+			"width": "100px"
 		});
 	} else if ((previousIndex > 0) && (pageIndex == 0)) {
 		$("#logo").css({
-			"top":(windowHeight / 2) + "px",
-			"box-shadow":"",
-			"margin-top":"",
-			"margin-left":"",
-			"background-color":""
+			"top": (windowHeight / 2) + "px",
+			"box-shadow": "",
+			"margin-top": "",
+			"margin-left": "",
+			"background-color": ""
 		});
 		$("#mainLogo").css({
-			"width":""
+			"width": ""
 		});
 	}
 }
-function toggleActivePage(previousIndex,currentIndex) {
+function toggleActivePage(previousIndex, currentIndex) {
 	$(".footerButton").eq(previousIndex).removeClass("active");
 	$(".footerButton").eq(previousIndex).addClass("notActive");
 	$(".footerButton").eq(previousIndex).addClass("icon");
@@ -123,39 +123,39 @@ function toggleActivePage(previousIndex,currentIndex) {
 	$(".footerButton").eq(currentIndex).removeClass("notActive");
 	$(".footerButton").eq(currentIndex).removeClass("icon");
 
-	setIconLocation(previousIndex,currentIndex,0);
+	setIconLocation(previousIndex, currentIndex, 0);
 }
 function adjustVideoSize_Page1(windowWidth) {
 	if (windowWidth <= 1000) {
 		$(".video").css({
-			"height":((windowWidth / 2) / 1.333) + "px"
+			"height": ((windowWidth / 2) / 1.333) + "px"
 		});
 		$("#videoSpacer").css({
-			"height":((windowWidth / 2) / 1.333) + "px"
+			"height": ((windowWidth / 2) / 1.333) + "px"
 		});
 		$("#showVideo").css({
-			"border-radius":"0px"
+			"border-radius": "0px"
 		});
 	} else {
 		$(".video").css({
-			"height":"375px"
+			"height": "375px"
 		});
 		$("#videoSpacer").css({
-			"height":"375px"
+			"height": "375px"
 		});
 		$("#showVideo").css({
-			"border-radius":"0px 0px 5px 5px"
+			"border-radius": "0px 0px 5px 5px"
 		});
 	}
 }
 function toggleSidebarDisplay() {
 	if (sidebarDisplayFlag == 0) {
 		$("#sidebar").css({
-			"right":"-64px"
+			"right": "-64px"
 		});
 	} else if (sidebarDisplayFlag == 1) {
 		$("#sidebar").css({
-			"right":""
+			"right": ""
 		});
 	} else {
 		alert("Error (3): Flag was set to incorrect value.");
@@ -170,22 +170,22 @@ function displayPageName(index) {
 /* -------------------- --------------- -------------------- */
 /* -------------------- Click Functions -------------------- */
 /* -------------------- --------------- -------------------- */
-$(".footerButton").click(function() {
+$(".footerButton").click(function () {
 	var windowWidth = $(window).width();
 	var previousIndex = pageIndex;
 	pageIndex = $(this).index();
 
 	if (previousIndex != pageIndex) {
-		offsetPages(pageIndex,windowWidth);
-		toggleActivePage(previousIndex,pageIndex);
+		offsetPages(pageIndex, windowWidth);
+		toggleActivePage(previousIndex, pageIndex);
 
 		if (pageIndex != 0) {
 			$("#introText").css({
-				"opacity":"0"
+				"opacity": "0"
 			});
 		} else if (pageIndex == 0) {
 			$("#introText").css({
-				"opacity":"1"
+				"opacity": "1"
 			});
 		} else {
 			alert("Error (1): Current page index is incorrect.");
@@ -199,14 +199,14 @@ $(".footerButton").click(function() {
 /* -------------------- Hover Functions -------------------- */
 /* -------------------- --------------- -------------------- */
 $(".footerButton").hover(
-	function() {
+	function () {
 		displayPageName($(this).index());
-	}, function() {
+	}, function () {
 		displayPageName(pageIndex);
 	}
 );
 $(".platform").hover(
-	function() {
+	function () {
 		var windowWidth = $(window).width();
 		var sidebarWidth = $("#sidebar").width();
 		var platformPosition = $(this).position().left + $(this).width();
@@ -218,12 +218,12 @@ $(".platform").hover(
 
 		var platformIndex = $(this).index() - platformIndexAdjust;
 		$(".background").eq(platformIndex).css({
-			"opacity":"0.2"
+			"opacity": "0.2"
 		});
 		$(".platformDescription").eq(platformIndex).css({
-			"opacity":"1"
+			"opacity": "1"
 		});
-	}, function() {
+	}, function () {
 		if (sidebarDisplayFlag == 0) {
 			sidebarDisplayFlag = 1;
 			toggleSidebarDisplay();
@@ -231,15 +231,15 @@ $(".platform").hover(
 
 		var platformIndex = $(this).index() - platformIndexAdjust;
 		$(".background").eq(platformIndex).css({
-			"opacity":""
+			"opacity": ""
 		});
 		$(".platformDescription").eq(platformIndex).css({
-			"opacity":""
+			"opacity": ""
 		});
 	}
 );
 $(".job").hover(
-	function() {
+	function () {
 		var windowWidth = $(window).width();
 		var sidebarWidth = $("#sidebar").width();
 		var jobPosition = $(this).position().left + $(this).width();
@@ -251,12 +251,12 @@ $(".job").hover(
 
 		var jobIndex = $(this).index() - jobIndexAdjust;
 		$(".background").eq(jobIndex + $(".platform").length).css({
-			"opacity":"0.2"
+			"opacity": "0.2"
 		});
 		$(".jobDescription").eq(jobIndex).css({
-			"opacity":"1"
+			"opacity": "1"
 		});
-	}, function() {
+	}, function () {
 		if (sidebarDisplayFlag == 0) {
 			sidebarDisplayFlag = 1;
 			toggleSidebarDisplay();
@@ -264,15 +264,15 @@ $(".job").hover(
 
 		var jobIndex = $(this).index() - jobIndexAdjust;
 		$(".background").eq(jobIndex + $(".platform").length).css({
-			"opacity":""
+			"opacity": ""
 		});
 		$(".jobDescription").eq(jobIndex).css({
-			"opacity":""
+			"opacity": ""
 		});
 	}
 );
 $(".project").hover(
-	function() {
+	function () {
 		var windowWidth = $(window).width();
 		var sidebarWidth = $("#sidebar").width();
 		var projectPosition = $(this).position().left + $(this).width();
@@ -284,12 +284,12 @@ $(".project").hover(
 
 		var projectIndex = $(this).index() - projectIndexAdjust;
 		$(".background").eq(projectIndex + $(".platform").length + $(".job").length).css({
-			"opacity":"0.2"
+			"opacity": "0.2"
 		});
 		$(".projectDescription").eq(projectIndex).css({
-			"opacity":"1"
+			"opacity": "1"
 		});
-	}, function() {
+	}, function () {
 		if (sidebarDisplayFlag == 0) {
 			sidebarDisplayFlag = 1;
 			toggleSidebarDisplay();
@@ -297,10 +297,10 @@ $(".project").hover(
 
 		var projectIndex = $(this).index() - projectIndexAdjust;
 		$(".background").eq(projectIndex + $(".platform").length + $(".job").length).css({
-			"opacity":""
+			"opacity": ""
 		});
 		$(".projectDescription").eq(projectIndex).css({
-			"opacity":""
+			"opacity": ""
 		});
 	}
 );
@@ -308,16 +308,16 @@ $(".project").hover(
 /* -------------------- ----------------------- -------------------- */
 /* -------------------- Contact Form Submission -------------------- */
 /* -------------------- ----------------------- -------------------- */
-$("#contentPage3").submit(function(e) {
+$("#contentPage3").submit(function (e) {
 	e.preventDefault();
 	$.ajax({
-	    url: "https://formspree.io/wachterfreddy@gmail.com", 
-	    method: "POST",
-	    data: {name: $("#userName").val(), _replyto: $("#userEmail").val(), message: $("#userMessage").val()},
-	    dataType: "json"
+		url: "https://formspree.io/wachterfreddy@gmail.com",
+		method: "POST",
+		data: { name: $("#userName").val(), _replyto: $("#userEmail").val(), message: $("#userMessage").val() },
+		dataType: "json"
 	});
 
-	setTimeout(function() {
+	setTimeout(function () {
 		clearForm();
 	}, 1000);
 });
@@ -336,12 +336,22 @@ function clearForm() {
 /* -------------------- --------------- -------------------- */
 /* -------------------- Google Tracking -------------------- */
 /* -------------------- --------------- -------------------- */
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-69516450-3', 'auto');
+// Include Google Analytics Tracking Code
+(function (i, s, o, g, r, a, m) {
+	i['GoogleAnalyticsObject'] = r;
+	(i[r] =
+		i[r] ||
+		function () {
+			(i[r].q = i[r].q || []).push(arguments);
+		}),
+		(i[r].l = 1 * new Date());
+	(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+	a.async = 1;
+	a.src = g;
+	m.parentNode.insertBefore(a, m);
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+ga('create', 'G-V57FY2LTWR', 'auto');
 ga('send', 'pageview');
-
 
