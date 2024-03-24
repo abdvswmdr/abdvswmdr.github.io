@@ -768,8 +768,8 @@ a {
 	background: url(img/projects/Picture1.jpg) no-repeat center center;
 }
 
-#project_background_STAR {
-	background: url(img/projects/STAR.png) no-repeat center center;
+#project_background_parcel {
+	background: url(img/projects/parcel.png) no-repeat center center;
 }
 
 #project_background_Hackathon {
@@ -816,7 +816,7 @@ a {
 #project_background_LIT,
 #project_background_THOR,
 #project_background_Micromouse,
-#project_background_STAR,
+#project_background_parcel,
 #project_background_Hackathon,
 #project_background_Hexcopter,
 #project_background_MATLAB,
