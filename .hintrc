@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_chr <= 127",
+    "not chrome <= 127",
+    "not edge <= 127",
+    "not firefox <= 129",
+    "not safari <= 17.5",
+    "not samsung <= 25"
+  ],
+  "hints": {
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "text-align: -webkit-match-parent"
+        ]
+      }
+    ]
+  }
+}
