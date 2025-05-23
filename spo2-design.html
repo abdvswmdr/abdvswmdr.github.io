@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>SPO2 Module Design - Abdulswamad Rama</title>
+    <meta content="SPO2 monitoring system with MAX30102 sensor and SSD1306 display" name="description">
+    <meta content="PCB, biomedical, SPO2, MAX30102, Arduino" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+
+  <body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex flex-column justify-content-center">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <nav id="navmenu" class="navmenu">
+	<ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Experience</span></a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+	</ul>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <!-- Updated Page Title -->
+      <div class="page-title" data-aos="fade">
+	<div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#pcb-designs">PCB Designs</a></li>
+              <li class="current">SPO2 Monitoring System</li>
+            </ol>
+          </nav>
+          <h1>SPO2 Monitoring Module</h1>
+	</div>
+      </div>
+
+      <!-- PCB Details Section -->
+      <section id="pcb-details" class="portfolio-details section">
+	<div class="container" data-aos="fade-up">
+
+          <div class="row">
+	    <!-- Left column: Images and basic info -->
+            <div class="col-lg-5">
+              <!-- Image slider -->
+              <div class="portfolio-details-slider swiper init-swiper mb-4">
+		<script type="application/json" class="swiper-config">
+                  {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+			  "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "navigation": {
+			  "nextEl": ".swiper-button-next",
+			  "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+			  "el": ".swiper-pagination",
+			  "type": "bullets",
+			  "clickable": true
+                      }
+                  }
+		</script>
+		<div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/pcb_spo2.png" alt="SPO2 Schematic">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/pcb_spo2_1.png" alt="SPO2 PCB">		  
+                  </div>
+		  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/spo2_schematic1.png" alt="3D Render">	a  
+                  </div>
+		  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/spo2_schematic2.png" alt="3D Render">	a  
+                  </div>
+		  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/spo2_schematic3.png" alt="3D Render">	a  
+                  </div>
+		  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/spo2_schematic4.png" alt="3D Render">	a  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/masonry-portfolio/masonry-portfolio-10.jpg" alt="3D Render">	        </div>
+		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-pagination"></div>
+              </div>
+              
+              <!-- Updated PCB Information -->
+              <div class="portfolio-info mb-4">
+		<h3>PCB Information</h3>
+		<ul>
+                  <li><strong>Category:</strong> Biomedical Sensing</li>
+                  <li><strong>Design Tool:</strong> KiCAD 9</li>
+                  <li><strong>Date:</strong> June 2024</li>
+                  <li><strong>Board Size:</strong> 73.3 × 50mm</li>
+                  <li><strong>Layers:</strong> 2-layer</li>
+                  <li><strong>Total Cost:</strong> RM64.79</li>
+                  <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Download Gerber Files</a></li>
+                  <li><a href="https://github.com/abdvswmdr/pcb-designs/tree/main/spo2-module" class="btn-visit align-self-start">View on GitHub</a></li>
+		</ul>
+              </div>
+            </div>
+            
+            <!-- Updated Technical Details -->
+            <div class="col-lg-7">
+              <div class="portfolio-description">
+		
+		<div class="row">
+                  <div class="col-md-12">
+                    <h3>Project Overview</h3>
+                    <p>
+                      This PCB design implements a complete SPO2 monitoring system featuring the MAX30102 pulse oximeter sensor 
+                      and SSD1306 OLED display. The system provides real-time blood oxygen saturation and heart rate monitoring 
+                      with a user-friendly interface.
+                    </p>
+                  </div>
+		</div>
+		
+		<div class="row mt-3">
+                  <div class="col-md-6">
+                    <h3>System Architecture</h3>
+                    <h4>Sensor Input</h4>
+                    <ul>
+                      <li>MAX30102 pulse oximeter with I2C interface</li>
+                      <li>Analog signal conditioning circuitry</li>
+                    </ul>
+                    
+                    <h4>Control Unit</h4>
+                    <ul>
+                      <li>Arduino Nano v3 microcontroller</li>
+                      <li>4x 1kΩ pull-up resistors for I2C bus</li>
+                    </ul>
+                    
+                    <h4>User Interface</h4>
+                    <ul>
+                      <li>SSD1306 128x64 OLED display</li>
+                      <li>3x tactile switches for mode control</li>
+                      <li>Status LED indicator</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <h3>Design Features</h3>
+                    <h4>Power Management</h4>
+                    <ul>
+                      <li>3x 100nF decoupling capacitors</li>
+                      <li>Low-power sleep modes implementation</li>
+                    </ul>
+                    
+                    <h4>Signal Integrity</h4>
+                    <ul>
+                      <li>Separate analog/digital grounds</li>
+                      <li>Proper I2C bus termination</li>
+                    </ul>
+                    
+                    <h4>Mechanical Design</h4>
+                    <ul>
+                      <li>Compact 73.3 × 50mm form factor</li>
+                      <li>Mounting holes for enclosure</li>
+                    </ul>
+                  </div>
+		</div>
+		
+		<!-- Updated BOM Table -->
+		<div class="row mt-3">
+                  <div class="col-md-12">
+                    <h3>Bill of Materials</h3>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped">
+			<thead>
+                          <tr>
+                            <th>Component</th>
+                            <th>Description</th>
+                            <th>Value/Part</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                            <th>Supplier</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td>A1</td>
+                            <td>Microcontroller</td>
+                            <td>Arduino Nano v3</td>
+                            <td>1</td>
+                            <td>RM22.99</td>
+                            <td><a href="https://shopee.com.my/NANO-V3-(FT232)-Microcontroller-ATmega328-Development-Board-Arduino-Compatible-MINI-Type-C-i.126211897.6363280546?sp_atk=2dcf2cd4-b870-4214-be12-a3353da23349&xptdk=2dcf2cd4-b870-4214-be12-a3353da23349" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td>C1-C3</td>
+                            <td>Capacitor THT</td>
+                            <td>100nF C_Disc</td>
+                            <td>3</td>
+                            <td>RM1.20</td>
+                            <td><a href="https://shopee.com.my/10PCS-x-Ceramic-Capacitor-1nF-2.2nF-3.3nF-4.7nF-10nF-15nF-22nF-33nF-47nF-56nF-100nF-220nF-330nF-470nF-1000nF-i.23949362.867630680?sp_atk=53f00fea-5e72-49ac-b737-5fa152fd4d46&xptdk=53f00fea-5e72-49ac-b737-5fa152fd4d46" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td>D1</td>
+                            <td>LED THT</td>
+                            <td>D5.0mm LED</td>
+                            <td>1</td>
+                            <td>RM0.70</td>
+                            <td><a href="https://shopee.com.my/5mm-LED-Diode-3mm-LED-Diode-10mm-LED-Diode-Light-Emitting-Diode-Red-Yellow-Green-Blue-White-Orange-LED-Diode-i.325787521.6668239811?sp_atk=8da6ef57-24b2-4d52-b4e2-5f236b66f9c0&xptdk=8da6ef57-24b2-4d52-b4e2-5f236b66f9c0" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td>R1-R4</td>
+                            <td>Resistors THT</td>
+                            <td>1kΩ R_Axial_DIN0207</td>
+                            <td>4</td>
+                            <td>RM1.71</td>
+                            <td><a href="https://my.element14.com/tt-electronics-welwyn/mfp1-1k-ji/res-1k-5-1w-axial-metal-film/dp/1565353" target="_blank">element14</a></td>
+                          </tr>
+                          <tr>
+                            <td>SW1-SW3</td>
+                            <td>Button Switch THT</td>
+                            <td>6mm Pushbutton</td>
+                            <td>3</td>
+                            <td>RM0.20</td>
+                            <td><a href="https://shopee.com.my/Tactile-Button-Momentary-Switch-6mm-x-6mm-x-5mm-Push-Button-4-Pin-i.1165814930.24226363215?sp_atk=3cef77f8-0617-4c68-948f-c664f617abb0&xptdk=3cef77f8-0617-4c68-948f-c664f617abb0" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td>U1</td>
+                            <td>Pulse Oximeter</td>
+                            <td>MAX30102 Module</td>
+                            <td>1</td>
+                            <td>RM11.99</td>
+                            <td><a href="https://shopee.com.my/Heart-Rate-Pulse-Sensor-Oximeter-MAX30100-MAX30102-compatible-Arduino-Raspberry-STM32-i.126211897.9905846610?sp_atk=106b00bc-238a-4df6-9000-675308a1627c&xptdk=106b00bc-238a-4df6-9000-675308a1627c" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td>U2</td>
+                            <td>OLED Display 128x64</td>
+                            <td>SSD1306</td>
+                            <td>1</td>
+                            <td>RM25.00</td>
+                            <td><a href="https://my.cytron.io/p-oled-i2c-0.96inch-128x64-blue-display?r=1&nis=8" target="_blank">Cytron</a></td>
+                          </tr>
+                          <tr>
+                            <td colspan="4" class="text-end"><strong>Total Cost:</strong></td>
+                            <td colspan="2"><strong>RM71.72</strong></td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+                  </div>
+		</div>
+		
+		<!-- Updated Testing Results -->
+		<div class="row mt-3">
+                  <div class="col-md-12">
+                    <h3>System Features</h3>
+                    <ul>
+                      <li>Real-time SPO2 and heart rate monitoring</li>
+                      <li>Low-power operation (5V @ 50mA)</li>
+                      <li>User-configurable thresholds and alerts</li>
+                      <li>Compact and portable design</li>
+                    </ul>
+                  </div>
+		</div>
+              </div>
+            </div>
+          </div>
+	</div>
+      </section>
+    </main>
+
+    
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+	<div class="container">
+          <div class="copyright">
+            <span>&#169</span> <strong class="px-1 sitename"> 2025 Abdulswamad Rama</strong>
+          </div>
+          <br>
+          <div class="social-links d-flex justify-content-center">
+            <a href="https://x.com/rsvlim"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/abdvswmdr/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZxEVAQbBVpn81AZPy_qSSg"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/abdulswamad-salim-05b475151/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/abdvswmdr"><i class="bi bi-github"></i></a>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://abdvswmdr.github.io">Abdulswamad Rama</a>
+          </div>
+	</div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>

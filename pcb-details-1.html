@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>LiPo Battery Charger PCB - Abdulswamad Rama</title>
+    <meta content="Single-cell lithium polymer battery charging circuit based on MCP73831-2-OT" name="description">
+    <meta content="PCB, electronics, battery charger, LiPo, MCP73831" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+
+  <body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex flex-column justify-content-center">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <nav id="navmenu" class="navmenu">
+	<ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Experience</span></a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+	</ul>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+	<div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#pcb-designs">PCB Designs</a></li>
+              <li class="current">LiPo Battery Charger</li>
+            </ol>
+          </nav>
+          <h1>LiPo Battery Charger PCB</h1>
+	</div>
+      </div><!-- End Page Title -->
+
+      <!-- PCB Details Section -->
+      <section id="pcb-details" class="portfolio-details section">
+	<div class="container" data-aos="fade-up">
+
+          <!-- Two-column layout for the main content -->
+          <div class="row">
+            <!-- Left column: Images and basic info -->
+            <div class="col-lg-5">
+              <!-- Image slider -->
+              <div class="portfolio-details-slider swiper init-swiper mb-4">
+		<script type="application/json" class="swiper-config">
+                  {
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+			  "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "navigation": {
+			  "nextEl": ".swiper-button-next",
+			  "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+			  "el": ".swiper-pagination",
+			  "type": "bullets",
+			  "clickable": true
+                      }
+                  }
+		</script>
+		<div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_schematic1.png" alt="PCB Schematic">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_pcb2.png" alt="PCB Routing">		  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_pcb3.png" alt="PCB Routing">		  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_schematic2.png" alt="PCB Routing">		  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_schematic3.png" alt="PCB Routing">		  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_schematic4.png" alt="PCB Routing">		  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_pcb1.png" alt="3D Render">		  
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/lipo_pcb_application1.png" alt="Application">		  
+                  </div>
+		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-pagination"></div>
+              </div>
+              
+              <!-- PCB Information box -->
+              <div class="portfolio-info mb-4">
+		<h3>PCB Information</h3>
+		<ul>
+                  <li><strong>Category:</strong> Power Management</li>
+                  <li><strong>Design Tool:</strong> KiCAD 9</li>
+                  <li><strong>Date:</strong> April 2025</li>
+                  <li><strong>Board Size:</strong> 25mm × 20mm</li>
+                  <li><strong>Layers:</strong> 2-layer</li>
+                  <li><strong>Total Cost:</strong> $4.87</li>
+                  <li><a href="assets/files/lipo-charger-gerber.zip" class="btn-visit align-self-start">Download Gerber Files</a></li>
+                  <li><a href="https://github.com/abdvswmdr/pcb-designs/tree/main/lipo-charger" class="btn-visit align-self-start">View on GitHub</a></li>
+		</ul>
+              </div>
+            </div>
+            
+            <!-- Right column: Technical details -->
+            <div class="col-lg-7">
+              <div class="portfolio-description">
+		
+		<div class="row">
+                  <div class="col-md-12">
+                    <h3>Project Overview</h3>
+                    <p>
+                      This PCB design implements a single-cell LiPo battery charging circuit based on the MCP73831-2-OT controller IC. 
+                      The design provides a compact, efficient solution for safely charging lithium polymer batteries with built-in 
+                      status indication and protection features.
+                    </p>
+                  </div>
+		</div>
+		
+		<div class="row mt-3">
+                  <div class="col-md-6">
+                    <h3>Schematic Analysis</h3>
+                    <h5>Input Section</h5>
+                    <ul>
+                      <li>4.7μF bypass capacitor for input stability</li>
+                      <li>USB Micro-B connector for power input</li>
+                    </ul>
+                    
+                    <h5>Charge Controller</h5>
+                    <ul>
+                      <li>MCP73831-2-OT in SOT-23-5 package</li>
+                      <li>2kΩ PROG resistor sets 500mA charging current</li>
+                    </ul>
+                    
+                    <h5>Status Indication</h5>
+                    <ul>
+                      <li>Red LED with 470Ω current-limiting resistor</li>
+                      <li>Indicates charging status (on/off)</li>
+                    </ul>
+                    
+                    <h5>Output Section</h5>
+                    <ul>
+                      <li>4.7μF output bypass capacitor</li>
+                      <li>JST connector for battery connection</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="col-md-6">
+                    <h3>Design Justification</h3>
+                    <h5>IC Selection</h5>
+                    <ul>
+                      <li>Complete charging solution in small package</li>
+                      <li>Built-in thermal regulation</li>
+                      <li>Automatic charge termination</li>
+                      <li>Low quiescent current (20μA)</li>
+                    </ul>
+                    
+                    <h5>Layout Guidelines</h5>
+                    <ul>
+                      <li>Wide power traces (20mil minimum)</li>
+                      <li>Components placed close to IC</li>
+                      <li>Ground plane for EMI reduction</li>
+                    </ul>
+                    
+                    <h5>Thermal Management</h5>
+                    <ul>
+                      <li>Copper pour for heat dissipation</li>
+                      <li>Thermal vias under the IC</li>
+                    </ul>
+                  </div>
+		</div>
+		
+		<div class="row mt-3">
+                  <div class="col-md-12">
+                    <h3>Bill of Materials</h3>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-striped">
+			<thead>
+                          <tr>
+                            <th>Component</th>
+                            <th>Description</th>
+                            <th>Value/Part</th>
+                            <th>Qty</th>
+                            <th>Unit Price</th>
+                            <th>Supplier</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td>U1</td>
+                            <td>LiPo Charger IC</td>
+                            <td>MCP73831-2-OT</td>
+                            <td>1</td>
+                            <td>RM3.39</td>
+                            <td><a href="https://my.element14.com/microchip/mcp73831t-2ati-ot/batt-charger-li-ion-li-poly-5sot23/dp/1834890" target="_blank">element14</a></td>
+                          </tr>
+                          <tr>
+                            <td>R1</td>
+                            <td>Resistor</td>
+                            <td>2kΩ, 1206 </td>
+                            <td>1</td>
+                            <td>RM0.02</td>
+                            <td><a href="https://my.element14.com/multicomp-pro/mcwr12x2001ftl/res-2k-1-0-25w-thick-film/dp/2446812" target="_blank">element14</a></td>
+                          </tr>
+                          <tr>
+                            <td>R2</td>
+                            <td>LED Resistor</td>
+                            <td>470Ω, 1206</td>
+                            <td>1</td>
+                            <td>RM0.035</td>
+                            <td><a href="https://my.element14.com/multicomp-pro/mc0125w12061470r/res-470r-1-0-125w-1206-thick-film/dp/9336567RL" target="_blank">element14</a></td>
+                          </tr>
+                          <tr>
+                            <td>C1, C2</td>
+                            <td>Bypass Capacitors</td>
+                            <td>4.7μF, 16V, 0603</td>
+                            <td>2</td>
+                            <td>RM0.59</td>
+                            <td><a href="https://my.element14.com/kemet/c1206c475k4nacauto/cap-aec-q200-4-7uf-16v-mlcc-1206/dp/2933168" target="_blank">element14</a></td>			  
+                          </tr>
+                          <tr>
+                            <td>D1</td>
+                            <td>Status LED</td>
+                            <td>Red, 0603</td>
+                            <td>1</td>
+                            <td>RM4.20</td>
+                            <td><a href="https://shopee.com.my/LED-SMD-0603-LED-Lamp-Bead-20-25lm-White-Yellow-Red-Blue-Orange-Beads-LED-DC3.0-3.2V-1.6mm-x-0.8mm-LED-Light-i.90748406.24232705515?sp_atk=6cefed7b-7fe6-4431-b87f-f9898916e77b&xptdk=6cefed7b-7fe6-4431-b87f-f9898916e77b" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td>J1</td>
+                            <td>USB Connector Micro-B</td>
+                            <td>105017-0001</td>
+                            <td>1</td>
+                            <td>RM2.82</td>
+                            <td><a href="https://my.element14.com/molex/105017-0001/micro-usb-conn-2-0-type-b-rcpt/dp/3499359" target="_blank">element14</a></td>
+                          </tr>
+                          <tr>
+                            <td>J2</td>
+                            <td>Battery Connector</td>
+                            <td>JST PH 2-pin 1.25mm</td>
+                            <td>1</td>
+                            <td>RM0.40</td>
+                            <td><a href="https://shopee.com.my/(1-Set)-MICRO-1.25-Connector-1.25mm-Pitch-Female-Straight-needle-Male-housing-Pin--i.166000545.8895507731" target="_blank">Shopee</a></td>
+                          </tr>
+                          <tr>
+                            <td colspan="4" class="text-end"><strong>Total Cost:</strong></td>
+                            <td colspan="2"><strong>RM11.455</strong></td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+                  </div>
+		</div>
+
+		<!--
+		    <div class="row mt-3">
+                      <div class="col-md-12">
+			<h3>Simulation Results</h3>
+			<p>
+			  The circuit was simulated using ngspice in KiCAD to verify proper operation before PCB layout:
+			</p>
+			<ul>
+			  <li>Charging current stabilizes at 498mA (within 1% of target)</li>
+			  <li>Output voltage reaches 4.2V with proper termination</li>
+			  <li>Thermal performance remains within safe limits</li>
+			</ul>
+                      </div>
+		    </div>
+		    -->
+              </div>
+            </div>
+          </div>
+	</div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+	<div class="container">
+          <div class="copyright">
+            <span>&#169</span> <strong class="px-1 sitename"> 2025 Abdulswamad Rama</strong>
+          </div>
+          <br>
+          <div class="social-links d-flex justify-content-center">
+            <a href="https://x.com/rsvlim"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://web.facebook.com/abdvswmdr/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCZxEVAQbBVpn81AZPy_qSSg"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/abdulswamad-salim-05b475151/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/abdvswmdr"><i class="bi bi-github"></i></a>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://abdvswmdr.github.io">Abdulswamad Rama</a>
+          </div>
+	</div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
