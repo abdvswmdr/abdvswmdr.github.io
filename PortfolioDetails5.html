@@ -68,7 +68,7 @@
               <li class="current">Project Details</li>
             </ol>
           </nav>
-          <h1>Autonomous Medical Delivery Robot (2024)</h1>
+          <h1>Autonomous Medicine Dispensing and Distribution Robot (2024-2025)</h1>
         </div>
       </div><!-- End Page Title -->
 
@@ -100,15 +100,19 @@
             <div class="swiper-wrapper align-items-center">
 
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/key3.png" alt="">
+                <img src="assets/img/portfolio/fyp_simulation_architecture.png" alt="System Architecture">
               </div>
 
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/key2.png" alt="">
+                <img src="assets/img/portfolio/fyp_gui_interface.png" alt="GUI Interface">
               </div>
 
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/nokia2.png" alt="">
+                <img src="assets/img/portfolio/fyp_gazebo_simulation.png" alt="Gazebo Simulation">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/fyp_rviz_interface.png" alt="RViz Interface">
               </div>
 
             </div>
@@ -121,43 +125,458 @@
 
             <div class="col-lg-8" data-aos="fade-up">
               <div class="portfolio-description">
-                <h2>Overview</h2>
+                <h2>Project Overview</h2>
                 <p>
-                  This project is still under development. The first phase of the project (FYP1) is already completed. What follows next
-                  is FYP2 which is the simulation of the robot and building the hardware. 
+                  Healthcare systems worldwide face mounting pressure to improve efficiency while maintaining high standards of patient care. This project addresses the development of an autonomous medicine dispensing and distribution robot capable of navigating hospital environments safely and efficiently.
                 </p>
 
-
-                <p style="text-align: center;">
-                  <img src="assets/img/portfolio/poster_0001.jpg" alt="Downview of the Smart Home Fan"
-                       class="img-fluid" style="width:100%">
-                  <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
-                    Poster of Project
-                  </figcaption>
-                </p>
-
-                <br>
-
-
-                <ul>
-                  <!--<li><a href="#">GitHub Repository</a></li> -->
-                  <li><a href="https://drive.google.com/file/d/1nXRafJ34LvPOe5emDZa-4hziSNYnNH3P/view">Project Report</a></li>
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="simulation-tab" data-bs-toggle="tab" data-bs-target="#simulation" type="button" role="tab">
+                      <i class="bi bi-cpu"></i> Simulation (FYP2 - Completed)
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="hardware-tab" data-bs-toggle="tab" data-bs-target="#hardware" type="button" role="tab">
+                      <i class="bi bi-gear"></i> Hardware (In Progress)
+                    </button>
+                  </li>
                 </ul>
 
+                <!-- Tab Content -->
+                <div class="tab-content mt-4" id="projectTabsContent">
+                  
+                  <!-- Simulation Tab -->
+                  <div class="tab-pane fade show active" id="simulation" role="tabpanel">
+                    <h3>Software Implementation & Simulation</h3>
+                    <p>
+                      The simulation phase focuses on developing and validating the robot's navigation system using ROS2 and Gazebo. The system implements advanced algorithms for autonomous navigation in hospital environments, featuring sophisticated path planning, localization, and obstacle avoidance capabilities.
+                    </p>
 
-</p>
+                    <!-- System Architecture Section -->
+                    <h4><i class="bi bi-diagram-3"></i> System Architecture</h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_simulation_architecture.png" alt="System Architecture" class="img-fluid" style="width:100%;">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>System Architecture:</strong> Layered design with Hardware Simulation, Driver Layer, Navigation Layer, and User Interface
+                          </figcaption>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Navigation Framework Section -->
+                    <h4><i class="bi bi-compass"></i> ROS2 Navigation Framework</h4>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_nav2_stack.png" alt="Nav2 Stack" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>NavFn Global Planner:</strong> Integration within the ROS2 Nav2 stack for optimal path generation
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Navigation Algorithms</h5>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Global Planning:</strong> NavFn with Dijkstra's algorithm</li>
+                          <li><strong>Local Planning:</strong> Dynamic Window Approach (DWA)</li>
+                          <li><strong>Localization:</strong> Adaptive Monte Carlo Localization (AMCL)</li>
+                          <li><strong>Recovery:</strong> State machine with fallback behaviors</li>
+                        </ul>
+                        
+                        <div class="alert alert-info" style="font-size: 0.85em; padding: 10px;">
+                          <strong>Performance:</strong>
+                          <ul style="margin-bottom: 0;">
+                            <li>20Hz planning frequency</li>
+                            <li>0.5m goal tolerance</li>
+                            <li>500 particles for AMCL</li>
+                            <li>Real-time obstacle avoidance</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Differential Drive Kinematics -->
+                    <h4><i class="bi bi-gear-wide-connected"></i> Differential Drive Kinematics</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_kinematics.png" alt="Kinematic Model" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Kinematic Structure:</strong> Differential drive coordinate frames and motion model
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <h5>Mathematical Model</h5>
+                        <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #007bff;">
+                          <strong>Linear and Angular Velocities:</strong><br>
+                          <code>v = (r/2)(ω<sub>r</sub> + ω<sub>l</sub>)</code><br>
+                          <code>ω = (r/L)(ω<sub>r</sub> - ω<sub>l</sub>)</code><br><br>
+                          
+                          <strong>State Transformation:</strong><br>
+                          <code>Ẋ = v cos φ</code><br>
+                          <code>Ẏ = v sin φ</code><br>
+                          <code>φ̇ = ω</code><br><br>
+                          
+                          <small><strong>Where:</strong> r = wheel radius, L = wheelbase, ω<sub>r,l</sub> = wheel angular velocities, φ = orientation</small>
+                        </div>
+                        
+                        <h6 style="margin-top: 15px;">Robot Parameters</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Wheel radius:</strong> 0.1 m</li>
+                          <li><strong>Wheelbase:</strong> 0.3 m</li>
+                          <li><strong>Mass:</strong> 18 kg</li>
+                          <li><strong>Max velocities:</strong> 1.5 m/s, 1.0 rad/s</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Extended Kalman Filter Section -->
+                    <h4><i class="bi bi-cpu"></i> Extended Kalman Filter (EKF) Sensor Fusion</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; border-left: 4px solid #28a745;">
+                          <h6><strong>State Vector (15D):</strong></h6>
+                          <code>x = [x, y, z, φ, θ, ψ, v<sub>x</sub>, v<sub>y</sub>, v<sub>z</sub>, φ̇, θ̇, ψ̇, a<sub>x</sub>, a<sub>y</sub>, a<sub>z</sub>]<sup>T</sup></code><br><br>
+                          
+                          <h6><strong>Prediction Step:</strong></h6>
+                          <code>x<sub>k</sub> = x<sub>k-1</sub> + v<sub>x</sub>Δt cos ψ - v<sub>y</sub>Δt sin ψ</code><br>
+                          <code>y<sub>k</sub> = y<sub>k-1</sub> + v<sub>x</sub>Δt sin ψ + v<sub>y</sub>Δt cos ψ</code><br>
+                          <code>ψ<sub>k</sub> = ψ<sub>k-1</sub> + ψ̇Δt</code><br><br>
+                          
+                          <h6><strong>Update Equations:</strong></h6>
+                          <code>K<sub>k</sub> = P<sub>k|k-1</sub>H<sup>T</sup>(HP<sub>k|k-1</sub>H<sup>T</sup> + R)<sup>-1</sup></code><br>
+                          <code>x<sub>k</sub> = x<sub>k|k-1</sub> + K<sub>k</sub>(z<sub>k</sub> - h(x<sub>k|k-1</sub>))</code>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <h6>Sensor Integration</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Wheel Odometry:</strong> v<sub>x</sub>, v<sub>y</sub>, ψ̇</li>
+                          <li><strong>IMU:</strong> φ, θ, ψ, ψ̇, a<sub>x</sub></li>
+                          <li><strong>Update Rate:</strong> 30 Hz</li>
+                          <li><strong>2D Mode:</strong> Enabled for hospital environments</li>
+                        </ul>
+                        
+                        <div class="alert alert-success" style="font-size: 0.85em; padding: 10px;">
+                          <strong>EKF Performance:</strong>
+                          <ul style="margin-bottom: 0;">
+                            <li><strong>Position RMSE:</strong> 0.12m</li>
+                            <li><strong>Orientation RMSE:</strong> 0.08 rad</li>
+                            <li><strong>Computation:</strong> 1.7ms/cycle</li>
+                            <li><strong>Hardware:</strong> AMD Ryzen 5-4600H</li>
+                          </ul>
+                        </div>
+                        
+                        <p style="text-align: center; margin-top: 15px;">
+                          <img src="assets/img/portfolio/fyp_tf_tree.png" alt="TF Tree" class="img-fluid" style="width:90%;">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Coordinate Frames (TF Tree):</strong> Robot model frame relationships
+                          </figcaption>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- State Management -->
+                    <h4><i class="bi bi-diagram-2"></i> Navigation State Management</h4>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_state_diagram.png" alt="State Diagram" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>State Machine:</strong> Navigation system state transitions and recovery behaviors
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <h6>Operational States</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Idle:</strong> Waiting for navigation goal</li>
+                          <li><strong>Planning:</strong> Computing optimal path</li>
+                          <li><strong>Navigating:</strong> Following planned route</li>
+                          <li><strong>Recovery:</strong> Handling obstacles/failures</li>
+                          <li><strong>Goal Reached:</strong> Successful completion</li>
+                        </ul>
+                        
+                        <h6>Recovery Behaviors</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li>Clear costmap around robot</li>
+                          <li>Rotate in place to clear obstacles</li>
+                          <li>Back up and retry planning</li>
+                          <li>Emergency stop if needed</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- GUI Implementation -->
+                    <h4><i class="bi bi-window"></i> Qt-Based User Interface</h4>
+                    <div class="row">
+                      <div class="col-md-7">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_gui_interface.png" alt="Qt GUI Interface" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Main Interface:</strong> Interactive map with click-to-navigate, waypoint management, and real-time status
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <h6>GUI Features</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Interactive Map:</strong> Click-to-navigate functionality</li>
+                          <li><strong>Waypoint Queue:</strong> Multi-destination routing</li>
+                          <li><strong>Real-time Status:</strong> ETA, distance, progress</li>
+                          <li><strong>Manual Override:</strong> Emergency joystick control</li>
+                          <li><strong>Preset Locations:</strong> Hospital room shortcuts</li>
+                        </ul>
+                        
+                        <div style="background-color: #fff3cd; padding: 10px; border-radius: 5px; border-left: 4px solid #ffc107; font-size: 0.85em;">
+                          <strong>Technical Implementation:</strong>
+                          <ul style="margin-bottom: 0;">
+                            <li>Qt Framework with C++</li>
+                            <li>ROS2 Action Client integration</li>
+                            <li>Real-time topic subscription</li>
+                            <li>Custom event handling system</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- UML Diagrams -->
+                    <h5><i class="bi bi-diagram-3-fill"></i> Software Architecture Diagrams</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_uml_class.png" alt="UML Class Diagram" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>UML Class Diagram:</strong> Qt GUI component structure and relationships
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_event_flow.png" alt="Event Flow" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Event Flow Diagram:</strong> GUI click-to-navigate sequence and ROS2 communication
+                          </figcaption>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Manual Control -->
+                    <h5><i class="bi bi-joystick"></i> Manual Control System</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_joystick_control.png" alt="Joystick Control" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Manual Control Logic:</strong> Emergency override system with 10Hz command publishing
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <h6>Safety Features</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Emergency Override:</strong> Instant manual control</li>
+                          <li><strong>Dead-man Switch:</strong> Auto-stop on button release</li>
+                          <li><strong>10Hz Publishing:</strong> Responsive control commands</li>
+                          <li><strong>Velocity Limiting:</strong> Safe maximum speeds</li>
+                        </ul>
+                        
+                        <div style="background-color: #d1ecf1; padding: 10px; border-radius: 5px; border-left: 4px solid #bee5eb; font-size: 0.85em;">
+                          <strong>Control Implementation:</strong>
+                          <ul style="margin-bottom: 0;">
+                            <li>Lambda slot functions for buttons</li>
+                            <li>QTimer for periodic publishing</li>
+                            <li>Velocity command management</li>
+                            <li>Safe shutdown protocols</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Simulation Results -->
+                    <h4><i class="bi bi-graph-up"></i> Simulation Results & Testing</h4>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_gazebo_simulation.png" alt="Gazebo Simulation" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Gazebo Environment:</strong> Hospital-like layout with 69.21% simulation performance rate
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_rviz_gazebo.png" alt="RViz+Gazebo" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Integrated Testing:</strong> RViz visualization with Gazebo 3D simulation
+                          </figcaption>
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_navigation_demo.png" alt="Navigation Demo" class="img-fluid" style="width:85%;">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Live Navigation:</strong> Real-time path planning with AMCL particle cloud and Nav2 status feedback
+                          </figcaption>
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Testing Methodology -->
+                    <h5><i class="bi bi-clipboard-data"></i> Testing Methodology & Results</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <table class="table table-sm table-striped" style="font-size: 0.9em;">
+                          <thead class="table-dark">
+                            <tr>
+                              <th>Test Scenario</th>
+                              <th>Runs</th>
+                              <th>Success Rate</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Open Environment</td>
+                              <td>10</td>
+                              <td>100%</td>
+                            </tr>
+                            <tr>
+                              <td>Cluttered (Obstacles)</td>
+                              <td>10</td>
+                              <td>90%</td>
+                            </tr>
+                            <tr>
+                              <td>Multi-waypoint</td>
+                              <td>50</td>
+                              <td>88%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="col-md-6">
+                        <h6>Performance Metrics</h6>
+                        <ul style="font-size: 0.9em;">
+                          <li><strong>Localization:</strong> 0.12m position RMSE</li>
+                          <li><strong>Orientation:</strong> 0.08 rad accuracy</li>
+                          <li><strong>Planning Time:</strong> <200ms average</li>
+                          <li><strong>Recovery Events:</strong> <5% of navigation attempts</li>
+                          <li><strong>Computational Load:</strong> <30% CPU usage</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Robot CAD Models -->
+                    <h5><i class="bi bi-box"></i> Robot Design Models</h5>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_robot_front.png" alt="Robot Front View" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Front View:</strong> Medicine dispensing compartment and sensor mounting
+                          </figcaption>
+                        </p>
+                      </div>
+                      <div class="col-md-6">
+                        <p style="text-align: center;">
+                          <img src="assets/img/portfolio/fyp_robot_back.png" alt="Robot Back View" class="img-fluid">
+                          <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                            <strong>Back View:</strong> Differential drive system and controller housing
+                          </figcaption>
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Hardware Tab -->
+                  <div class="tab-pane fade" id="hardware" role="tabpanel">
+                    <h3>Hardware Implementation (In Progress)</h3>
+                    <p>
+                      The hardware phase involves building the physical robot based on the validated simulation design. This phase focuses on integrating real sensors, actuators, and embedded systems.
+                    </p>
+
+                    <h4>Planned Hardware Architecture</h4>
+                    <p style="text-align: center;">
+                      <img src="assets/img/portfolio/fyp_hardware_architecture.png" alt="Hardware Architecture" class="img-fluid" style="width:80%;">
+                      <figcaption style="font-style: italic; font-size: smaller; text-align: center;">
+                        Planned hardware architecture with sensor integration and control systems
+                      </figcaption>
+                    </p>
+
+                    <h4>Hardware Components</h4>
+                    <ul>
+                      <li><strong>Main Controller:</strong> Raspberry Pi 4B for high-level navigation and ROS2</li>
+                      <li><strong>Low-Level Control:</strong> ESP32/Arduino for motor control and sensor interfacing</li>
+                      <li><strong>LiDAR Sensor:</strong> RPLiDAR A1 M8 (360° scanning, 12m range)</li>
+                      <li><strong>IMU:</strong> 9-axis inertial measurement unit for orientation tracking</li>
+                      <li><strong>Motors:</strong> Differential drive system with wheel encoders</li>
+                      <li><strong>Power System:</strong> Rechargeable battery pack with power management</li>
+                    </ul>
+
+                    <h4>Development Status</h4>
+                    <div class="alert alert-info">
+                      <h5><i class="bi bi-info-circle"></i> Current Progress</h5>
+                      <p>The hardware implementation is currently in progress as a continuation of the FYP2 simulation work. The goal is to validate the simulation results with a physical prototype.</p>
+                    </div>
+
+                    <h4>Next Steps</h4>
+                    <ul>
+                      <li>Physical robot assembly and component integration</li>
+                      <li>Real-world sensor calibration and testing</li>
+                      <li>Performance comparison between simulation and hardware</li>
+                      <li>Hospital environment testing and validation</li>
+                      <li>Safety system implementation and emergency protocols</li>
+                    </ul>
+
+                    <h4>Expected Outcomes</h4>
+                    <p>
+                      The completed hardware implementation will demonstrate the practical applicability of the navigation algorithms developed in simulation, providing a working prototype for potential deployment in healthcare settings.
+                    </p>
+                  </div>
+                </div>
+
+                <h4>Research Publications & Reports</h4>
+                <ul>
+                  <li><a href="https://drive.google.com/file/d/1nXRafJ34LvPOe5emDZa-4hziSNYnNH3P/view" target="_blank">Progress Report (FYP2)</a></li>
+                  <li><a href="assets/pdf/poster.pdf" target="_blank">Project Poster Presentation</a></li>
+                </ul>
+
+              </div>
 </div>
 </div>
 
 <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
   <div class="portfolio-info">
-    <h3>Project information</h3>
+    <h3>Project Information</h3>
     <ul>
-      <li><strong>Category</strong> Mechatronic System Design</li>
-      <li><strong>Client</strong> Swinburne University of Technology</li>
-      <li><strong>Project date</strong> September 2023 - November 2023</li>
-      <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-      <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
+      <li><strong>Category</strong> Autonomous Robotics</li>
+      <li><strong>Institution</strong> Swinburne University of Technology</li>
+      <li><strong>Course</strong> ENG40001 - Final Year Research Project</li>
+      <li><strong>Duration</strong> 2024 - 2025 (2 Semesters)</li>
+      <li><strong>Supervisor</strong> Dr. Evon Lim Wan Ting</li>
+      <li><strong>Co-Supervisor</strong> Ir. Chai Pui Ching</li>
+      <li><strong>Technologies</strong></li>
+      <ul style="margin-left: 20px; font-size: 0.9em;">
+        <li>ROS2 & Nav2 Stack</li>
+        <li>Gazebo Simulation</li>
+        <li>Qt Framework (GUI)</li>
+        <li>C++ Programming</li>
+        <li>SLAM & Navigation</li>
+      </ul>
+      <li><strong>Status</strong></li>
+      <ul style="margin-left: 20px; font-size: 0.9em;">
+        <li>✅ FYP1: Research & Design</li>
+        <li>✅ FYP2: Simulation</li>
+        <li>🔄 Hardware Implementation</li>
+      </ul>
     </ul>
   </div>
 </div>
