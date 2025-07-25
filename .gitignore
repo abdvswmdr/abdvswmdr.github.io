@@ -60,7 +60,10 @@ Thumbs.db
 # Ignore prompt files or personal notes
 CLAUDE.md
 *.prompt.md
-rules_for_ai/*.org
+/rules_for_ai/portfolio_projects.org
+/rules_for_ai/update_resume.org
+/rules_for_ai/resume_overview.org
+rules_for_ai/
 
 
 *.zip
