@@ -29,6 +29,9 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
+    <!-- Portfolio UI Enhancements -->
+    <link href="assets/css/portfolio-enhancements.css" rel="stylesheet">
+
     <!-- =======================================================
 	 * Template Name: MyResume
 	 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
@@ -494,6 +497,71 @@
                       </div>
                     </div>
 
+                    <!-- Project Demo & Resources Section -->
+                    <h4 style="margin-top: 3rem;"><i class="bi bi-play-circle"></i>Project Demo</h4>
+                    <p style="margin-bottom: 1.5rem;">
+                      See the autonomous medicine dispensing robot in action with real-time navigation, obstacle avoidance, and path planning demonstrations.
+                    </p>
+
+                    <!-- Demo GIF Section -->
+                    <div class="my-4 p-4 border rounded demo-section" style="background-color: #f8f9fa;">
+                      <!-- <h5><i class="bi bi-camera-video"></i>Demo</h5> -->
+                      <div class="text-center my-3">
+			
+                        <!-- <img src="assets/img/portfolio/fyp_simulation_demo.gif" -->
+			     
+                        <img src="assets/img/portfolio/output3.gif"
+                             alt="Robot Navigation Demo"
+                             class="img-fluid rounded shadow-sm"
+                             style="max-width: 80%;">
+                        <p class="text-muted small mt-3">
+                          Real-time Simulation: Robot autonomously navigating hospital environment with dynamic obstacle avoidance and optimal path planning
+                        </p>
+                      </div>
+                    </div>
+
+                    <!-- Resources Cards Section -->
+                    <div class="row my-4">
+                      <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm demo-card">
+                          <div class="card-body text-center">
+                            <i class="bi bi-youtube demo-icon" style="color: #ff0000;"></i>
+                            <h5 class="card-title mt-3">Video Demonstration</h5>
+                            <p class="card-text">Full walkthrough of the simulation system with detailed explanations</p>
+                            <a href="YOUR_YOUTUBE_URL" target="_blank" class="btn btn-outline-danger">
+                              <i class="bi bi-play-circle"></i> Watch on YouTube
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm demo-card">
+                          <div class="card-body text-center">
+                            <i class="bi bi-file-earmark-pdf demo-icon" style="color: #dc3545;"></i>
+                            <h5 class="card-title mt-3">Project Report</h5>
+                            <p class="card-text">Comprehensive documentation of methodology and results</p>
+                            <a href="assets/FYP_DOCS/Progress Report/FYP2_Progress_Report.pdf" target="_blank" class="btn btn-outline-primary">
+                              <i class="bi bi-file-pdf"></i> Download PDF
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-3">
+                        <div class="card h-100 shadow-sm demo-card">
+                          <div class="card-body text-center">
+                            <i class="bi bi-presentation demo-icon" style="color: #0d6efd;"></i>
+                            <h5 class="card-title mt-3">Presentation</h5>
+                            <p class="card-text">Project poster and presentation materials</p>
+                            <a href="assets/FYP_DOCS/Poster Presentation/FYP2_Poster.pdf" target="_blank" class="btn btn-outline-success">
+                              <i class="bi bi-file-slides"></i> View Presentation
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
 
                   <!-- Hardware Tab -->
@@ -550,33 +618,29 @@
                 </ul>
 
               </div>
-</div>
-</div>
+            </div>
 
-<div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
   <div class="portfolio-info">
     <h3>Project Information</h3>
     <ul>
-      <li><strong>Category</strong> Autonomous Robotics</li>
       <li><strong>Institution</strong> Swinburne University of Technology</li>
-      <li><strong>Course</strong> ENG40001 - Final Year Research Project</li>
       <li><strong>Duration</strong> 2024 - 2025 (2 Semesters)</li>
       <li><strong>Supervisor</strong> Dr. Evon Lim Wan Ting</li>
       <li><strong>Co-Supervisor</strong> Ir. Chai Pui Ching</li>
       <li><strong>Technologies</strong></li>
-      <ul style="margin-left: 20px; font-size: 0.9em;">
-        <li>ROS2 & Nav2 Stack</li>
-        <li>Gazebo Simulation</li>
-        <li>Qt Framework (GUI)</li>
-        <li>C++ Programming</li>
-        <li>SLAM & Navigation</li>
+      <ul style="margin-left: 1px; font-size: 0.9em;">
+        <li>ROS2, Nav2, Gazebo, Qt, C++, SLAM</li>
       </ul>
       <li><strong>Status</strong></li>
-      <ul style="margin-left: 20px; font-size: 0.9em;">
-        <li>✅ FYP1: Research & Design</li>
-        <li>✅ FYP2: Simulation</li>
-        <li>🔄 Hardware Implementation</li>
-      </ul>
+      <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Final Report</a></li>
+      <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Presentation</a></li>
+      <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">GitHub</a></li>
+      <!--<ul style="margin-left: 20px; font-size: 0.9em;"<!-- > -->
+      <!--   <li>✅ FYP1: Research & Design</li> -->
+      <!--   <li>✅ FYP2: Simulation</li> -->
+      <!--   <li>🔄 Hardware Implementation</li> -->
+      <!-- </ul> -->
     </ul>
   </div>
 </div>
@@ -597,7 +661,6 @@
       </div>
       <br>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://x.com/rsvlim"><i class="bi bi-twitter-x"></i></a>
         <a href="https://web.facebook.com/abdvswmdr/"><i class="bi bi-facebook"></i></a>
         <a href="https://www.youtube.com/channel/UCZxEVAQbBVpn81AZPy_qSSg"><i class="bi bi-youtube"></i></a>
         <a href="https://www.linkedin.com/in/abdulswamad-salim-05b475151/"><i

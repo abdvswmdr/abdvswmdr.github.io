@@ -59,6 +59,7 @@ Thumbs.db
 
 # Ignore prompt files or personal notes
 CLAUDE.md
+GEMINI.md
 *.prompt.md
 /rules_for_ai/portfolio_projects.org
 /rules_for_ai/update_resume.org
