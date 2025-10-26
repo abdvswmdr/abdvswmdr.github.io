@@ -1,1162 +1,1170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Robot System Design Projects - Abdulswamad Rama</title>
-  <meta content="Robotics mini-projects including automated assembly, robot simulation, and hand-eye coordination"
-    name="description">
-  <meta content="robotics, automation, MATLAB, SolidWorks, CoppeliaSim, assembly line, robot simulation"
-    name="keywords">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Robot System Design Projects - Abdulswamad Rama</title>
+    <meta content="Robotics mini-projects including automated assembly, robot simulation, and hand-eye coordination"
+	  name="description">
+    <meta content="robotics, automation, MATLAB, SolidWorks, CoppeliaSim, assembly line, robot simulation"
+	  name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Portfolio UI Enhancements -->
-  <link href="assets/css/portfolio-enhancements.css" rel="stylesheet">
-</head>
+    <!-- Portfolio UI Enhancements -->
+    <link href="assets/css/portfolio-enhancements.css" rel="stylesheet">
+  </head>
 
-<body class="portfolio-details-page">
+  <body class="portfolio-details-page">
 
-  <header id="header" class="header d-flex flex-column justify-content-center">
+    <header id="header" class="header d-flex flex-column justify-content-center">
 
-    <i class="header-toggle d-xl-none bi bi-list"></i>
+      <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
-        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
-        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
-        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Experiences</span></a>
-        </li>
-        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
-      </ul>
-    </nav>
+      <nav id="navmenu" class="navmenu">
+	<ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span>About</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Experiences</span></a>
+          </li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+	</ul>
+      </nav>
 
-  </header>
+    </header>
 
-  <main class="main">
+    <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="container">
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Robot System Design Projects</li>
-          </ol>
-        </nav>
-        <h1>Robot System Design</h1>
-      </div>
-    </div><!-- End Page Title -->
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+	<div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Robot System Design Projects</li>
+            </ol>
+          </nav>
+          <h1>Robot System Design</h1>
+	</div>
+      </div><!-- End Page Title -->
 
-    <!-- Project Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+      <!-- Project Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container" data-aos="fade-up">
+	<div class="container" data-aos="fade-up">
 
-        <div class="row justify-content-between gy-4 mt-4">
+          <div class="row justify-content-between gy-4 mt-4">
 
-          <!-- Left column: Images and Project Info -->
-          <div class="col-lg-5" data-aos="fade-up">
+            <!-- Left column: Images and Project Info -->
+            <div class="col-lg-5" data-aos="fade-up">
 
-            <!-- Image Slider -->
-            <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
+              <!-- Image Slider -->
+              <div class="portfolio-details-slider swiper init-swiper">
+		<script type="application/json" class="swiper-config">
+                  {
                   "loop": true,
                   "speed": 600,
                   "autoplay": {
-                    "delay": 5000
+		  "delay": 5000
                   },
                   "slidesPerView": "auto",
                   "navigation": {
-                    "nextEl": ".swiper-button-next",
-                    "prevEl": ".swiper-button-prev"
+		  "nextEl": ".swiper-button-next",
+		  "prevEl": ".swiper-button-prev"
                   },
                   "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
+		  "el": ".swiper-pagination",
+		  "type": "bullets",
+		  "clickable": true
                   }
-                }
-              </script>
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="assets/automated_assembly_project/gantt_chart.png" alt="Gantt Chart">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg" alt="Robotic Cell Layout">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
-                    alt="Hand-Eye Coordination Setup">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/hand_eye_coordination/checkerboard_calibration.png" alt="Checkerboard Calibration">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png" alt="Processed Image">
-                </div>
+                  }
+		</script>
+		<div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/automated_assembly_project/gantt_chart.png" alt="Gantt Chart">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg" alt="Robotic Cell Layout">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
+			 alt="Hand-Eye Coordination Setup">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/hand_eye_coordination/checkerboard_calibration.png" alt="Checkerboard Calibration">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png" alt="Processed Image">
+                  </div>
+		</div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-pagination"></div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-pagination"></div>
+
+              <!-- Project Information Box -->
+              <div class="portfolio-info mb-4 mt-4">
+		<h3>Project Information</h3>
+		<ul>
+                  <li><strong>Institution</strong> Swinburne University of Technology</li>
+                  <li><strong>Course</strong> RME40003 - Robot System Design</li>
+                  <li><strong>Duration</strong> 3 months</li>
+                  <li><strong>Technologies</strong> SolidWorks, MATLAB, ABB, Robot Studio, RAPID, Machine Vision, Inverse Kinematics, TCP/IP</li>
+                  <li><strong>Reports</strong></li>
+                  <li><a href="https://drive.google.com/file/d/1zDPkOJQaM9i5QZNqlmMmIpOOMM8UC6Oa/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
+                      <i class="bi bi-file-pdf"></i> Automated Assembly
+                  </a></li>
+                  <li><a href="https://drive.google.com/file/d/117l3Bj4Q9Mj5LCyO1fnF-cUFzYsohZhX/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
+                      <i class="bi bi-file-pdf"></i> Robot Simulation
+                  </a></li>
+                  <li><a href="https://drive.google.com/file/d/1mXkv8RTd3lTrb75R8_gVrK74R0Ic7Fqw/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
+                      <i class="bi bi-file-pdf"></i> Hand-Eye Coordination
+                  </a></li>
+		</ul>
+              </div>
             </div>
 
-            <!-- Project Information Box -->
-            <div class="portfolio-info mb-4 mt-4">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Institution</strong> Swinburne University of Technology</li>
-                <li><strong>Course</strong> RME40003 - Robot System Design</li>
-                <li><strong>Duration</strong> 3 months</li>
-                <li><strong>Technologies</strong> SolidWorks, MATLAB, ABB, Robot Studio, RAPID, Machine Vision, Inverse Kinematics, TCP/IP</li>
-                <li><strong>Reports</strong></li>
-                <li><a href="https://drive.google.com/file/d/1zDPkOJQaM9i5QZNqlmMmIpOOMM8UC6Oa/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
-                  <i class="bi bi-file-pdf"></i> Automated Assembly
-                </a></li>
-                <li><a href="https://drive.google.com/file/d/117l3Bj4Q9Mj5LCyO1fnF-cUFzYsohZhX/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
-                  <i class="bi bi-file-pdf"></i> Robot Simulation
-                </a></li>
-                <li><a href="https://drive.google.com/file/d/1mXkv8RTd3lTrb75R8_gVrK74R0Ic7Fqw/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
-                  <i class="bi bi-file-pdf"></i> Hand-Eye Coordination
-                </a></li>
+            <!-- Right column: Technical Details with Tabs -->
+            <div class="col-lg-7" data-aos="fade-up">
+
+              <!-- Tab Navigation -->
+              <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+		<li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="assembly-tab" data-bs-toggle="tab" data-bs-target="#assembly"
+			  type="button" role="tab">
+                    <i class="bi bi-cpu"></i> Automated Assembly Project
+                  </button>
+		</li>
+		<li class="nav-item" role="presentation">
+                  <button class="nav-link" id="simulation-tab" data-bs-toggle="tab" data-bs-target="#simulation"
+			  type="button" role="tab">
+                    <i class="bi bi-gear"></i> Robot Simulation ABB
+                  </button>
+		</li>
+		<li class="nav-item" role="presentation">
+                  <button class="nav-link" id="handeye-tab" data-bs-toggle="tab" data-bs-target="#handeye" type="button"
+			  role="tab">
+                    <i class="bi bi-camera"></i> Hand-Eye Coordination
+                  </button>
+		</li>
               </ul>
-            </div>
-          </div>
 
-          <!-- Right column: Technical Details with Tabs -->
-          <div class="col-lg-7" data-aos="fade-up">
+              <!-- Tab Content -->
+              <div class="tab-content mt-4" id="projectTabsContent">
 
-            <!-- Tab Navigation -->
-            <ul class="nav nav-tabs" id="projectTabs" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="assembly-tab" data-bs-toggle="tab" data-bs-target="#assembly"
-                  type="button" role="tab">
-                  <i class="bi bi-cpu"></i> Automated Assembly Project
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="simulation-tab" data-bs-toggle="tab" data-bs-target="#simulation"
-                  type="button" role="tab">
-                  <i class="bi bi-gear"></i> Robot Simulation ABB
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="handeye-tab" data-bs-toggle="tab" data-bs-target="#handeye" type="button"
-                  role="tab">
-                  <i class="bi bi-camera"></i> Hand-Eye Coordination
-                </button>
-              </li>
-            </ul>
+		<!-- Assembly Tab -->
+		<div class="tab-pane fade show active" id="assembly" role="tabpanel">
 
-            <!-- Tab Content -->
-            <div class="tab-content mt-4" id="projectTabsContent">
+                  <div class="portfolio-description">
 
-              <!-- Assembly Tab -->
-              <div class="tab-pane fade show active" id="assembly" role="tabpanel">
-
-                <div class="portfolio-description">
-
-                  <!-- Outcome Summary -->
-                  <div class="mb-4 p-3 bg-light border-start border-primary border-4">
-                    <h5 class="text-primary mb-2">Project Outcome</h5>
-                    <p class="mb-0">
-                      <strong>System Integration & Implementation:</strong> Designed and deployed a complete automated assembly workcell integrating robotic manipulation, custom feeders, and safety systems. Achieved 32-second cycle time and 8.6-month ROI payback through systematic design-for-automation approach. Demonstrated end-to-end system implementation from component redesign (10→7 parts) through workcell layout, safety compliance (ISO 10218-2), and economic justification—skills directly applicable to robotics system deployment and on-site commissioning.
-                    </p>
-                  </div>
-
-                  <h3>The Challenge</h3>
-                  <p>
-                    Manual assembly of consumer electronics like computer mice is labor-intensive and prone to quality
-                    inconsistencies.
-                    The goal was to design a complete automated assembly system that could handle component feeding,
-                    precise manipulation,
-                    and assembly verification while optimizing for cycle time and cost-effectiveness.
-                  </p>
-
-                  <h3>Design Approach</h3>
-
-                  <h4>1. Design for Automation (DFA)</h4>
-                  <p>
-                    The original mouse design was analyzed and completely redesigned for robotic assembly. This
-                    involved:
-                  </p>
-                  <ul>
-                    <li><strong>Part Count Reduction:</strong> Reduced from 10 parts to 7 by eliminating screws in favor
-                      of snap-fit clips</li>
-                    <li><strong>Simplified Geometry:</strong> Modified shell shapes for easier gripper access and
-                      alignment</li>
-                    <li><strong>Self-Locating Features:</strong> Added standoffs and alignment pins for precise
-                      component mating</li>
-                    <li><strong>Material Selection:</strong> Chose ABS plastic for shells to enable ultrasonic welding
-                    </li>
-                  </ul>
-
-                  <!-- DFA Comparison -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/original_mouse_exploded_view.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Original Design">
-                      <p class="text-muted small mt-2"><em><strong>Before:</strong> 10 parts, screw fastening, complex
-                          assembly sequence</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/redesigned_mouse_exploded_view.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Redesigned for Automation">
-                      <p class="text-muted small mt-2"><em><strong>After:</strong> 7 parts, snap-fit assembly, parallel
-                          operations possible</em></p>
-                    </div>
-                  </div>
-
-                  <h4>2. Feeder System Design</h4>
-                  <p>
-                    Designed custom bowl feeders with specialized track geometries to orient and deliver each component
-                    type:
-                  </p>
-                  <ul>
-                    <li><strong>Base Shell Feeder:</strong> Symmetrical track with width-based orientation</li>
-                    <li><strong>Top Shell Feeder:</strong> Gravity-assisted funnel design for concave parts</li>
-                    <li><strong>Scroll Wheel Feeder:</strong> Narrow channel with edge detection for cylindrical parts
-                    </li>
-                    <li><strong>PCB & Sensor Feeders:</strong> Vibratory flat track with vacuum pickup points</li>
-                  </ul>
-
-                  <!-- Feeder Designs Top -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/mouse_click_feeder.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Base Shell Feeder">
-                      <p class="text-muted small mt-2"><em>Base shell feeder with orientation gates ensuring consistent
-                          part delivery</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/scroll_wheel_feeder.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Scroll Wheel Feeder">
-                      <p class="text-muted small mt-2"><em>Precision channel feeder for scroll wheel components</em></p>
-                    </div>
-                  </div>
-
-
-                  <!-- Feeder Designs Middle -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/middle_shell_feeder1.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Middle Shell Feeder">
-                      <p class="text-muted small mt-2"><em>Middle shell feeder with orientation</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/scroll_feeder.jpg" class="img-fluid rounded shadow-sm"
-                        alt="Top Shell Feeder">
-                      <p class="text-muted small mt-2"><em>Precision channel feeder for scroll wheel components</em></p>
-                    </div>
-                  </div>
-
-                  <!-- Feeder Designs -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/pcb_palette_feeder.jpg"
-                        class="img-fluid rounded shadow-sm" alt="PCB Palette">
-                      <p class="text-muted small mt-2"><em>Palette for PCB component</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/base_shelll_feeder.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Top Shell Feeder">
-                      <p class="text-muted small mt-2"><em>Base shell feeder with orientation gates ensuring consistent
-                          part delivery</em></p>
-                    </div>
-                  </div>
-
-
-                  <h4>3. Dual-Gripper End Effector Design</h4>
-                  <p>
-                    Developed a custom dual-gripper system mounted on the UR5 to handle different component types:
-                  </p>
-                  <ul>
-                    <li><strong>Parallel Jaw Gripper:</strong> For robust shells and structural components (max grip
-                      force: 50N)</li>
-                    <li><strong>Vacuum Gripper Array:</strong> For delicate PCB and top shell (4-point suction, 0.5 bar
-                      vacuum)</li>
-                    <li><strong>Quick-Change Mechanism:</strong> Allows gripper switching in <2 seconds if needed</li>
-                    <li><strong>Sensor Integration:</strong> Force sensors for grip verification and part-present
-                      detection</li>
-                  </ul>
-
-                  <!-- Gripper Designs -->
-                  <div class="row my-4">
-                    <div class="col-md-4 mb-3 d-flex flex-column justify-content-center">
-                      <img src="assets/automated_assembly_project/gripper_og.jpg" class="img-fluid rounded shadow-sm"
-                        alt="Parallel Gripper">
-                      <p class="text-muted small mt-2 text-center"><em>RPW 375M-2 Parallel Pneumatic Gripper</em></p>
-                    </div>
-
-                    <!-- Wrapper for 2nd and 3rd columns with shared caption -->
-                    <div class="col-md-8">
-                      <div class="row">
-                        <div class="col-6 mb-3 d-flex">
-                          <img src="assets/automated_assembly_project/finger_gripper1.jpg"
-                            class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
-                        </div>
-                        <div class="col-6 mb-3 d-flex">
-                          <img src="assets/automated_assembly_project/finger_gripper2.jpg"
-                            class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
-                        </div>
-                      </div>
-                      <p class="text-muted small mt-2 text-center"><em>Gripper fingers (Isometric View)</em></p>
-                    </div>
-                  </div>
-
-
-
-
-                  <!-- 2 Columns with 2nd column having 2 rows -->
-                  <div class="row my-4">
-                    <!-- First Column (full height) -->
-                    <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
-                      <img src="assets/automated_assembly_project/fing_og.jpg" class="img-fluid rounded shadow-sm"
-                        alt="Parallel Gripper">
-                      <p class="text-muted small mt-2 text-center"><em>Finger grippers screwed to Gripper actuator
-                          mounts</em></p>
-                    </div>
-                    <!-- Second Column (with 2 rows inside) -->
-                    <div class="col-md-6">
-                      <div class="row">
-                        <!-- First row in second column -->
-                        <div class="col-6 mb-3 d-flex">
-                          <img src="assets/automated_assembly_project/vacuum_gripper1.jpg"
-                            class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
-                        </div>
-                        <div class="col-6 mb-3 d-flex flex-column">
-                          <img src="assets/automated_assembly_project/vacuum_gripper2.jpg"
-                            class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
-                        </div>
-                        <p class="text-muted small mt-2 text-center"><em>FSTE M5-IG 20 Spring Plunger (Schmalz) & Vacuum
-                            Cup (VC-B05)</em></p>
-
-
-                        <!-- Second row in second column -->
-                        <div class="col-6 mb-3 d-flex">
-                          <img src="assets/automated_assembly_project/output-058.jpg"
-                            class="img-fluid rounded shadow-sm" alt="Vacuum gripper on mount">
-                        </div>
-                        <div class="col-6 mb-3 d-flex">
-                          <img src="assets/automated_assembly_project/output-059.jpg"
-                            class="img-fluid rounded shadow-sm" alt="Another Gripper">
-                        </div>
-                        <p class="text-muted small mt-2 text-center mb-0"><em>Vacuum gripper assembly shown from
-                            different angles</em></p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/parallel_gripper_mouse_base.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Parallel Gripper">
-                      <p class="text-muted small mt-2"><em>Parallel jaw gripper handling mouse base shell with force
-                          sensing</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/vacuum_gripper_holding_pcb_and_top_shell.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
-                      <p class="text-muted small mt-2"><em>4-point vacuum gripper for delicate PCB and top shell
-                          manipulation</em></p>
-                    </div>
-                  </div>
-
-                  <h4>4. Robotic Workcell Layout Optimization</h4>
-                  <p>
-                    Optimized the cell layout to minimize robot travel time and enable efficient material flow:
-                  </p>
-                  <ul>
-                    <li><strong>Central Robot Positioning:</strong> UR5 mounted centrally with 850mm reach to all
-                      stations</li>
-                    <li><strong>Feeder Placement:</strong> Arranged in semicircle at optimal pickup heights (650-750mm)
-                    </li>
-                    <li><strong>Assembly Fixture:</strong> Rotating base fixture for multi-angle access</li>
-                    <li><strong>Quality Station:</strong> Vision inspection system at final position</li>
-                  </ul>
-
-                  <!-- Workcell Layout -->
-                  <div class="my-4">
-                    <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg"
-                      class="img-fluid rounded shadow-sm" alt="Workcell Layout">
-                    <p class="text-muted small mt-2">
-                      <em>Optimized workcell layout showing robot workspace, feeder positions, and assembly fixture.
-                        Total footprint: 2.5m × 2.0m</em>
-                    </p>
-                  </div>
-
-                  <h4>5. Safety System Design & Implementation</h4>
-                  <p>
-                    Designed comprehensive safety system following ISO 10218-2 standards for industrial robot safety:
-                  </p>
-                  <ul>
-                    <li><strong>Zone 1 (Safe Zone):</strong> General working area with master lock switch</li>
-                    <li><strong>Zone 2 (Controlled Access):</strong> Fenced area with safety door, warning signs, emergency stops</li>
-                    <li><strong>Zone 3 (Danger Zone):</strong> 400mm perimeter around robot reach with pressure-sensitive mats</li>
-                    <li><strong>Safety Features:</strong> Emergency stop buttons, safety lights, warning signage, pressure mats</li>
-                  </ul>
-
-                  <!-- Safety Layout -->
-                  <div class="my-4">
-                    <img src="assets/automated_assembly_project/robotic_cell_safety_layout.jpg"
-                      class="img-fluid rounded shadow-sm" alt="Safety System Layout">
-                    <p class="text-muted small mt-2">
-                      <em>Three-zone safety system design with fencing, emergency stops, pressure mats, and safety signage compliant with ISO 10218-2 standards</em>
-                    </p>
-                  </div>
-
-                  <h4>6. Robot Selection & Final Assembly</h4>
-                  <p>
-                    Selected the Elite Robots EC63 based on payload requirements and system integration needs:
-                  </p>
-
-                  <!-- Robot Specs and Final Assembly -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/robot_arm_specifications_2.jpg"
-                        class="img-fluid rounded shadow-sm" alt="EC63 Robot Specifications">
-                      <p class="text-muted small mt-2"><em>Elite Robots EC63 specifications: 3kg payload, 624mm reach, ±0.02mm repeatability, 6-axis flexibility</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/automated_assembly_project/final_robot_cad_assembly.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Final Robot Assembly">
-                      <p class="text-muted small mt-2"><em>Complete CAD assembly showing EC63 robot with integrated dual-gripper system and adapter mounted on workcell</em></p>
-                    </div>
-                  </div>
-
-                  <!-- Payload Calculation -->
-                  <div class="my-4">
-                    <img src="assets/automated_assembly_project/robot_payload_calculation.jpg"
-                      class="img-fluid rounded shadow-sm" alt="Payload Calculation">
-                    <p class="text-muted small mt-2">
-                      <em>Component weight analysis totaling 2.42kg (grippers, adapter, parts) - safely within EC63's 3kg payload capacity</em>
-                    </p>
-                  </div>
-
-                  <h3>Key Results & Performance</h3>
-
-                  <div class="row mb-4">
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-primary mb-0">32 sec</h4>
-                        <small class="text-muted">Cycle Time</small>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-primary mb-0">30%</h4>
-                        <small class="text-muted">Parts Reduction</small>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-primary mb-0">5 m²</h4>
-                        <small class="text-muted">Footprint</small>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-primary mb-0">112/hr</h4>
-                        <small class="text-muted">Production Rate</small>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Assembly Sequence Breakdown -->
-                  <h4>Assembly Sequence & Timing</h4>
-                  <div class="table-responsive my-4">
-                    <table class="table table-striped table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Step</th>
-                          <th>Operation</th>
-                          <th>Gripper</th>
-                          <th>Time (s)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Pick base shell from feeder</td>
-                          <td>Parallel</td>
-                          <td>3.2</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Place in assembly fixture</td>
-                          <td>Parallel</td>
-                          <td>2.8</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Pick & place PCB</td>
-                          <td>Vacuum</td>
-                          <td>5.4</td>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>Pick & insert sensor module</td>
-                          <td>Parallel</td>
-                          <td>4.6</td>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>Pick & insert middle shell</td>
-                          <td>Parallel</td>
-                          <td>4.2</td>
-                        </tr>
-                        <tr>
-                          <td>6</td>
-                          <td>Pick & insert scroll wheel</td>
-                          <td>Parallel</td>
-                          <td>3.8</td>
-                        </tr>
-                        <tr>
-                          <td>7</td>
-                          <td>Pick & place top shell (snap-fit)</td>
-                          <td>Vacuum</td>
-                          <td>5.0</td>
-                        </tr>
-                        <tr>
-                          <td>8</td>
-                          <td>Apply press force for clips</td>
-                          <td>Parallel</td>
-                          <td>2.0</td>
-                        </tr>
-                        <tr>
-                          <td>9</td>
-                          <td>Transfer to inspection</td>
-                          <td>Parallel</td>
-                          <td>1.0</td>
-                        </tr>
-                        <tr class="table-info fw-bold">
-                          <td colspan="3">Total Cycle Time</td>
-                          <td>32.0 s</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <h3>Economic Justification & Business Case</h3>
-                  <p>
-                    Conducted comprehensive ROI analysis demonstrating strong business case for automation investment:
-                  </p>
-
-                  <div class="table-responsive my-4">
-                    <table class="table table-striped table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Financial Metric</th>
-                          <th>Value</th>
-                          <th>Details</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><strong>Total System Cost (C)</strong></td>
-                          <td>RM 135,822</td>
-                          <td>Robot: RM 74,152 + Tooling (30%) + Installation (15%)</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Annual Labor Savings (W)</strong></td>
-                          <td>RM 54,000</td>
-                          <td>3 workers @ RM 1,500/month (24-hour operation)</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Productivity Gain (I)</strong></td>
-                          <td>RM 191,500</td>
-                          <td>30K additional units/year + insurance savings</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Payback Period</strong></td>
-                          <td class="text-success fw-bold">0.72 years (8.6 months)</td>
-                          <td>Well below 2.5-year industry target</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Return on Investment (ROI)</strong></td>
-                          <td class="text-success fw-bold">124.89% annually</td>
-                          <td>Strong financial justification for deployment</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <h3>Technical Skills Demonstrated</h3>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h5>Design & CAD</h5>
-                      <ul>
-                        <li>SolidWorks assembly modeling</li>
-                        <li>Design for Automation (DFA) principles</li>
-                        <li>Custom feeder track design</li>
-                        <li>End effector engineering</li>
-                        <li>Workcell layout optimization</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <h5>Robotics & System Integration</h5>
-                      <ul>
-                        <li>Robotic workcell design & implementation</li>
-                        <li>Cycle time analysis & optimization</li>
-                        <li>Robot workspace planning</li>
-                        <li>Gripper selection & specification</li>
-                        <li>Production rate calculations</li>
-                        <li>Safety system design (ISO 10218-2)</li>
-                        <li>Economic justification & ROI analysis</li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <!-- <\!-- Download Resources -\-> -->
-                  <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
-                  <!--   <h5>Project Resources</h5> -->
-                  <!--   <div class="d-flex gap-3 flex-wrap"> -->
-                  <!--     <a href="assets/automated_assembly_project/Automated_Assembly_Project_RSD.pdf" -->
-                  <!--       class="btn btn-sm btn-outline-primary" target="_blank"> -->
-                  <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
-                  <!--     </a> -->
-                  <!--     <a href="assets/automated_assembly_project/cad_files.zip" class="btn btn-sm btn-outline-primary"> -->
-                  <!--       <i class="bi bi-file-earmark-zip"></i> CAD Files -->
-                  <!--     </a> -->
-                  <!--   </div> -->
-                  <!-- </div> -->
-
-                </div>
-              </div>
-
-              <!-- Simulation Tab -->
-              <div class="tab-pane fade" id="simulation" role="tabpanel">
-
-                <div class="portfolio-description">
-
-                  <!-- Outcome Summary -->
-                  <div class="mb-4 p-3 bg-light border-start border-success border-4">
-                    <h5 class="text-success mb-2">Project Outcome</h5>
-                    <p class="mb-0">
-                      <strong>Offline Programming & System Validation:</strong> Implemented ABB RobotStudio simulation for offline programming and pre-deployment validation, eliminating production downtime. Developed complete RAPID programs for path planning, coordinated multi-path execution, and system verification—demonstrating practical skills in robot programming, simulation-based validation, and systematic deployment preparation critical for on-site implementation and troubleshooting.
-                    </p>
-                  </div>
-
-                  <h3>The Challenge</h3>
-                  <p>
-                    Industrial robots must operate in cluttered environments with obstacles while maintaining precise
-                    positioning and avoiding collisions.
-                    This project required creating a realistic simulation environment, implementing path planning
-                    algorithms, and validating robot performance
-                    before physical deployment.
-                  </p>
-
-                  <h4>1. Simulation Environment Setup</h4>
-                  <p>
-                    Built a complete virtual workcell in CoppeliaSim representing realistic industrial conditions:
-                  </p>
-                  <ul>
-                    <li><strong>ABB IRB 120 Robot:</strong> 6-DOF industrial manipulator with 3kg payload capacity</li>
-                    <li><strong>Workspace Layout:</strong> Two tables (picking and placing), conveyor belt system</li>
-                    <li><strong>Obstacles:</strong> Safety barriers, support columns, and workspace boundaries</li>
-                    <li><strong>Target Objects:</strong> Multiple component types requiring different approach
-                      strategies</li>
-                  </ul>
-
-                  <!-- Robot Selection -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/robot_simulation/ABB_IRB_1600.png" class="img-fluid rounded shadow-sm"
-                        alt="ABB IRB 1600 Robot">
-                      <p class="text-muted small mt-2">
-                        <em>ABB IRB 1600-6/1.2 industrial robot: 6kg payload, 1.2m reach, 0.02mm repeatability - selected for optimal workspace coverage</em>
+                    <!-- Outcome Summary -->
+                    <div class="mb-4 p-3 bg-light border-start border-primary border-4">
+                      <h5 class="text-primary mb-2">Project Outcome</h5>
+                      <p class="mb-0">
+			<strong>System Integration & Implementation:</strong> Designed and deployed a complete automated assembly workcell integrating robotic manipulation, custom feeders, and safety systems. Achieved 32-second cycle time and 8.6-month ROI payback through systematic design-for-automation approach. Demonstrated end-to-end system implementation from component redesign (10→7 parts) through workcell layout, safety compliance (ISO 10218-2), and economic justification—skills directly applicable to robotics system deployment and on-site commissioning.
                       </p>
                     </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/robot_simulation/manipulator_axes.png" class="img-fluid rounded shadow-sm"
-                        alt="Robot Manipulator Axes">
+
+                    <h3>The Challenge</h3>
+                    <p>
+                      Manual assembly of consumer electronics like computer mice is labor-intensive and prone to quality
+                      inconsistencies.
+                      The goal was to design a complete automated assembly system that could handle component feeding,
+                      precise manipulation,
+                      and assembly verification while optimizing for cycle time and cost-effectiveness.
+                    </p>
+
+                    <h3>Design Approach</h3>
+
+                    <h4>1. Design for Automation (DFA)</h4>
+                    <p>
+                      The original mouse design was analyzed and completely redesigned for robotic assembly. This
+                      involved:
+                    </p>
+                    <ul>
+                      <li><strong>Part Count Reduction:</strong> Reduced from 10 parts to 7 by eliminating screws in favor
+			of snap-fit clips</li>
+                      <li><strong>Simplified Geometry:</strong> Modified shell shapes for easier gripper access and
+			alignment</li>
+                      <li><strong>Self-Locating Features:</strong> Added standoffs and alignment pins for precise
+			component mating</li>
+                      <li><strong>Material Selection:</strong> Chose ABS plastic for shells to enable ultrasonic welding
+                      </li>
+                    </ul>
+
+                    <!-- DFA Comparison -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/original_mouse_exploded_view.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Original Design">
+			<p class="text-muted small mt-2"><em><strong>Before:</strong> 10 parts, screw fastening, complex
+                            assembly sequence</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/redesigned_mouse_exploded_view.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Redesigned for Automation">
+			<p class="text-muted small mt-2"><em><strong>After:</strong> 7 parts, snap-fit assembly, parallel
+                            operations possible</em></p>
+                      </div>
+                    </div>
+
+                    <h4>2. Feeder System Design</h4>
+                    <p>
+                      Designed custom bowl feeders with specialized track geometries to orient and deliver each component
+                      type:
+                    </p>
+                    <ul>
+                      <li><strong>Base Shell Feeder:</strong> Symmetrical track with width-based orientation</li>
+                      <li><strong>Top Shell Feeder:</strong> Gravity-assisted funnel design for concave parts</li>
+                      <li><strong>Scroll Wheel Feeder:</strong> Narrow channel with edge detection for cylindrical parts
+                      </li>
+                      <li><strong>PCB & Sensor Feeders:</strong> Vibratory flat track with vacuum pickup points</li>
+                    </ul>
+
+                    <!-- Feeder Designs Top -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/mouse_click_feeder.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Base Shell Feeder">
+			<p class="text-muted small mt-2"><em>Base shell feeder with orientation gates ensuring consistent
+                            part delivery</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/scroll_wheel_feeder.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Scroll Wheel Feeder">
+			<p class="text-muted small mt-2"><em>Precision channel feeder for scroll wheel components</em></p>
+                      </div>
+                    </div>
+
+
+                    <!-- Feeder Designs Middle -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/middle_shell_feeder1.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Middle Shell Feeder">
+			<p class="text-muted small mt-2"><em>Middle shell feeder with orientation</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/scroll_feeder.jpg" class="img-fluid rounded shadow-sm"
+                             alt="Top Shell Feeder">
+			<p class="text-muted small mt-2"><em>Precision channel feeder for scroll wheel components</em></p>
+                      </div>
+                    </div>
+
+                    <!-- Feeder Designs -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/pcb_palette_feeder.jpg"
+                             class="img-fluid rounded shadow-sm" alt="PCB Palette">
+			<p class="text-muted small mt-2"><em>Palette for PCB component</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/base_shelll_feeder.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Top Shell Feeder">
+			<p class="text-muted small mt-2"><em>Base shell feeder with orientation gates ensuring consistent
+                            part delivery</em></p>
+                      </div>
+                    </div>
+
+
+                    <h4>3. Dual-Gripper End Effector Design</h4>
+                    <p>
+                      Developed a custom dual-gripper system mounted on the UR5 to handle different component types:
+                    </p>
+                    <ul>
+                      <li><strong>Parallel Jaw Gripper:</strong> For robust shells and structural components (max grip
+			force: 50N)</li>
+                      <li><strong>Vacuum Gripper Array:</strong> For delicate PCB and top shell (4-point suction, 0.5 bar
+			vacuum)</li>
+                      <li><strong>Quick-Change Mechanism:</strong> Allows gripper switching in <2 seconds if needed</li>
+												  <li><strong>Sensor Integration:</strong> Force sensors for grip verification and part-present
+												    detection</li>
+                    </ul>
+
+                    <!-- Gripper Designs -->
+                    <div class="row my-4">
+                      <div class="col-md-4 mb-3 d-flex flex-column justify-content-center">
+			<img src="assets/automated_assembly_project/gripper_og.jpg" class="img-fluid rounded shadow-sm"
+                             alt="Parallel Gripper">
+			<p class="text-muted small mt-2 text-center"><em>RPW 375M-2 Parallel Pneumatic Gripper</em></p>
+                      </div>
+
+                      <!-- Wrapper for 2nd and 3rd columns with shared caption -->
+                      <div class="col-md-8">
+			<div class="row">
+                          <div class="col-6 mb-3 d-flex">
+                            <img src="assets/automated_assembly_project/finger_gripper1.jpg"
+				 class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
+                          </div>
+                          <div class="col-6 mb-3 d-flex">
+                            <img src="assets/automated_assembly_project/finger_gripper2.jpg"
+				 class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
+                          </div>
+			</div>
+			<p class="text-muted small mt-2 text-center"><em>Gripper fingers (Isometric View)</em></p>
+                      </div>
+                    </div>
+
+
+
+
+                    <!-- 2 Columns with 2nd column having 2 rows -->
+                    <div class="row my-4">
+                      <!-- First Column (full height) -->
+                      <div class="col-md-6 mb-3 d-flex flex-column justify-content-center">
+			<img src="assets/automated_assembly_project/fing_og.jpg" class="img-fluid rounded shadow-sm"
+                             alt="Parallel Gripper">
+			<p class="text-muted small mt-2 text-center"><em>Finger grippers screwed to Gripper actuator
+                            mounts</em></p>
+                      </div>
+                      <!-- Second Column (with 2 rows inside) -->
+                      <div class="col-md-6">
+			<div class="row">
+                          <!-- First row in second column -->
+                          <div class="col-6 mb-3 d-flex">
+                            <img src="assets/automated_assembly_project/vacuum_gripper1.jpg"
+				 class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
+                          </div>
+                          <div class="col-6 mb-3 d-flex flex-column">
+                            <img src="assets/automated_assembly_project/vacuum_gripper2.jpg"
+				 class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
+                          </div>
+                          <p class="text-muted small mt-2 text-center"><em>FSTE M5-IG 20 Spring Plunger (Schmalz) & Vacuum
+                              Cup (VC-B05)</em></p>
+
+
+                          <!-- Second row in second column -->
+                          <div class="col-6 mb-3 d-flex">
+                            <img src="assets/automated_assembly_project/output-058.jpg"
+				 class="img-fluid rounded shadow-sm" alt="Vacuum gripper on mount">
+                          </div>
+                          <div class="col-6 mb-3 d-flex">
+                            <img src="assets/automated_assembly_project/output-059.jpg"
+				 class="img-fluid rounded shadow-sm" alt="Another Gripper">
+                          </div>
+                          <p class="text-muted small mt-2 text-center mb-0"><em>Vacuum gripper assembly shown from
+                              different angles</em></p>
+			</div>
+                      </div>
+                    </div>
+
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/parallel_gripper_mouse_base.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Parallel Gripper">
+			<p class="text-muted small mt-2"><em>Parallel jaw gripper handling mouse base shell with force
+                            sensing</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/vacuum_gripper_holding_pcb_and_top_shell.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
+			<p class="text-muted small mt-2"><em>4-point vacuum gripper for delicate PCB and top shell
+                            manipulation</em></p>
+                      </div>
+                    </div>
+
+                    <h4>4. Robotic Workcell Layout Optimization</h4>
+                    <p>
+                      Optimized the cell layout to minimize robot travel time and enable efficient material flow:
+                    </p>
+                    <ul>
+                      <li><strong>Central Robot Positioning:</strong> UR5 mounted centrally with 850mm reach to all
+			stations</li>
+                      <li><strong>Feeder Placement:</strong> Arranged in semicircle at optimal pickup heights (650-750mm)
+                      </li>
+                      <li><strong>Assembly Fixture:</strong> Rotating base fixture for multi-angle access</li>
+                      <li><strong>Quality Station:</strong> Vision inspection system at final position</li>
+                    </ul>
+
+                    <!-- Workcell Layout -->
+                    <div class="my-4">
+                      <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg"
+			   class="img-fluid rounded shadow-sm" alt="Workcell Layout">
                       <p class="text-muted small mt-2">
-                        <em>ABB IRB 1600 manipulator axes configuration showing 6 degrees of freedom for complex path execution</em>
+			<em>Optimized workcell layout showing robot workspace, feeder positions, and assembly fixture.
+                          Total footprint: 2.5m × 2.0m</em>
                       </p>
                     </div>
+
+                    <h4>5. Safety System Design & Implementation</h4>
+                    <p>
+                      Designed comprehensive safety system following ISO 10218-2 standards for industrial robot safety:
+                    </p>
+                    <ul>
+                      <li><strong>Zone 1 (Safe Zone):</strong> General working area with master lock switch</li>
+                      <li><strong>Zone 2 (Controlled Access):</strong> Fenced area with safety door, warning signs, emergency stops</li>
+                      <li><strong>Zone 3 (Danger Zone):</strong> 400mm perimeter around robot reach with pressure-sensitive mats</li>
+                      <li><strong>Safety Features:</strong> Emergency stop buttons, safety lights, warning signage, pressure mats</li>
+                    </ul>
+
+                    <!-- Safety Layout -->
+                    <div class="my-4">
+                      <img src="assets/automated_assembly_project/robotic_cell_safety_layout.jpg"
+			   class="img-fluid rounded shadow-sm" alt="Safety System Layout">
+                      <p class="text-muted small mt-2">
+			<em>Three-zone safety system design with fencing, emergency stops, pressure mats, and safety signage compliant with ISO 10218-2 standards</em>
+                      </p>
+                    </div>
+
+                    <h4>6. Robot Selection & Final Assembly</h4>
+                    <p>
+                      Selected the Elite Robots EC63 based on payload requirements and system integration needs:
+                    </p>
+
+                    <!-- Robot Specs and Final Assembly -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/robot_arm_specifications_2.jpg"
+                             class="img-fluid rounded shadow-sm" alt="EC63 Robot Specifications">
+			<p class="text-muted small mt-2"><em>Elite Robots EC63 specifications: 3kg payload, 624mm reach, ±0.02mm repeatability, 6-axis flexibility</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/final_robot_cad_assembly.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Final Robot Assembly">
+			<p class="text-muted small mt-2"><em>Complete CAD assembly showing EC63 robot with integrated dual-gripper system and adapter mounted on workcell</em></p>
+                      </div>
+                    </div>
+
+                    <!-- Payload Calculation -->
+                    <div class="my-4">
+                      <img src="assets/automated_assembly_project/robot_payload_calculation.jpg"
+			   class="img-fluid rounded shadow-sm" alt="Payload Calculation">
+                      <p class="text-muted small mt-2">
+			<em>Component weight analysis totaling 2.42kg (grippers, adapter, parts) - safely within EC63's 3kg payload capacity</em>
+                      </p>
+                    </div>
+
+                    <h3>Key Results & Performance</h3>
+
+                    <div class="row mb-4">
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">32 sec</h4>
+                          <small class="text-muted">Cycle Time</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">30%</h4>
+                          <small class="text-muted">Parts Reduction</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">5 m²</h4>
+                          <small class="text-muted">Footprint</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">112/hr</h4>
+                          <small class="text-muted">Production Rate</small>
+			</div>
+                      </div>
+                    </div>
+
+                    <!-- Assembly Sequence Breakdown -->
+                    <h4>Assembly Sequence & Timing</h4>
+                    <div class="table-responsive my-4">
+                      <table class="table table-striped table-hover">
+			<thead class="table-dark">
+                          <tr>
+                            <th>Step</th>
+                            <th>Operation</th>
+                            <th>Gripper</th>
+                            <th>Time (s)</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Pick base shell from feeder</td>
+                            <td>Parallel</td>
+                            <td>3.2</td>
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>Place in assembly fixture</td>
+                            <td>Parallel</td>
+                            <td>2.8</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Pick & place PCB</td>
+                            <td>Vacuum</td>
+                            <td>5.4</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Pick & insert sensor module</td>
+                            <td>Parallel</td>
+                            <td>4.6</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Pick & insert middle shell</td>
+                            <td>Parallel</td>
+                            <td>4.2</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>Pick & insert scroll wheel</td>
+                            <td>Parallel</td>
+                            <td>3.8</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>Pick & place top shell (snap-fit)</td>
+                            <td>Vacuum</td>
+                            <td>5.0</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>Apply press force for clips</td>
+                            <td>Parallel</td>
+                            <td>2.0</td>
+                          </tr>
+                          <tr>
+                            <td>9</td>
+                            <td>Transfer to inspection</td>
+                            <td>Parallel</td>
+                            <td>1.0</td>
+                          </tr>
+                          <tr class="table-info fw-bold">
+                            <td colspan="3">Total Cycle Time</td>
+                            <td>32.0 s</td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+
+                    <h3>Economic Justification & Business Case</h3>
+                    <p>
+                      Conducted comprehensive ROI analysis demonstrating strong business case for automation investment:
+                    </p>
+
+                    <div class="table-responsive my-4">
+                      <table class="table table-striped table-hover">
+			<thead class="table-dark">
+                          <tr>
+                            <th>Financial Metric</th>
+                            <th>Value</th>
+                            <th>Details</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td><strong>Total System Cost (C)</strong></td>
+                            <td>RM 135,822</td>
+                            <td>Robot: RM 74,152 + Tooling (30%) + Installation (15%)</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Annual Labor Savings (W)</strong></td>
+                            <td>RM 54,000</td>
+                            <td>3 workers @ RM 1,500/month (24-hour operation)</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Productivity Gain (I)</strong></td>
+                            <td>RM 191,500</td>
+                            <td>30K additional units/year + insurance savings</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Payback Period</strong></td>
+                            <td class="text-success fw-bold">0.72 years (8.6 months)</td>
+                            <td>Well below 2.5-year industry target</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Return on Investment (ROI)</strong></td>
+                            <td class="text-success fw-bold">124.89% annually</td>
+                            <td>Strong financial justification for deployment</td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+
+                    <h3>Technical Skills Demonstrated</h3>
+                    <div class="row">
+                      <div class="col-md-6">
+			<h5>Design & CAD</h5>
+			<ul>
+                          <li>SolidWorks assembly modeling</li>
+                          <li>Design for Automation (DFA) principles</li>
+                          <li>Custom feeder track design</li>
+                          <li>End effector engineering</li>
+                          <li>Workcell layout optimization</li>
+			</ul>
+                      </div>
+                      <div class="col-md-6">
+			<h5>Robotics & System Integration</h5>
+			<ul>
+                          <li>Robotic workcell design & implementation</li>
+                          <li>Cycle time analysis & optimization</li>
+                          <li>Robot workspace planning</li>
+                          <li>Gripper selection & specification</li>
+                          <li>Production rate calculations</li>
+                          <li>Safety system design (ISO 10218-2)</li>
+                          <li>Economic justification & ROI analysis</li>
+			</ul>
+                      </div>
+                    </div>
+
+                    <!-- <\!-- Download Resources -\-> -->
+                      <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
+			<!--   <h5>Project Resources</h5> -->
+			<!--   <div class="d-flex gap-3 flex-wrap"> -->
+			  <!--     <a href="assets/automated_assembly_project/Automated_Assembly_Project_RSD.pdf" -->
+			  <!--       class="btn btn-sm btn-outline-primary" target="_blank"> -->
+			    <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
+			    <!--     </a> -->
+			  <!--     <a href="assets/automated_assembly_project/cad_files.zip" class="btn btn-sm btn-outline-primary"> -->
+			    <!--       <i class="bi bi-file-earmark-zip"></i> CAD Files -->
+			    <!--     </a> -->
+			  <!--   </div> -->
+			<!-- </div> -->
+
                   </div>
+		</div>
+
+		<!-- Simulation Tab -->
+		<div class="tab-pane fade" id="simulation" role="tabpanel">
+
+                  <div class="portfolio-description">
+
+                    <!-- Outcome Summary -->
+                    <div class="mb-4 p-3 bg-light border-start border-success border-4">
+                      <h5 class="text-success mb-2">Project Outcome</h5>
+                      <p class="mb-0">
+			<strong>Offline Programming & System Validation:</strong> Implemented ABB RobotStudio simulation for offline programming and pre-deployment validation, eliminating production downtime. Developed complete RAPID programs for path planning, coordinated multi-path execution, and system verification—demonstrating practical skills in robot programming, simulation-based validation, and systematic deployment preparation critical for on-site implementation and troubleshooting.
+                      </p>
+                    </div>
+
+                    <h3>The Challenge</h3>
+                    <p>
+                      Industrial robots must operate in cluttered environments with obstacles while maintaining precise
+                      positioning and avoiding collisions.
+                      This project required creating a realistic simulation environment, implementing path planning
+                      algorithms, and validating robot performance
+                      before physical deployment.
+                    </p>
+
+                    <h4>1. Simulation Environment Setup</h4>
+                    <p>
+                      Built a complete virtual workcell in CoppeliaSim representing realistic industrial conditions:
+                    </p>
+                    <ul>
+                      <li><strong>ABB IRB 120 Robot:</strong> 6-DOF industrial manipulator with 3kg payload capacity</li>
+                      <li><strong>Workspace Layout:</strong> Two tables (picking and placing), conveyor belt system</li>
+                      <li><strong>Obstacles:</strong> Safety barriers, support columns, and workspace boundaries</li>
+                      <li><strong>Target Objects:</strong> Multiple component types requiring different approach
+			strategies</li>
+                    </ul>
+
+                    <!-- Robot Selection -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/robot_simulation/ABB_IRB_1600.png" class="img-fluid rounded shadow-sm"
+                             alt="ABB IRB 1600 Robot">
+			<p class="text-muted small mt-2">
+                          <em>ABB IRB 1600-6/1.2 industrial robot: 6kg payload, 1.2m reach, 0.02mm repeatability - selected for optimal workspace coverage</em>
+			</p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/robot_simulation/manipulator_axes.png" class="img-fluid rounded shadow-sm"
+                             alt="Robot Manipulator Axes">
+			<p class="text-muted small mt-2">
+                          <em>ABB IRB 1600 manipulator axes configuration showing 6 degrees of freedom for complex path execution</em>
+			</p>
+                      </div>
+                    </div>
 
 
-		  <!-- Demo GIF Section -->
-		  <div class="my-4 p-4 border rounded demo-section" style="background-color: #f8f9fa;">
-		    <!-- <h5><i class="bi bi-camera-video"></i>Demo</h5> -->
-		    <div class="text-center my-3">
-		      <img src="assets/img/portfolio/outputc.gif"
-			   alt="Robot Navigation Demo"
-			   class="img-fluid rounded shadow-sm"
-			   style="max-width: 80%;">
-		      <p class="text-muted small mt-3">
-			Custom "RSD" flag design created in SolidWorks, exported as .SAT format for RobotStudio import
-		      </p>
+		    <!-- Demo GIF Section -->
+		    <div class="my-4 p-4 border rounded demo-section" style="background-color: #f8f9fa;">
+		      <!-- <h5><i class="bi bi-camera-video"></i>Demo</h5> -->
+		      <div class="text-center my-3">
+			<img src="assets/img/portfolio/outputc.gif"
+			     alt="Robot Navigation Demo"
+			     class="img-fluid rounded shadow-sm"
+			     style="max-width: 80%;">
+			<p class="text-muted small mt-3">
+			  Custom "RSD" flag design created in SolidWorks, exported as .SAT format for RobotStudio import
+			</p>
+		      </div>
 		    </div>
-		  </div>
-		  
-                  <!-- CAD Model Design -->
-                  <div class="my-4">
-                    <img src="assets/robot_simulation/RSD_Flag.png" class="img-fluid rounded shadow-sm"
-                      alt="RSD Flag CAD Model">
-                  </div>
+		    
+                    <!-- CAD Model Design -->
+                    <div class="my-4">
+                      <img src="assets/robot_simulation/RSD_Flag.png" class="img-fluid rounded shadow-sm"
+			   alt="RSD Flag CAD Model">
+                    </div>
 
-                  <!-- Simulation Environment -->
-                  <div class="my-4">
-                    <img src="assets/robot_simulation/robot_studio_simulation.png" class="img-fluid rounded shadow-sm"
-                      alt="RobotStudio Simulation Environment">
-                    <p class="text-muted small mt-2">
-                      <em>Complete RobotStudio simulation environment showing ABB IRB 1600, table workspace, and RSD flag model positioned for path tracing</em>
-                    </p>
-                  </div>
-
-                  <h4>2. Path Planning & Offline Programming</h4>
-                  <p>
-                    Implemented a comprehensive control system using Python and the CoppeliaSim Remote API:
-                  </p>
-
-                  <h5>Inverse Kinematics Solver</h5>
-                  <ul>
-                    <li>Developed custom IK algorithm for 6-DOF manipulator</li>
-                    <li>Handled multiple solutions and joint limit constraints</li>
-                    <li>Optimized for minimal joint movement and singularity avoidance</li>
-                    <li>Calculation time: <10ms per solution</li>
-                  </ul>
-
-                  <h5>Path Planning Module</h5>
-                  <ul>
-                    <li>Implemented waypoint-based trajectory generation</li>
-                    <li>Smooth acceleration/deceleration profiles</li>
-                    <li>Real-time collision checking using proximity sensors</li>
-                    <li>Dynamic obstacle avoidance with replanning capability</li>
-                  </ul>
-
-                  <h5>Task Sequencing Logic</h5>
-                  <ul>
-                    <li>State machine for pick-place-return cycle</li>
-                    <li>Error handling and recovery behaviors</li>
-                    <li>Gripper control synchronization</li>
-                    <li>Position verification at each waypoint</li>
-                  </ul>
-
-                  <!-- Path Planning Visualization -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/robot_simulation/rsdflag-004.png" class="img-fluid rounded shadow-sm"
-                        alt="Multiple Path Planning">
+                    <!-- Simulation Environment -->
+                    <div class="my-4">
+                      <img src="assets/robot_simulation/robot_studio_simulation.png" class="img-fluid rounded shadow-sm"
+			   alt="RobotStudio Simulation Environment">
                       <p class="text-muted small mt-2">
-                        <em>Four separate paths created for flag pole and R, S, D letters using Auto Path feature and manual waypoint refinement</em>
+			<em>Complete RobotStudio simulation environment showing ABB IRB 1600, table workspace, and RSD flag model positioned for path tracing</em>
                       </p>
                     </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/robot_simulation/rsdflag-006.png" class="img-fluid rounded shadow-sm"
-                        alt="Final Traced Path">
+
+                    <h4>2. Path Planning & Offline Programming</h4>
+                    <p>
+                      Implemented a comprehensive control system using Python and the CoppeliaSim Remote API:
+                    </p>
+
+                    <h5>Inverse Kinematics Solver</h5>
+                    <ul>
+                      <li>Developed custom IK algorithm for 6-DOF manipulator</li>
+                      <li>Handled multiple solutions and joint limit constraints</li>
+                      <li>Optimized for minimal joint movement and singularity avoidance</li>
+                      <li>Calculation time: <10ms per solution</li>
+						  </ul>
+
+                    <h5>Path Planning Module</h5>
+                    <ul>
+                      <li>Implemented waypoint-based trajectory generation</li>
+                      <li>Smooth acceleration/deceleration profiles</li>
+                      <li>Real-time collision checking using proximity sensors</li>
+                      <li>Dynamic obstacle avoidance with replanning capability</li>
+                    </ul>
+
+                    <h5>Task Sequencing Logic</h5>
+                    <ul>
+                      <li>State machine for pick-place-return cycle</li>
+                      <li>Error handling and recovery behaviors</li>
+                      <li>Gripper control synchronization</li>
+                      <li>Position verification at each waypoint</li>
+                    </ul>
+
+                    <!-- Path Planning Visualization -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/robot_simulation/rsdflag-004.png" class="img-fluid rounded shadow-sm"
+                             alt="Multiple Path Planning">
+			<p class="text-muted small mt-2">
+                          <em>Four separate paths created for flag pole and R, S, D letters using Auto Path feature and manual waypoint refinement</em>
+			</p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/robot_simulation/rsdflag-006.png" class="img-fluid rounded shadow-sm"
+                             alt="Final Traced Path">
+			<p class="text-muted small mt-2">
+                          <em>Final merged complete path showing successful tracing result with smooth transitions between letters</em>
+			</p>
+                      </div>
+                    </div>
+
+                    <!-- Code Snippet Example -->
+                    <div class="my-4 p-3 bg-dark text-light rounded">
+                      <h6 class="text-warning">RAPID Programming: Complete Path Execution</h6>
+                      <pre class="mb-0"><code class="text-light">PROC main()
+			  COMPLETE_PATH;
+			  MOVE_HOME;
+			  ENDPROC
+
+			  PROC COMPLETE_PATH()
+			  ! Trace flag pole and letters R, S, D
+			  MoveL Target_Flag_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+			  ! ... (path targets for flag)
+			  MoveL Target_R_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+			  ! ... (path targets for letter R)
+			  MoveL Target_S_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+			  ! ... (path targets for letter S)
+			  MoveL Target_D_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+			  ! ... (path targets for letter D)
+			  ENDPROC
+
+			  PROC MOVE_HOME()
+			  MoveL Target_930_4, v600, fine, MyTool\WObj:=Table_Workobject;
+			  WaitTime 20;  ! Pause before restarting cycle
+			  ENDPROC</code></pre>
+                      <p class="text-muted small mt-2 mb-0"><em>ABB RAPID code showing offline programming approach with merged path execution and continuous run capability</em></p>
+                    </div>
+
+                    <h4>3. Robot Specifications & Selection Rationale</h4>
+                    <p>
+                      Selected ABB IRB 1600-6/1.2 for its balanced specifications and workspace coverage:
+                    </p>
+
+                    <div class="table-responsive my-4">
+                      <table class="table table-striped table-hover">
+			<thead class="table-dark">
+                          <tr>
+                            <th>Specification</th>
+                            <th>Value</th>
+                            <th>Relevance to Project</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td><strong>Payload Capacity</strong></td>
+                            <td>6 kg</td>
+                            <td>More than sufficient for pen tool end effector</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Maximum Reach</strong></td>
+                            <td>1200 mm</td>
+                            <td>Covers entire table workspace for flag tracing</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Repeatability</strong></td>
+                            <td>±0.02 mm</td>
+                            <td>Ensures precise path following for accurate tracing</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Degrees of Freedom</strong></td>
+                            <td>6 axes</td>
+                            <td>Enables complex curved paths for letters R and S</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Weight</strong></td>
+                            <td>225 kg</td>
+                            <td>Stable base for dynamic movements</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Programming Method</strong></td>
+                            <td>RAPID (offline)</td>
+                            <td>Enables simulation validation before deployment</td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+
+                    <h4>4. Offline Programming Benefits</h4>
+                    <p>
+                      Demonstrated key advantages of offline programming with RobotStudio:
+                    </p>
+                    <ul>
+                      <li><strong>Zero Production Downtime:</strong> Programming and testing done entirely offline</li>
+                      <li><strong>Path Optimization:</strong> Auto Path feature with manual refinement for smooth curves</li>
+                      <li><strong>Collision Detection:</strong> Virtual environment testing before physical deployment</li>
+                      <li><strong>Multi-Path Management:</strong> Four separate paths merged into single coordinated program</li>
+                      <li><strong>Simulation Validation:</strong> Verified complete cycle before hardware commissioning</li>
+                    </ul>
+
+                    <h4>5. Performance Testing & Validation</h4>
+                    <p>
+                      Conducted comprehensive testing to validate system performance:
+                    </p>
+
+                    <!-- Performance Results Table -->
+                    <div class="table-responsive my-4">
+                      <table class="table table-striped table-hover">
+			<thead class="table-dark">
+                          <tr>
+                            <th>Test Scenario</th>
+                            <th>Success Rate</th>
+                            <th>Avg Cycle Time</th>
+                            <th>Notes</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td>Clear Workspace</td>
+                            <td>100% (50/50)</td>
+                            <td>8.2s</td>
+                            <td>Baseline performance</td>
+                          </tr>
+                          <tr>
+                            <td>Single Obstacle</td>
+                            <td>98% (49/50)</td>
+                            <td>9.7s</td>
+                            <td>1 path replanning failure</td>
+                          </tr>
+                          <tr>
+                            <td>Multiple Obstacles</td>
+                            <td>94% (47/50)</td>
+                            <td>11.3s</td>
+                            <td>3 complex path scenarios</td>
+                          </tr>
+                          <tr>
+                            <td>Moving Obstacles</td>
+                            <td>89% (44/50)</td>
+                            <td>13.1s</td>
+                            <td>Dynamic replanning required</td>
+                          </tr>
+                          <tr>
+                            <td>Tight Clearances</td>
+                            <td>92% (46/50)</td>
+                            <td>10.5s</td>
+                            <td>Min clearance: 75mm</td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+
+                    <h3>Key Results & Insights</h3>
+
+                    <div class="row mb-4">
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-success mb-0">94.6%</h4>
+                          <small class="text-muted">Overall Success Rate</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-success mb-0">10.6s</h4>
+                          <small class="text-muted">Avg Cycle Time</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-success mb-0">
+                            <10ms< /h4>
+				   <small class="text-muted">IK Solve Time</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-success mb-0">0</h4>
+                          <small class="text-muted">Collisions</small>
+			</div>
+                      </div>
+                    </div>
+
+                    <h4>Key Learnings</h4>
+                    <ul>
+                      <li><strong>IK Solution Selection:</strong> Out of multiple valid solutions, choosing the one with
+			minimal joint movement improved cycle time by 23%</li>
+                      <li><strong>Path Smoothing:</strong> Implementing S-curve acceleration profiles reduced mechanical
+			stress and improved positioning accuracy by 15%</li>
+                      <li><strong>Sensor Placement:</strong> Strategic proximity sensor positioning (especially at elbow
+			and wrist) was critical for effective collision avoidance</li>
+                      <li><strong>Simulation vs Reality:</strong> Identified need for friction modeling and payload
+			dynamics for more realistic simulation</li>
+                    </ul>
+
+
+                    <!-- <\!-- Download Resources -\-> -->
+                      <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
+			<!--   <h5>Project Resources</h5> -->
+			<!--   <div class="d-flex gap-3 flex-wrap"> -->
+			  <!--     <a href="assets/robot_simulation/101229220_Robot_Simulation_Individual_Assignment.pdf" -->
+			  <!--       class="btn btn-sm btn-outline-success" target="_blank"> -->
+			    <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
+			    <!--     </a> -->
+			  <!--     <a href="assets/robot_simulation/python_code.zip" class="btn btn-sm btn-outline-success"> -->
+			    <!--       <i class="bi bi-file-code"></i> Python Code -->
+			    <!--     </a> -->
+			  <!--     <a href="assets/robot_simulation/coppeliasim_scene.ttt" class="btn btn-sm btn-outline-success"> -->
+			    <!--       <i class="bi bi-file-earmark-zip"></i> CoppeliaSim Scene -->
+			    <!--     </a> -->
+			  <!--   </div> -->
+			<!-- </div> -->
+
+                  </div>
+		</div>
+
+		<!-- Hand-Eye Coordination Tab -->
+		<div class="tab-pane fade" id="handeye" role="tabpanel">
+
+                  <div class="portfolio-description">
+
+                    <!-- Outcome Summary -->
+                    <div class="mb-4 p-3 bg-light border-start border-info border-4">
+                      <h5 class="text-info mb-2">Project Outcome</h5>
+                      <p class="mb-0">
+			<strong>Multi-System Integration & Deployment:</strong> Integrated vision system, MATLAB processing, TCP/IP communication, and ABB robot control into unified pick-and-place system achieving <5mm positioning accuracy. Demonstrated complete system integration workflow including hardware setup, software development, communication protocol implementation, and systematic testing/validation—essential capabilities for robotics system deployment, troubleshooting, and technical documentation in real-world implementations.
+																											   </p>
+                    </div>
+
+                    <h3>The Challenge</h3>
+                    <p>
+                      Modern industrial robots require vision systems to handle unstructured environments where object
+                      positions are not predetermined.
+                      This project involved creating a complete hand-eye coordination system capable of detecting,
+                      localizing, and grasping objects of
+                      varying sizes and orientations using computer vision and coordinate transformation.
+                    </p>
+
+                    <h3>Project Planning & Team Collaboration</h3>
+                    <p>
+                      Executed as a 3-person team project with structured task distribution and timeline management:
+                    </p>
+
+                    <!-- Project Timeline -->
+                    <div class="my-4">
+                      <img src="assets/hand_eye_coordination/project_timeline.png"
+			   class="img-fluid rounded shadow-sm" alt="Project Timeline">
                       <p class="text-muted small mt-2">
-                        <em>Final merged complete path showing successful tracing result with smooth transitions between letters</em>
+			<em>Project timeline and work distribution showing coordinated effort across image processing, robot programming, and kinematics analysis modules</em>
                       </p>
                     </div>
-                  </div>
 
-                  <!-- Code Snippet Example -->
-                  <div class="my-4 p-3 bg-dark text-light rounded">
-                    <h6 class="text-warning">RAPID Programming: Complete Path Execution</h6>
-                    <pre class="mb-0"><code class="text-light">PROC main()
-    COMPLETE_PATH;
-    MOVE_HOME;
-ENDPROC
+		    <!-- small brand-logo rule -->
+		    <style>
+		      /* match the Bootstrap icon size (2rem) and center logo above caption */
+		      .brand-logo { height: 2rem; width: auto; display: block; }
+		      .brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
+		    </style>
 
-PROC COMPLETE_PATH()
-    ! Trace flag pole and letters R, S, D
-    MoveL Target_Flag_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-    ! ... (path targets for flag)
-    MoveL Target_R_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-    ! ... (path targets for letter R)
-    MoveL Target_S_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-    ! ... (path targets for letter S)
-    MoveL Target_D_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-    ! ... (path targets for letter D)
-ENDPROC
-
-PROC MOVE_HOME()
-    MoveL Target_930_4, v600, fine, MyTool\WObj:=Table_Workobject;
-    WaitTime 20;  ! Pause before restarting cycle
-ENDPROC</code></pre>
-                    <p class="text-muted small mt-2 mb-0"><em>ABB RAPID code showing offline programming approach with merged path execution and continuous run capability</em></p>
-                  </div>
-
-                  <h4>3. Robot Specifications & Selection Rationale</h4>
-                  <p>
-                    Selected ABB IRB 1600-6/1.2 for its balanced specifications and workspace coverage:
-                  </p>
-
-                  <div class="table-responsive my-4">
-                    <table class="table table-striped table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Specification</th>
-                          <th>Value</th>
-                          <th>Relevance to Project</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><strong>Payload Capacity</strong></td>
-                          <td>6 kg</td>
-                          <td>More than sufficient for pen tool end effector</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Maximum Reach</strong></td>
-                          <td>1200 mm</td>
-                          <td>Covers entire table workspace for flag tracing</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Repeatability</strong></td>
-                          <td>±0.02 mm</td>
-                          <td>Ensures precise path following for accurate tracing</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Degrees of Freedom</strong></td>
-                          <td>6 axes</td>
-                          <td>Enables complex curved paths for letters R and S</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Weight</strong></td>
-                          <td>225 kg</td>
-                          <td>Stable base for dynamic movements</td>
-                        </tr>
-                        <tr>
-                          <td><strong>Programming Method</strong></td>
-                          <td>RAPID (offline)</td>
-                          <td>Enables simulation validation before deployment</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <h4>4. Offline Programming Benefits</h4>
-                  <p>
-                    Demonstrated key advantages of offline programming with RobotStudio:
-                  </p>
-                  <ul>
-                    <li><strong>Zero Production Downtime:</strong> Programming and testing done entirely offline</li>
-                    <li><strong>Path Optimization:</strong> Auto Path feature with manual refinement for smooth curves</li>
-                    <li><strong>Collision Detection:</strong> Virtual environment testing before physical deployment</li>
-                    <li><strong>Multi-Path Management:</strong> Four separate paths merged into single coordinated program</li>
-                    <li><strong>Simulation Validation:</strong> Verified complete cycle before hardware commissioning</li>
-                  </ul>
-
-                  <h4>5. Performance Testing & Validation</h4>
-                  <p>
-                    Conducted comprehensive testing to validate system performance:
-                  </p>
-
-                  <!-- Performance Results Table -->
-                  <div class="table-responsive my-4">
-                    <table class="table table-striped table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Test Scenario</th>
-                          <th>Success Rate</th>
-                          <th>Avg Cycle Time</th>
-                          <th>Notes</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Clear Workspace</td>
-                          <td>100% (50/50)</td>
-                          <td>8.2s</td>
-                          <td>Baseline performance</td>
-                        </tr>
-                        <tr>
-                          <td>Single Obstacle</td>
-                          <td>98% (49/50)</td>
-                          <td>9.7s</td>
-                          <td>1 path replanning failure</td>
-                        </tr>
-                        <tr>
-                          <td>Multiple Obstacles</td>
-                          <td>94% (47/50)</td>
-                          <td>11.3s</td>
-                          <td>3 complex path scenarios</td>
-                        </tr>
-                        <tr>
-                          <td>Moving Obstacles</td>
-                          <td>89% (44/50)</td>
-                          <td>13.1s</td>
-                          <td>Dynamic replanning required</td>
-                        </tr>
-                        <tr>
-                          <td>Tight Clearances</td>
-                          <td>92% (46/50)</td>
-                          <td>10.5s</td>
-                          <td>Min clearance: 75mm</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <h3>Key Results & Insights</h3>
-
-                  <div class="row mb-4">
-                    <div class="col-md-3 col-6 text-center mb-3">
+                    <h3>My System Architecture</h3>
+                    <!-- System Block Diagram -->
+                    <div class="my-4">
                       <div class="p-3 border rounded bg-light">
-                        <h4 class="text-success mb-0">94.6%</h4>
-                        <small class="text-muted">Overall Success Rate</small>
+			<h5>System Components</h5>
+			<div class="row text-center">
+                          <div class="col-md-3">
+                            <i class="bi bi-camera-video" style="font-size: 2rem; color: #0dcaf0;"></i>
+                            <p class="mt-2 mb-0 fw-bold">Webcam</p>
+                            <small class="text-muted">Image Acquisition</small>
+                          </div>
+                          <div class="col-md-3">
+			    <div class="brand-item">
+			      <img src="assets/img/portfolio/matlabsvg.svg" alt="MATLAB logo" class="brand-logo" />
+			      <p class="mt-2 mb-0 fw-bold">MATLAB</p>
+			      <small class="text-muted">Image Processing</small>
+			    </div>
+                          </div>
+                          <div class="col-md-3">
+                            <i class="bi bi-ethernet" style="font-size: 2rem; color: #0dcaf0;"></i>
+                            <p class="mt-2 mb-0 fw-bold">TCP/IP</p>
+                            <small class="text-muted">Communication</small>
+                          </div>
+                          <div class="col-md-3">
+                            <i class="bi bi-robot" style="font-size: 2rem; color: #0dcaf0;"></i>
+                            <p class="mt-2 mb-0 fw-bold">ABB IRB 120</p>
+                            <small class="text-muted">Robot Execution</small>
+                          </div>
+			</div>
                       </div>
                     </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-success mb-0">10.6s</h4>
-                        <small class="text-muted">Avg Cycle Time</small>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-success mb-0">
-                          <10ms< /h4>
-                            <small class="text-muted">IK Solve Time</small>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-success mb-0">0</h4>
-                        <small class="text-muted">Collisions</small>
-                      </div>
-                    </div>
-                  </div>
 
-                  <h4>Key Learnings</h4>
-                  <ul>
-                    <li><strong>IK Solution Selection:</strong> Out of multiple valid solutions, choosing the one with
-                      minimal joint movement improved cycle time by 23%</li>
-                    <li><strong>Path Smoothing:</strong> Implementing S-curve acceleration profiles reduced mechanical
-                      stress and improved positioning accuracy by 15%</li>
-                    <li><strong>Sensor Placement:</strong> Strategic proximity sensor positioning (especially at elbow
-                      and wrist) was critical for effective collision avoidance</li>
-                    <li><strong>Simulation vs Reality:</strong> Identified need for friction modeling and payload
-                      dynamics for more realistic simulation</li>
-                  </ul>
-
-
-                  <!-- <\!-- Download Resources -\-> -->
-                  <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
-                  <!--   <h5>Project Resources</h5> -->
-                  <!--   <div class="d-flex gap-3 flex-wrap"> -->
-                  <!--     <a href="assets/robot_simulation/101229220_Robot_Simulation_Individual_Assignment.pdf" -->
-                  <!--       class="btn btn-sm btn-outline-success" target="_blank"> -->
-                  <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
-                  <!--     </a> -->
-                  <!--     <a href="assets/robot_simulation/python_code.zip" class="btn btn-sm btn-outline-success"> -->
-                  <!--       <i class="bi bi-file-code"></i> Python Code -->
-                  <!--     </a> -->
-                  <!--     <a href="assets/robot_simulation/coppeliasim_scene.ttt" class="btn btn-sm btn-outline-success"> -->
-                  <!--       <i class="bi bi-file-earmark-zip"></i> CoppeliaSim Scene -->
-                  <!--     </a> -->
-                  <!--   </div> -->
-                  <!-- </div> -->
-
-                </div>
-              </div>
-
-              <!-- Hand-Eye Coordination Tab -->
-              <div class="tab-pane fade" id="handeye" role="tabpanel">
-
-                <div class="portfolio-description">
-
-                  <!-- Outcome Summary -->
-                  <div class="mb-4 p-3 bg-light border-start border-info border-4">
-                    <h5 class="text-info mb-2">Project Outcome</h5>
-                    <p class="mb-0">
-                      <strong>Multi-System Integration & Deployment:</strong> Integrated vision system, MATLAB processing, TCP/IP communication, and ABB robot control into unified pick-and-place system achieving <5mm positioning accuracy. Demonstrated complete system integration workflow including hardware setup, software development, communication protocol implementation, and systematic testing/validation—essential capabilities for robotics system deployment, troubleshooting, and technical documentation in real-world implementations.
+                    <h4>1. Camera Calibration & Setup</h4>
+                    <p>
+                      Performed comprehensive camera calibration to ensure accurate coordinate mapping:
                     </p>
-                  </div>
+                    <ul>
+                      <li><strong>Calibration Method:</strong> Zhang's checkerboard-based camera calibration</li>
+                      <li><strong>Parameters Determined:</strong> Intrinsic matrix (focal length, principal point),
+			distortion coefficients (radial & tangential)</li>
+                      <li><strong>Calibration Accuracy:</strong> Mean reprojection error <0.3 pixels</li>
+											      <li><strong>Camera Mounting:</strong> Fixed overhead position at 800mm height, 45° viewing angle
+											      </li>
+                    </ul>
 
-                  <h3>The Challenge</h3>
-                  <p>
-                    Modern industrial robots require vision systems to handle unstructured environments where object
-                    positions are not predetermined.
-                    This project involved creating a complete hand-eye coordination system capable of detecting,
-                    localizing, and grasping objects of
-                    varying sizes and orientations using computer vision and coordinate transformation.
-                  </p>
-
-                  <h3>Project Planning & Team Collaboration</h3>
-                  <p>
-                    Executed as a 3-person team project with structured task distribution and timeline management:
-                  </p>
-
-                  <!-- Project Timeline -->
-                  <div class="my-4">
-                    <img src="assets/hand_eye_coordination/project_timeline.png"
-                      class="img-fluid rounded shadow-sm" alt="Project Timeline">
-                    <p class="text-muted small mt-2">
-                      <em>Project timeline and work distribution showing coordinated effort across image processing, robot programming, and kinematics analysis modules</em>
-                    </p>
-                  </div>
-
-                  <h3>My System Architecture</h3>
-
-                  <!-- System Block Diagram -->
-                  <div class="my-4">
-                    <div class="p-3 border rounded bg-light">
-                      <h5>System Components</h5>
-                      <div class="row text-center">
-                        <div class="col-md-3">
-                          <i class="bi bi-camera-video" style="font-size: 2rem; color: #0dcaf0;"></i>
-                          <p class="mt-2 mb-0 fw-bold">Webcam</p>
-                          <small class="text-muted">Image Acquisition</small>
-                        </div>
-                        <div class="col-md-3">
-                          <i class="bi bi-laptop" style="font-size: 2rem; color: #0dcaf0;"></i>
-                          <p class="mt-2 mb-0 fw-bold">MATLAB</p>
-                          <small class="text-muted">Image Processing</small>
-                        </div>
-                        <div class="col-md-3">
-                          <i class="bi bi-ethernet" style="font-size: 2rem; color: #0dcaf0;"></i>
-                          <p class="mt-2 mb-0 fw-bold">TCP/IP</p>
-                          <small class="text-muted">Communication</small>
-                        </div>
-                        <div class="col-md-3">
-                          <i class="bi bi-robot" style="font-size: 2rem; color: #0dcaf0;"></i>
-                          <p class="mt-2 mb-0 fw-bold">ABB IRB 120</p>
-                          <small class="text-muted">Robot Execution</small>
-                        </div>
+                    <!-- Calibration Images -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/hand_eye_coordination/checkerboard_calibration.png"
+                             class="img-fluid rounded shadow-sm" alt="Checkerboard Calibration">
+			<p class="text-muted small mt-2"><em>Multiple checkerboard views captured for camera calibration.
+                            Grid: 9×6 corners, square size: 25mm</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Physical Setup">
+			<p class="text-muted small mt-2"><em>Complete physical setup showing ABB IRB 120 robot, overhead
+                            camera,
+                            workspace, and target objects</em></p>
                       </div>
                     </div>
-                  </div>
 
-                  <h4>1. Camera Calibration & Setup</h4>
-                  <p>
-                    Performed comprehensive camera calibration to ensure accurate coordinate mapping:
-                  </p>
-                  <ul>
-                    <li><strong>Calibration Method:</strong> Zhang's checkerboard-based camera calibration</li>
-                    <li><strong>Parameters Determined:</strong> Intrinsic matrix (focal length, principal point),
-                      distortion coefficients (radial & tangential)</li>
-                    <li><strong>Calibration Accuracy:</strong> Mean reprojection error <0.3 pixels</li>
-                    <li><strong>Camera Mounting:</strong> Fixed overhead position at 800mm height, 45° viewing angle
-                    </li>
-                  </ul>
-
-                  <!-- Calibration Images -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/hand_eye_coordination/checkerboard_calibration.png"
-                        class="img-fluid rounded shadow-sm" alt="Checkerboard Calibration">
-                      <p class="text-muted small mt-2"><em>Multiple checkerboard views captured for camera calibration.
-                          Grid: 9×6 corners, square size: 25mm</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
-                        class="img-fluid rounded shadow-sm" alt="Physical Setup">
-                      <p class="text-muted small mt-2"><em>Complete physical setup showing ABB IRB 120 robot, overhead
-                          camera,
-                          workspace, and target objects</em></p>
-                    </div>
-                  </div>
-
-                  <h4>2. Image Processing Pipeline</h4>
-                  <p>
-                    Developed a robust MATLAB-based vision processing pipeline:
-                  </p>
-
-                  <h5>Image Acquisition & Preprocessing</h5>
-                  <ul>
-                    <li><strong>Undistortion:</strong> Applied calibration parameters to remove lens distortion</li>
-                    <li><strong>Color Space Conversion:</strong> RGB → Grayscale for intensity-based processing</li>
-                    <li><strong>Noise Reduction:</strong> Gaussian filtering (5×5 kernel, σ=1.0)</li>
-                    <li><strong>Contrast Enhancement:</strong> Adaptive histogram equalization (CLAHE)</li>
-                  </ul>
-
-                  <h5>Object Detection & Segmentation</h5>
-                  <ul>
-                    <li><strong>Thresholding:</strong> Adaptive binary thresholding (Otsu's method)</li>
-                    <li><strong>Morphological Operations:</strong> Opening (erosion + dilation) to remove noise</li>
-                    <li><strong>Connected Components:</strong> Blob analysis for individual object identification</li>
-                    <li><strong>Contour Analysis:</strong> Boundary extraction using Canny edge detection</li>
-                  </ul>
-
-                  <h5>Feature Extraction</h5>
-                  <ul>
-                    <li><strong>Centroid Calculation:</strong> Geometric center using image moments</li>
-                    <li><strong>Bounding Box:</strong> Minimum area rectangle for object dimensions</li>
-                    <li><strong>Orientation:</strong> Principal axis angle using second-order moments</li>
-                    <li><strong>Area & Perimeter:</strong> For object classification</li>
-                  </ul>
-
-                  <!-- Image Processing Pipeline Steps -->
-                  <h5>Processing Pipeline Visualization</h5>
-                  <p class="small text-muted">Step-by-step transformation from raw capture to feature extraction:</p>
-
-                  <div class="row my-4">
-                    <div class="col-md-3 mb-3">
-                      <img src="assets/hand_eye_coordination/original_image_capture.png"
-                        class="img-fluid rounded shadow-sm" alt="Step 1: Original">
-                      <p class="text-muted small mt-2 text-center"><em><strong>1.</strong> Original capture</em></p>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <img src="assets/hand_eye_coordination/grayscale_image.png"
-                        class="img-fluid rounded shadow-sm" alt="Step 2: Grayscale">
-                      <p class="text-muted small mt-2 text-center"><em><strong>2.</strong> Grayscale conversion</em></p>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <img src="assets/hand_eye_coordination/thresholded_image.png"
-                        class="img-fluid rounded shadow-sm" alt="Step 3: Thresholding">
-                      <p class="text-muted small mt-2 text-center"><em><strong>3.</strong> Binary thresholding</em></p>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                      <img src="assets/hand_eye_coordination/image_masking.png"
-                        class="img-fluid rounded shadow-sm" alt="Step 4: Masking">
-                      <p class="text-muted small mt-2 text-center"><em><strong>4.</strong> Object masking</em></p>
-                    </div>
-                  </div>
-
-                  <!-- Final Processing Results -->
-                  <div class="my-4">
-                    <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png"
-                      class="img-fluid rounded shadow-sm" alt="Final: Processed with Detections">
-                    <p class="text-muted small mt-2">
-                      <em><strong>Final Result:</strong> Detected objects with centroids, bounding boxes, and orientation vectors overlaid. Object properties (position, rotation, area) extracted for robot control.</em>
+                    <h4>2. Image Processing Pipeline</h4>
+                    <p>
+                      Developed a robust MATLAB-based vision processing pipeline:
                     </p>
-                  </div>
 
-                  <h4>3. Coordinate Transformation</h4>
-                  <p>
-                    Implemented precise transformation from image coordinates to robot base coordinates:
-                  </p>
+                    <h5>Image Acquisition & Preprocessing</h5>
+                    <ul>
+                      <li><strong>Undistortion:</strong> Applied calibration parameters to remove lens distortion</li>
+                      <li><strong>Color Space Conversion:</strong> RGB → Grayscale for intensity-based processing</li>
+                      <li><strong>Noise Reduction:</strong> Gaussian filtering (5×5 kernel, σ=1.0)</li>
+                      <li><strong>Contrast Enhancement:</strong> Adaptive histogram equalization (CLAHE)</li>
+                    </ul>
 
-                  <h5>Transformation Chain</h5>
-                  <ol>
-                    <li><strong>Image → Camera Frame:</strong> Using intrinsic calibration matrix and known Z-height
-                      (workspace plane)</li>
-                    <li><strong>Camera → Robot Base:</strong> Homogeneous transformation matrix from hand-eye
-                      calibration</li>
-                    <li><strong>Validation:</strong> Physical measurement verification (target grid points)</li>
-                  </ol>
+                    <h5>Object Detection & Segmentation</h5>
+                    <ul>
+                      <li><strong>Thresholding:</strong> Adaptive binary thresholding (Otsu's method)</li>
+                      <li><strong>Morphological Operations:</strong> Opening (erosion + dilation) to remove noise</li>
+                      <li><strong>Connected Components:</strong> Blob analysis for individual object identification</li>
+                      <li><strong>Contour Analysis:</strong> Boundary extraction using Canny edge detection</li>
+                    </ul>
 
-                  <!-- Transformation Visualization -->
-                  <div class="my-4 p-3 bg-dark text-light rounded">
-                    <h6 class="text-warning">Coordinate Transformation Matrix</h6>
-                    <pre class="mb-0 text-center"><code class="text-light">    [R₁₁  R₁₂  R₁₃  Tx]     [Xrobot]
+                    <h5>Feature Extraction</h5>
+                    <ul>
+                      <li><strong>Centroid Calculation:</strong> Geometric center using image moments</li>
+                      <li><strong>Bounding Box:</strong> Minimum area rectangle for object dimensions</li>
+                      <li><strong>Orientation:</strong> Principal axis angle using second-order moments</li>
+                      <li><strong>Area & Perimeter:</strong> For object classification</li>
+                    </ul>
+
+                    <!-- Image Processing Pipeline Steps -->
+                    <h5>Processing Pipeline Visualization</h5>
+                    <p class="small text-muted">Step-by-step transformation from raw capture to feature extraction:</p>
+
+                    <div class="row my-4">
+                      <div class="col-md-3 mb-3">
+			<img src="assets/hand_eye_coordination/original_image_capture.png"
+                             class="img-fluid rounded shadow-sm" alt="Step 1: Original">
+			<p class="text-muted small mt-2 text-center"><em><strong>1.</strong> Original capture</em></p>
+                      </div>
+                      <div class="col-md-3 mb-3">
+			<img src="assets/hand_eye_coordination/grayscale_image.png"
+                             class="img-fluid rounded shadow-sm" alt="Step 2: Grayscale">
+			<p class="text-muted small mt-2 text-center"><em><strong>2.</strong> Grayscale conversion</em></p>
+                      </div>
+                      <div class="col-md-3 mb-3">
+			<img src="assets/hand_eye_coordination/thresholded_image.png"
+                             class="img-fluid rounded shadow-sm" alt="Step 3: Thresholding">
+			<p class="text-muted small mt-2 text-center"><em><strong>3.</strong> Binary thresholding</em></p>
+                      </div>
+                      <div class="col-md-3 mb-3">
+			<img src="assets/hand_eye_coordination/image_masking.png"
+                             class="img-fluid rounded shadow-sm" alt="Step 4: Masking">
+			<p class="text-muted small mt-2 text-center"><em><strong>4.</strong> Object masking</em></p>
+                      </div>
+                    </div>
+
+                    <!-- Final Processing Results -->
+                    <div class="my-4">
+                      <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png"
+			   class="img-fluid rounded shadow-sm" alt="Final: Processed with Detections">
+                      <p class="text-muted small mt-2">
+			<em><strong>Final Result:</strong> Detected objects with centroids, bounding boxes, and orientation vectors overlaid. Object properties (position, rotation, area) extracted for robot control.</em>
+                      </p>
+                    </div>
+
+                    <h4>3. Coordinate Transformation</h4>
+                    <p>
+                      Implemented precise transformation from image coordinates to robot base coordinates:
+                    </p>
+
+                    <h5>Transformation Chain</h5>
+                    <ol>
+                      <li><strong>Image → Camera Frame:</strong> Using intrinsic calibration matrix and known Z-height
+			(workspace plane)</li>
+                      <li><strong>Camera → Robot Base:</strong> Homogeneous transformation matrix from hand-eye
+			calibration</li>
+                      <li><strong>Validation:</strong> Physical measurement verification (target grid points)</li>
+                    </ol>
+
+                    <!-- Transformation Visualization -->
+                    <div class="my-4 p-3 bg-dark text-light rounded">
+                      <h6 class="text-warning">Coordinate Transformation Matrix</h6>
+                      <pre class="mb-0 text-center"><code class="text-light">    [R₁₁  R₁₂  R₁₃  Tx]     [Xrobot]
 			  T = [R₂₁  R₂₂  R₂₃  Ty]  →  [Yrobot]
 			  [R₃₁  R₃₂  R₃₃  Tz]     [Zrobot]
 			  [ 0    0    0    1]     [  1  ]
@@ -1165,320 +1173,320 @@ ENDPROC</code></pre>
 			  Translation (T): Camera → Robot position offset
 
 			  Example: Camera at X=450mm, Y=300mm, Z=800mm above robot base</code></pre>
-                    <p class="text-muted small mt-2 mb-0"><em>4×4 homogeneous transformation matrix mapping camera
-                        coordinates to robot base frame</em></p>
-                  </div>
-
-                  <h4>4. Robot Control Integration</h4>
-                  <p>
-                    Developed seamless communication between MATLAB vision system and ABB robot controller:
-                  </p>
-
-                  <h5>Communication Protocol (TCP/IP)</h5>
-                  <ul>
-                    <li><strong>Socket Connection:</strong> MATLAB client → ABB IRC5 controller server</li>
-                    <li><strong>IP Address:</strong> 192.168.125.1 (robot controller)</li>
-                    <li><strong>Port:</strong> 1025 (custom RAPID socket server)</li>
-                    <li><strong>Data Format:</strong> ASCII string "X,Y,Z,RX,RY,RZ" (comma-delimited coordinates)</li>
-                    <li><strong>Acknowledgment:</strong> Robot returns "OK" upon successful move completion</li>
-                  </ul>
-
-                  <h5>RAPID Programming (Robot-Side)</h5>
-                  <ul>
-                    <li><strong>Socket Server:</strong> Listens for incoming coordinate data</li>
-                    <li><strong>Motion Planning:</strong> Generates safe trajectory to target pose</li>
-                    <li><strong>Execution:</strong> MoveL (linear) or MoveJ (joint) motion commands</li>
-                    <li><strong>Error Handling:</strong> Timeout detection, unreachable position checks</li>
-                  </ul>
-
-                  <!-- Robot Kinematics Diagrams -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/hand_eye_coordination/abb_irb_120_coordinate_frames1.png"
-                        class="img-fluid rounded shadow-sm" alt="DH Parameters">
-                      <p class="text-muted small mt-2"><em>Denavit-Hartenberg coordinate frames for ABB IRB 120
-                          kinematic model showing link assignments</em></p>
+                      <p class="text-muted small mt-2 mb-0"><em>4×4 homogeneous transformation matrix mapping camera
+                          coordinates to robot base frame</em></p>
                     </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/hand_eye_coordination/abb_irb_120_dimensions.png"
-                        class="img-fluid rounded shadow-sm" alt="Robot Dimensions">
-                      <p class="text-muted small mt-2"><em>ABB IRB 120 dimensional specifications for kinematic calculations and workspace analysis</em></p>
-                    </div>
-                  </div>
 
-                  <!-- DH Parameters Table -->
-                  <h5>Denavit-Hartenberg Parameters</h5>
-                  <p>Complete DH table for ABB IRB 120 forward/inverse kinematics implementation:</p>
-                  <div class="table-responsive my-4">
-                    <table class="table table-striped table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Joint</th>
-                          <th>θ (rad)</th>
-                          <th>d (mm)</th>
-                          <th>a (mm)</th>
-                          <th>α (rad)</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td><strong>1</strong></td>
-                          <td>θ₁</td>
-                          <td>290</td>
-                          <td>0</td>
-                          <td>-π/2</td>
-                        </tr>
-                        <tr>
-                          <td><strong>2</strong></td>
-                          <td>θ₂ - π/2</td>
-                          <td>0</td>
-                          <td>270</td>
-                          <td>0</td>
-                        </tr>
-                        <tr>
-                          <td><strong>3</strong></td>
-                          <td>θ₃</td>
-                          <td>0</td>
-                          <td>70</td>
-                          <td>π/2</td>
-                        </tr>
-                        <tr>
-                          <td><strong>4</strong></td>
-                          <td>θ₄</td>
-                          <td>302</td>
-                          <td>0</td>
-                          <td>-π/2</td>
-                        </tr>
-                        <tr>
-                          <td><strong>5</strong></td>
-                          <td>θ₅</td>
-                          <td>0</td>
-                          <td>0</td>
-                          <td>π/2</td>
-                        </tr>
-                        <tr>
-                          <td><strong>6</strong></td>
-                          <td>θ₆ + π</td>
-                          <td>72</td>
-                          <td>0</td>
-                          <td>0</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                    <h4>4. Robot Control Integration</h4>
+                    <p>
+                      Developed seamless communication between MATLAB vision system and ABB robot controller:
+                    </p>
 
-                  <!-- MATLAB Visualization -->
-                  <div class="row my-4">
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/hand_eye_coordination/robot_3d_model_visualization.png"
-                        class="img-fluid rounded shadow-sm" alt="MATLAB Visualization">
-                      <p class="text-muted small mt-2"><em>3D robot model in MATLAB Robotics Toolbox using DH parameters for forward/inverse kinematics validation</em></p>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                      <img src="assets/hand_eye_coordination/robot_studio_joint_jog_interface.png"
-                        class="img-fluid rounded shadow-sm" alt="RobotStudio Joint Jog">
-                      <p class="text-muted small mt-2"><em>RobotStudio joint jog interface showing end-effector position verification for kinematics accuracy (error <1%)</em></p>
-                    </div>
-                  </div>
+                    <h5>Communication Protocol (TCP/IP)</h5>
+                    <ul>
+                      <li><strong>Socket Connection:</strong> MATLAB client → ABB IRC5 controller server</li>
+                      <li><strong>IP Address:</strong> 192.168.125.1 (robot controller)</li>
+                      <li><strong>Port:</strong> 1025 (custom RAPID socket server)</li>
+                      <li><strong>Data Format:</strong> ASCII string "X,Y,Z,RX,RY,RZ" (comma-delimited coordinates)</li>
+                      <li><strong>Acknowledgment:</strong> Robot returns "OK" upon successful move completion</li>
+                    </ul>
 
-                  <h4>5. System Testing & Performance</h4>
-                  <p>
-                    Conducted extensive testing to evaluate positioning accuracy and system reliability:
-                  </p>
+                    <h5>RAPID Programming (Robot-Side)</h5>
+                    <ul>
+                      <li><strong>Socket Server:</strong> Listens for incoming coordinate data</li>
+                      <li><strong>Motion Planning:</strong> Generates safe trajectory to target pose</li>
+                      <li><strong>Execution:</strong> MoveL (linear) or MoveJ (joint) motion commands</li>
+                      <li><strong>Error Handling:</strong> Timeout detection, unreachable position checks</li>
+                    </ul>
 
-                  <!-- Performance Results -->
-                  <div class="table-responsive my-4">
-                    <table class="table table-striped table-hover">
-                      <thead class="table-dark">
-                        <tr>
-                          <th>Test Parameter</th>
-                          <th>Measured Value</th>
-                          <th>Target Spec</th>
-                          <th>Status</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>X-axis positioning accuracy</td>
-                          <td>±3.2 mm</td>
-                          <td>±5.0 mm</td>
-                          <td><span class="badge bg-success">Pass</span></td>
-                        </tr>
-                        <tr>
-                          <td>Y-axis positioning accuracy</td>
-                          <td>±4.1 mm</td>
-                          <td>±5.0 mm</td>
-                          <td><span class="badge bg-success">Pass</span></td>
-                        </tr>
-                        <tr>
-                          <td>Repeatability (10 trials)</td>
-                          <td>±1.8 mm</td>
-                          <td>±3.0 mm</td>
-                          <td><span class="badge bg-success">Pass</span></td>
-                        </tr>
-                        <tr>
-                          <td>Detection success rate</td>
-                          <td>97.5% (39/40)</td>
-                          <td>>95%</td>
-                          <td><span class="badge bg-success">Pass</span></td>
-                        </tr>
-                        <tr>
-                          <td>Processing time (vision)</td>
-                          <td>0.38 s</td>
-                          <td>
-                            <0.5 s</td>
-                          <td><span class="badge bg-success">Pass</span></td>
-                        </tr>
-                        <tr>
-                          <td>Total cycle time (detect→move→grasp)</td>
-                          <td>4.2 s</td>
-                          <td>
-                            <5.0 s</td>
-                          <td><span class="badge bg-success">Pass</span></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-
-                  <h3>Key Results & Insights</h3>
-
-                  <div class="row mb-4">
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-info mb-0">±3.7mm</h4>
-                        <small class="text-muted">Avg Positioning Error</small>
+                    <!-- Robot Kinematics Diagrams -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/hand_eye_coordination/abb_irb_120_coordinate_frames1.png"
+                             class="img-fluid rounded shadow-sm" alt="DH Parameters">
+			<p class="text-muted small mt-2"><em>Denavit-Hartenberg coordinate frames for ABB IRB 120
+                            kinematic model showing link assignments</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/hand_eye_coordination/abb_irb_120_dimensions.png"
+                             class="img-fluid rounded shadow-sm" alt="Robot Dimensions">
+			<p class="text-muted small mt-2"><em>ABB IRB 120 dimensional specifications for kinematic calculations and workspace analysis</em></p>
                       </div>
                     </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-info mb-0">97.5%</h4>
-                        <small class="text-muted">Detection Success</small>
+
+                    <!-- DH Parameters Table -->
+                    <h5>Denavit-Hartenberg Parameters</h5>
+                    <p>Complete DH table for ABB IRB 120 forward/inverse kinematics implementation:</p>
+                    <div class="table-responsive my-4">
+                      <table class="table table-striped table-hover">
+			<thead class="table-dark">
+                          <tr>
+                            <th>Joint</th>
+                            <th>θ (rad)</th>
+                            <th>d (mm)</th>
+                            <th>a (mm)</th>
+                            <th>α (rad)</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td><strong>1</strong></td>
+                            <td>θ₁</td>
+                            <td>290</td>
+                            <td>0</td>
+                            <td>-π/2</td>
+                          </tr>
+                          <tr>
+                            <td><strong>2</strong></td>
+                            <td>θ₂ - π/2</td>
+                            <td>0</td>
+                            <td>270</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            <td><strong>3</strong></td>
+                            <td>θ₃</td>
+                            <td>0</td>
+                            <td>70</td>
+                            <td>-π/2</td>
+                          </tr>
+                          <tr>
+                            <td><strong>4</strong></td>
+                            <td>θ₄</td>
+                            <td>302</td>
+                            <td>0</td>
+                            <td>π/2</td>
+                          </tr>
+                          <tr>
+                            <td><strong>5</strong></td>
+                            <td>θ₅</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>-π/2</td>
+                          </tr>
+                          <tr>
+                            <td><strong>6</strong></td>
+                            <td>θ₆ + π</td>
+                            <td>72</td>
+                            <td>0</td>
+                            <td>0</td>
+                          </tr>
+			</tbody>
+                      </table>
+                    </div>
+
+                    <!-- MATLAB Visualization -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/hand_eye_coordination/robot_3d_model_visualization.png"
+                             class="img-fluid rounded shadow-sm" alt="MATLAB Visualization">
+			<p class="text-muted small mt-2"><em>3D robot model in MATLAB Robotics Toolbox using DH parameters for forward/inverse kinematics validation</em></p>
                       </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/hand_eye_coordination/robot_studio_joint_jog_interface.png"
+                             class="img-fluid rounded shadow-sm" alt="RobotStudio Joint Jog">
+			<p class="text-muted small mt-2"><em>RobotStudio joint jog interface showing end-effector position verification for kinematics accuracy (error <1%)</em></p>
+																					 </div>
                     </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-info mb-0">0.38s</h4>
-                        <small class="text-muted">Vision Processing</small>
-                      </div>
-                    </div>
-                    <div class="col-md-3 col-6 text-center mb-3">
-                      <div class="p-3 border rounded bg-light">
-                        <h4 class="text-info mb-0">4.2s</h4>
-                        <small class="text-muted">Total Cycle Time</small>
-                      </div>
-                    </div>
-                  </div>
 
-                  <h4>Key Learnings & Improvements</h4>
-                  <ul>
-                    <li><strong>Lighting Sensitivity:</strong> System accuracy degraded by ~40% under variable lighting.
-                      Implemented controlled LED ring light to maintain consistent illumination.</li>
-                    <li><strong>Calibration Drift:</strong> Periodic recalibration (every 50 cycles) necessary to
-                      compensate for mechanical vibrations and thermal expansion.</li>
-                    <li><strong>Z-Height Assumption:</strong> Current system assumes planar workspace. Future
-                      enhancement: integrate depth sensor for 3D object localization.</li>
-                    <li><strong>Multi-Object Handling:</strong> Successfully handled up to 5 objects simultaneously.
-                      Priority-based selection implemented (nearest-first strategy).</li>
-                  </ul>
+                    <h4>5. System Testing & Performance</h4>
+                    <p>
+                      Conducted extensive testing to evaluate positioning accuracy and system reliability:
+                    </p>
 
-                  <h3>Technical Skills Demonstrated</h3>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h5>Computer Vision</h5>
-                      <ul>
-                        <li>Camera calibration (intrinsic/extrinsic)</li>
-                        <li>Image processing (filtering, thresholding)</li>
-                        <li>Object detection & segmentation</li>
-                        <li>Feature extraction (moments, contours)</li>
-                        <li>Coordinate transformation (2D→3D)</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-6">
-                      <h5>Robot Integration</h5>
-                      <ul>
-                        <li>MATLAB image processing toolbox</li>
-                        <li>TCP/IP socket programming</li>
-                        <li>ABB RAPID programming</li>
-                        <li>Forward & inverse kinematics</li>
-                        <li>Hand-eye calibration methods</li>
-                      </ul>
-                    </div>
-                  </div>
+                    <!-- Performance Results -->
+                    <div class="table-responsive my-4">
+                      <table class="table table-striped table-hover">
+			<thead class="table-dark">
+                          <tr>
+                            <th>Test Parameter</th>
+                            <th>Measured Value</th>
+                            <th>Target Spec</th>
+                            <th>Status</th>
+                          </tr>
+			</thead>
+			<tbody>
+                          <tr>
+                            <td>X-axis positioning accuracy</td>
+                            <td>±3.2 mm</td>
+                            <td>±5.0 mm</td>
+                            <td><span class="badge bg-success">Pass</span></td>
+                          </tr>
+                          <tr>
+                            <td>Y-axis positioning accuracy</td>
+                            <td>±4.1 mm</td>
+                            <td>±5.0 mm</td>
+                            <td><span class="badge bg-success">Pass</span></td>
+                          </tr>
+                          <tr>
+                            <td>Repeatability (10 trials)</td>
+                            <td>±1.8 mm</td>
+                            <td>±3.0 mm</td>
+                            <td><span class="badge bg-success">Pass</span></td>
+                          </tr>
+                          <tr>
+                            <td>Detection success rate</td>
+                            <td>97.5% (39/40)</td>
+                            <td>>95%</td>
+<td><span class="badge bg-success">Pass</span></td>
+</tr>
+<tr>
+  <td>Processing time (vision)</td>
+  <td>0.38 s</td>
+  <td>
+    <0.5 s</td>
+         <td><span class="badge bg-success">Pass</span></td>
+</tr>
+<tr>
+  <td>Total cycle time (detect→move→grasp)</td>
+  <td>4.2 s</td>
+  <td>
+    <5.0 s</td>
+         <td><span class="badge bg-success">Pass</span></td>
+</tr>
+</tbody>
+</table>
+</div>
 
-                  <!-- <\!-- Download Resources -\-> -->
-                  <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
-                  <!--   <h5>Project Resources</h5> -->
-                  <!--   <div class="d-flex gap-3 flex-wrap"> -->
-                  <!--     <a href="assets/hand_eye_coordination/rme40003_hand_eye_coordination_project.pdf" -->
-                  <!--       class="btn btn-sm btn-outline-info" target="_blank"> -->
-                  <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
-                  <!--     </a> -->
-                  <!--     <a href="assets/hand_eye_coordination/matlab_code.zip" class="btn btn-sm btn-outline-info"> -->
-                  <!--       <i class="bi bi-file-code"></i> MATLAB Code -->
-                  <!--     </a> -->
-                  <!--     <a href="assets/hand_eye_coordination/rapid_program.mod" class="btn btn-sm btn-outline-info"> -->
-                  <!--       <i class="bi bi-filetype-txt"></i> RAPID Program -->
-                  <!--     </a> -->
-                  <!--   </div> -->
-                  <!-- </div> -->
+<h3>Key Results & Insights</h3>
 
-                </div>
-              </div>
+<div class="row mb-4">
+  <div class="col-md-3 col-6 text-center mb-3">
+    <div class="p-3 border rounded bg-light">
+      <h4 class="text-info mb-0">±3.7mm</h4>
+      <small class="text-muted">Avg Positioning Error</small>
+    </div>
+  </div>
+  <div class="col-md-3 col-6 text-center mb-3">
+    <div class="p-3 border rounded bg-light">
+      <h4 class="text-info mb-0">97.5%</h4>
+      <small class="text-muted">Detection Success</small>
+    </div>
+  </div>
+  <div class="col-md-3 col-6 text-center mb-3">
+    <div class="p-3 border rounded bg-light">
+      <h4 class="text-info mb-0">0.38s</h4>
+      <small class="text-muted">Vision Processing</small>
+    </div>
+  </div>
+  <div class="col-md-3 col-6 text-center mb-3">
+    <div class="p-3 border rounded bg-light">
+      <h4 class="text-info mb-0">4.2s</h4>
+      <small class="text-muted">Total Cycle Time</small>
+    </div>
+  </div>
+</div>
 
-            </div><!-- End Tab Content -->
+<h4>Key Learnings & Improvements</h4>
+<ul>
+  <li><strong>Lighting Sensitivity:</strong> System accuracy degraded by ~40% under variable lighting.
+    Implemented controlled LED ring light to maintain consistent illumination.</li>
+  <li><strong>Calibration Drift:</strong> Periodic recalibration (every 50 cycles) necessary to
+    compensate for mechanical vibrations and thermal expansion.</li>
+  <li><strong>Z-Height Assumption:</strong> Current system assumes planar workspace. Future
+    enhancement: integrate depth sensor for 3D object localization.</li>
+  <li><strong>Multi-Object Handling:</strong> Successfully handled up to 5 objects simultaneously.
+    Priority-based selection implemented (nearest-first strategy).</li>
+</ul>
 
-          </div>
+<h3>Technical Skills Demonstrated</h3>
+<div class="row">
+  <div class="col-md-6">
+    <h5>Computer Vision</h5>
+    <ul>
+      <li>Camera calibration (intrinsic/extrinsic)</li>
+      <li>Image processing (filtering, thresholding)</li>
+      <li>Object detection & segmentation</li>
+      <li>Feature extraction (moments, contours)</li>
+      <li>Coordinate transformation (2D→3D)</li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h5>Robot Integration</h5>
+    <ul>
+      <li>MATLAB image processing toolbox</li>
+      <li>TCP/IP socket programming</li>
+      <li>ABB RAPID programming</li>
+      <li>Forward & inverse kinematics</li>
+      <li>Hand-eye calibration methods</li>
+    </ul>
+  </div>
+</div>
 
-        </div>
+<!-- <\!-- Download Resources -\-> -->
+  <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
+    <!--   <h5>Project Resources</h5> -->
+    <!--   <div class="d-flex gap-3 flex-wrap"> -->
+      <!--     <a href="assets/hand_eye_coordination/rme40003_hand_eye_coordination_project.pdf" -->
+      <!--       class="btn btn-sm btn-outline-info" target="_blank"> -->
+        <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
+        <!--     </a> -->
+      <!--     <a href="assets/hand_eye_coordination/matlab_code.zip" class="btn btn-sm btn-outline-info"> -->
+        <!--       <i class="bi bi-file-code"></i> MATLAB Code -->
+        <!--     </a> -->
+      <!--     <a href="assets/hand_eye_coordination/rapid_program.mod" class="btn btn-sm btn-outline-info"> -->
+        <!--       <i class="bi bi-filetype-txt"></i> RAPID Program -->
+        <!--     </a> -->
+      <!--   </div> -->
+    <!-- </div> -->
 
+</div>
+</div>
+
+</div><!-- End Tab Content -->
+
+</div>
+
+</div>
+
+</div>
+
+</section><!-- /Project Details Section -->
+
+</main>
+
+<footer id="footer" class="footer position-relative light-background">
+  <div class="container">
+    <div class="container">
+      <div class="copyright">
+        <span>&#169</span> <strong class="px-1 sitename"> 2025 Abdulswamad Rama</strong>
+      </div>
+      <br>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://web.facebook.com/abdvswmdr/"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UCZxEVAQbBVpn81AZPy_qSSg"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/abdulswamad-salim-05b475151/"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/abdvswmdr"><i class="bi bi-github"></i></a>
       </div>
 
-    </section><!-- /Project Details Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-    <div class="container">
-      <div class="container">
-        <div class="copyright">
-          <span>&#169</span> <strong class="px-1 sitename"> 2025 Abdulswamad Rama</strong>
-        </div>
-        <br>
-        <div class="social-links d-flex justify-content-center">
-          <a href="https://web.facebook.com/abdvswmdr/"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.youtube.com/channel/UCZxEVAQbBVpn81AZPy_qSSg"><i class="bi bi-youtube"></i></a>
-          <a href="https://www.linkedin.com/in/abdulswamad-salim-05b475151/"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/abdvswmdr"><i class="bi bi-github"></i></a>
-        </div>
-
-        <div class="credits">
-          Designed by <a href="https://abdvswmdr.github.io">Abdulswamad Rama</a>
-        </div>
+      <div class="credits">
+        Designed by <a href="https://abdvswmdr.github.io">Abdulswamad Rama</a>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+<!-- Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+												  class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+<!-- Preloader -->
+<div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
 
 </body>
 
