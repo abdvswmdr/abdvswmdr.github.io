@@ -74,59 +74,79 @@
 
       <div class="container" data-aos="fade-up">
 
-        <div class="portfolio-details-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-              {
-		  "loop": true,
-		  "speed": 600,
-		  "autoplay": {
-                      "delay": 5000
-		  },
-		  "slidesPerView": "auto",
-		  "navigation": {
-                      "nextEl": ".swiper-button-next",
-                      "prevEl": ".swiper-button-prev"
-		  },
-		  "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-		  }
-              }
-            </script>
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img src="assets/automated_assembly_project/gantt_chart.png" alt="Gantt Chart">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg" alt="Robotic Cell Layout">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
-                alt="Hand-Eye Coordination Setup">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/hand_eye_coordination/checkerboard_calibration.png" alt="Checkerboard Calibration">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png" alt="Processed Image">
-            </div>
-
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-
         <div class="row justify-content-between gy-4 mt-4">
 
-          <div class="col-lg-8" data-aos="fade-up">
+          <!-- Left column: Images and Project Info -->
+          <div class="col-lg-5" data-aos="fade-up">
 
+            <!-- Image Slider -->
+            <div class="portfolio-details-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "navigation": {
+                    "nextEl": ".swiper-button-next",
+                    "prevEl": ".swiper-button-prev"
+                  },
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="assets/automated_assembly_project/gantt_chart.png" alt="Gantt Chart">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg" alt="Robotic Cell Layout">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
+                    alt="Hand-Eye Coordination Setup">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/hand_eye_coordination/checkerboard_calibration.png" alt="Checkerboard Calibration">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png" alt="Processed Image">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- Project Information Box -->
+            <div class="portfolio-info mb-4 mt-4">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Institution</strong> Swinburne University of Technology</li>
+                <li><strong>Course</strong> RME40003 - Robot System Design</li>
+                <li><strong>Duration</strong> 3 months</li>
+                <li><strong>Technologies</strong> SolidWorks, MATLAB, ABB, Robot Studio, RAPID, Machine Vision, Inverse Kinematics, TCP/IP</li>
+                <li><strong>Reports</strong></li>
+                <li><a href="assets/files/spo2-gerber.zip" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bi bi-file-pdf"></i> Automated Assembly
+                </a></li>
+                <li><a href="assets/files/spo2-gerber.zip" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bi bi-file-pdf"></i> Robot Simulation
+                </a></li>
+                <li><a href="assets/files/spo2-gerber.zip" class="btn btn-sm btn-outline-primary mt-2">
+                  <i class="bi bi-file-pdf"></i> Hand-Eye Coordination
+                </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right column: Technical Details with Tabs -->
+          <div class="col-lg-7" data-aos="fade-up">
 
             <!-- Tab Navigation -->
             <ul class="nav nav-tabs" id="projectTabs" role="tablist">
@@ -1419,27 +1439,6 @@ ENDPROC</code></pre>
 
             </div><!-- End Tab Content -->
 
-          </div>
-
-          <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-            <div class="portfolio-info">
-              <h3>Project Information</h3>
-              <ul>
-                <li><strong>Institution</strong> Swinburne University of Technology</li>
-                <li><strong>Course</strong> RME40003 - Robot System Design</li>
-                <li><strong>Duration</strong> 3 months</li>
-                <li><strong>Technologies</strong></li>
-                <ul style="margin-left: 1px; font-size: 0.9em;">
-                  <li>SolidWorks, MATLAB, ABB, Robot Studio, RAPID, Machine Vision, Inverse Kinematics, TCP/IP</li>
-                </ul>
-                <li><strong>Reports</strong></li>
-		<li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Automated Assembly</a></li>
-<li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Robot Simulation</a></li>
-		<li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Hand-Eye Coordination</a></li>
-                <ul style="margin-left: 20px; font-size: 0.9em;">
-                </ul>
-              </ul>
-            </div>
           </div>
 
         </div>

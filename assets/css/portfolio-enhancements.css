@@ -1,0 +1,354 @@
+/* ============================================
+   Portfolio UI Enhancements
+   Font sizes, spacing, and visual improvements
+   ============================================ */
+
+/* ========== Typography Improvements ========== */
+
+/* Increase base content font size for better readability */
+.portfolio-description p,
+.portfolio-description ul li,
+.portfolio-description ol li {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ========== Caption Styling ========== */
+
+/* Remove italic, increase size, improve contrast */
+.portfolio-description .text-muted.small {
+  font-size: 0.95rem !important;
+  color: #495057 !important;
+  font-style: normal !important;
+  text-align: center;
+  line-height: 1.5;
+  margin-top: 0.75rem !important;
+  margin-bottom: 1rem !important;
+}
+
+/* Override em (italic) inside captions */
+.portfolio-description .text-muted.small em {
+  font-style: normal !important;
+}
+
+/* ========== Heading Spacing ========== */
+
+/* H3 - Main section headings */
+.portfolio-description h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+/* First h3 shouldn't have top margin */
+.portfolio-description > h3:first-of-type {
+  margin-top: 1rem;
+}
+
+/* H4 - Subsection headings */
+.portfolio-description h4 {
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+/* H5 - Minor headings */
+.portfolio-description h5 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+/* ========== Table Enhancements ========== */
+
+.portfolio-description .table {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.portfolio-description .table thead th {
+  font-size: 1.05rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.portfolio-description .table tbody td {
+  padding: 0.85rem;
+  vertical-align: middle;
+}
+
+/* Enhanced hover effect for tables */
+.portfolio-description .table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+/* ========== Code Block Enhancements ========== */
+
+.portfolio-description pre {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.portfolio-description code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+/* ========== Image Enhancements ========== */
+
+/* Subtle zoom effect on hover */
+.portfolio-description img.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.portfolio-description img.img-fluid:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* ========== Button Enhancements ========== */
+
+.portfolio-description .btn {
+  font-size: 0.95rem;
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.portfolio-description .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* ========== Card Enhancements ========== */
+
+/* Metric cards and info boxes */
+.portfolio-description .border.rounded {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ========== Alert Box Improvements ========== */
+
+.portfolio-description .alert {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ========== List Improvements ========== */
+
+.portfolio-description ul,
+.portfolio-description ol {
+  margin-bottom: 1.5rem;
+}
+
+.portfolio-description ul li,
+.portfolio-description ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* ========== Demo Section Styling ========== */
+
+.demo-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.demo-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.demo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.demo-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== Fixed Navigation & Scrollable Content ========== */
+
+/* Make tab navigation fixed (doesn't scroll with page) - FOR PAGES WITH TABS */
+.nav.nav-tabs {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 100;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* For pages WITHOUT tabs - make the portfolio-description container scrollable */
+.col-lg-8 > .portfolio-description:not(:has(.nav-tabs)),
+.col-lg-7 > .portfolio-description:not(:has(.nav-tabs)) {
+  max-height: calc(100vh - 150px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 1rem;
+}
+
+/* Style scrollbar for non-tab pages */
+.portfolio-description:not(:has(.nav-tabs))::-webkit-scrollbar {
+  width: 8px;
+}
+
+.portfolio-description:not(:has(.nav-tabs))::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.portfolio-description:not(:has(.nav-tabs))::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.portfolio-description:not(:has(.nav-tabs))::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Make the tab content area scrollable with fixed height */
+.tab-content {
+  max-height: calc(100vh - 200px); /* Viewport height minus tabs and spacing */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  padding-right: 1rem; /* Space for scrollbar */
+  margin-top: 0.5rem !important;
+}
+
+/* Style the scrollbar for the content area */
+.tab-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tab-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.tab-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.tab-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Make Project Information sidebar/box fixed with its own scroll */
+.portfolio-info {
+  position: sticky;
+  top: 0; /* Align with tabs horizontally */
+  max-height: calc(100vh - 20px); /* Viewport height minus small padding */
+  overflow-y: auto; /* Allow scrolling within sidebar if content is long */
+  overflow-x: hidden;
+  padding-top: 0.5rem; /* Match tabs padding */
+}
+
+/* For col-lg-5 layout (like pcb-details), info box appears after slider */
+.col-lg-5 .portfolio-info {
+  position: relative; /* Don't stick in left column, just scroll naturally */
+  top: auto;
+  max-height: none;
+}
+
+/* Style scrollbar for sidebar (consistent with content) */
+.portfolio-info::-webkit-scrollbar {
+  width: 6px;
+}
+
+.portfolio-info::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.portfolio-info::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.portfolio-info::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== Responsive Adjustments ========== */
+
+@media (max-width: 768px) {
+  .portfolio-description p,
+  .portfolio-description ul li,
+  .portfolio-description ol li {
+    font-size: 1.05rem;
+  }
+
+  .portfolio-description h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .portfolio-description h4 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+  }
+
+  .portfolio-description h5 {
+    font-size: 1.15rem;
+  }
+
+  /* Disable fixed scroll on mobile to save screen space */
+  .nav.nav-tabs {
+    position: relative;
+    top: auto;
+    padding-top: 0;
+  }
+
+  .tab-content {
+    max-height: none; /* Allow natural height on mobile */
+    overflow-y: visible;
+  }
+
+  /* Disable fixed scroll for non-tab pages on mobile */
+  .col-lg-8 > .portfolio-description:not(:has(.nav-tabs)),
+  .col-lg-7 > .portfolio-description:not(:has(.nav-tabs)) {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .portfolio-info {
+    position: relative;
+    top: auto;
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+/* For tablets and larger - enable fixed scroll containers */
+@media (min-width: 992px) {
+  /* For pages with tabs */
+  .tab-content {
+    max-height: calc(100vh - 200px);
+  }
+
+  /* For pages without tabs */
+  .col-lg-8 > .portfolio-description:not(:has(.nav-tabs)),
+  .col-lg-7 > .portfolio-description:not(:has(.nav-tabs)) {
+    max-height: calc(100vh - 150px);
+  }
+
+  .portfolio-info {
+    top: 0; /* Keep aligned with tabs or content */
+    max-height: calc(100vh - 20px);
+  }
+}

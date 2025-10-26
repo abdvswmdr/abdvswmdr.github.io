@@ -78,57 +78,79 @@
       <!-- Project Details Section -->
       <section id="portfolio-details" class="portfolio-details section">
 
-        <div class="container" data-aos="fade-up">
-
-          <div class="portfolio-details-slider swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-		  "loop": true,
-		  "speed": 600,
-		  "autoplay": {
-                      "delay": 5000
-		  },
-		  "slidesPerView": "auto",
-		  "navigation": {
-                      "nextEl": ".swiper-button-next",
-                      "prevEl": ".swiper-button-prev"
-		  },
-		  "pagination": {
-                      "el": ".swiper-pagination",
-                      "type": "bullets",
-                      "clickable": true
-		  }
-              }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/fyp_simulation_architecture.png" alt="System Architecture">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/fyp_gui_interface.png" alt="GUI Interface">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/fyp_gazebo_simulation.png" alt="Gazebo Simulation">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/fyp_rviz_interface.png" alt="RViz Interface">
-              </div>
-
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
+	<div class="container" data-aos="fade-up">
 
           <div class="row justify-content-between gy-4 mt-4">
 
-            <div class="col-lg-8" data-aos="fade-up">
+            <!-- Left column: Images and Project Info -->
+            <div class="col-lg-5" data-aos="fade-up">
+
+              <!-- Image Slider -->
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": "auto",
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/fyp_simulation_architecture.png" alt="System Architecture">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/fyp_gui_interface.png" alt="GUI Interface">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/fyp_gazebo_simulation.png" alt="Gazebo Simulation">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/fyp_rviz_interface.png" alt="RViz Interface">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- Project Information Box -->
+              <div class="portfolio-info mb-4 mt-4">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Institution</strong> Swinburne University of Technology</li>
+                  <li><strong>Duration</strong> 2024 - 2025 (2 Semesters)</li>
+                  <li><strong>Supervisor</strong> Dr. Evon Lim Wan Ting</li>
+                  <li><strong>Co-Supervisor</strong> Ir. Chai Pui Ching</li>
+                  <li><strong>Technologies</strong> ROS2, Nav2, Gazebo, Qt, C++, SLAM</li>
+                  <li><a href="assets/files/spo2-gerber.zip" class="btn btn-sm btn-outline-primary mt-2">
+                    <i class="bi bi-file-pdf"></i> Final Report
+                  </a></li>
+                  <li><a href="assets/files/spo2-gerber.zip" class="btn btn-sm btn-outline-primary mt-2">
+                    <i class="bi bi-file-slides"></i> Presentation
+                  </a></li>
+                  <li><a href="assets/files/spo2-gerber.zip" class="btn btn-sm btn-outline-primary mt-2">
+                    <i class="bi bi-github"></i> GitHub
+                  </a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Right column: Technical Details with Tabs -->
+            <div class="col-lg-7" data-aos="fade-up">
               <div class="portfolio-description">
-                <h2>Project Overview</h2>
+                <h3>Project Overview</h3>
                 <p>
                   Healthcare systems worldwide face mounting pressure to improve efficiency while maintaining high standards of patient care. This project addresses the development of an autonomous medicine dispensing and distribution robot capable of navigating hospital environments safely and efficiently.
                 </p>
@@ -620,34 +642,9 @@
               </div>
             </div>
 
-            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
-  <div class="portfolio-info">
-    <h3>Project Information</h3>
-    <ul>
-      <li><strong>Institution</strong> Swinburne University of Technology</li>
-      <li><strong>Duration</strong> 2024 - 2025 (2 Semesters)</li>
-      <li><strong>Supervisor</strong> Dr. Evon Lim Wan Ting</li>
-      <li><strong>Co-Supervisor</strong> Ir. Chai Pui Ching</li>
-      <li><strong>Technologies</strong></li>
-      <ul style="margin-left: 1px; font-size: 0.9em;">
-        <li>ROS2, Nav2, Gazebo, Qt, C++, SLAM</li>
-      </ul>
-      <li><strong>Status</strong></li>
-      <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Final Report</a></li>
-      <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">Presentation</a></li>
-      <li><a href="assets/files/spo2-gerber.zip" class="btn-visit align-self-start">GitHub</a></li>
-      <!--<ul style="margin-left: 20px; font-size: 0.9em;"<!-- > -->
-      <!--   <li>✅ FYP1: Research & Design</li> -->
-      <!--   <li>✅ FYP2: Simulation</li> -->
-      <!--   <li>🔄 Hardware Implementation</li> -->
-      <!-- </ul> -->
-    </ul>
-  </div>
-</div>
+          </div>
 
-</div>
-
-</div>
+	</div>
 
 </section><!-- /Project Details Section -->
 

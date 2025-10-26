@@ -79,55 +79,79 @@
 
 	<div class="container" data-aos="fade-up">
 
-          <div class="portfolio-details-slider swiper init-swiper">
-            <script type="application/json" class="swiper-config">
-              {
-		  "loop": true,
-		  "speed": 600,
-		  "autoplay": {
+          <div class="row justify-content-between gy-4 mt-4">
+
+            <!-- Left column: Images and Project Info -->
+            <div class="col-lg-5" data-aos="fade-up">
+
+              <!-- Image Slider -->
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
                       "delay": 5000
-		  },
-		  "slidesPerView": "auto",
-		  "navigation": {
+                    },
+                    "slidesPerView": "auto",
+                    "navigation": {
                       "nextEl": ".swiper-button-next",
                       "prevEl": ".swiper-button-prev"
-		  },
-		  "pagination": {
+                    },
+                    "pagination": {
                       "el": ".swiper-pagination",
                       "type": "bullets",
                       "clickable": true
-		  }
-              }
-            </script>
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-		<img src="assets/img/portfolio/vehiclesys_main.png" alt="Vehicle Infotainment System Main Interface">
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/vehiclesys_main.png" alt="Vehicle Infotainment System Main Interface">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/vehiclesys_settings.png" alt="Settings Interface">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/vehiclesys_map.png" alt="Navigation Interface">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/volume-max.png" alt="Audio Control System">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
               </div>
 
-              <div class="swiper-slide">
-		<img src="assets/img/portfolio/vehiclesys_settings.png" alt="Settings Interface">
-              </div>
+              <!-- Project Information Box -->
+              <div class="portfolio-info mb-4 mt-4">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Category:</strong> Software Development / Automotive Systems</li>
+                  <li><strong>Technologies:</strong> Qt 5.15+, QML, C++17, CMake</li>
+                  <li><strong>Project Type:</strong> Personal Learning Project</li>
+                  <li><strong>Status:</strong> In Progress (Started July 2025)</li>
+                  <li><a href="https://github.com/abdvswmdr/Vehicle-Infotainment-System" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                    <i class="bi bi-github"></i> View on GitHub
+                  </a></li>
+                </ul>
 
-              <div class="swiper-slide">
-		<img src="assets/img/portfolio/vehiclesys_map.png" alt="Navigation Interface">
+                <h5 class="mt-4">Skills Demonstrated</h5>
+                <ul style="font-size: 0.9em;">
+                  <li>Qt/QML Development</li>
+                  <li>C++ Programming</li>
+                  <li>Automotive UI/UX Design</li>
+                  <li>Component Architecture</li>
+                  <li>Real-time Systems</li>
+                </ul>
               </div>
-
-              <div class="swiper-slide">
-		<img src="assets/img/portfolio/volume-max.png" alt="Audio Control System">
-              </div>
-
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
 
-          <div class="row justify-content-between gy-4 mt-4">
-
-            <div class="col-lg-8" data-aos="fade-up">
+            <!-- Right column: Technical Details -->
+            <div class="col-lg-7" data-aos="fade-up">
               <div class="portfolio-description">
-		<h2>Project Overview</h2>
+                <h3>Project Overview</h3>
 		<p>
                   <strong>VehicleSys</strong> is a sophisticated automotive infotainment interface developed as a personal learning project to demonstrate advanced Qt/QML development skills and modern C++ programming practices. The project showcases professional-grade automotive UI development with real-time vehicle control systems, climate management, and interactive multimedia interfaces.
 		</p>
@@ -244,43 +268,6 @@
 		</p>
 
               </div>
-            </div>
-
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="portfolio-info">
-		<h3>Project Information</h3>
-		<ul>
-                  <li><strong>Category:</strong> Software Development / Automotive Systems</li>
-                  <li><strong>Technologies:</strong> Qt 5.15+, QML, C++17, CMake</li>
-                  <li><strong>Project Type:</strong> Personal Learning Project</li>
-                  <li><strong>Status:</strong> In Progress (Started July 23, 2025)</li>
-                  <li><strong>GitHub:</strong> <a href="https://github.com/abdvswmdr/Vehicle-Infotainment-System" target="_blank">View Repository</a></li>
-		</ul>
-              </div>
-
-              <div class="portfolio-info">
-		<h3>Skills Demonstrated</h3>
-		<ul>
-                  <li><strong>Qt/QML Development:</strong> Advanced GUI programming with modern Qt framework</li>
-                  <li><strong>C++ Programming:</strong> Object-oriented design with Qt best practices</li>
-                  <li><strong>Automotive UI/UX:</strong> Professional infotainment interface design</li>
-                  <li><strong>Component Architecture:</strong> Modular, reusable component systems</li>
-                  <li><strong>Real-time Systems:</strong> Property binding and event-driven programming</li>
-                  <li><strong>Build Systems:</strong> Modern CMake configuration and automation</li>
-		</ul>
-              </div>
-
-              <div class="portfolio-info">
-		<h3>Development Focus</h3>
-		<ul>
-                  <li><strong>Learning Objective:</strong> Enhance C++ and Qt/QML expertise</li>
-                  <li><strong>Professional Growth:</strong> Automotive software development skills</li>
-                  <li><strong>Code Quality:</strong> Enterprise-level development practices</li>
-                  <li><strong>Architecture Design:</strong> Scalable component-based systems</li>
-		</ul>
-              </div>
-
             </div>
 
           </div>
