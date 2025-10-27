@@ -102,12 +102,6 @@
 		</script>
 		<div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
-                    <img src="assets/automated_assembly_project/gantt_chart.png" alt="Gantt Chart">
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg" alt="Robotic Cell Layout">
-                  </div>
-                  <div class="swiper-slide">
                     <img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
 			 alt="Hand-Eye Coordination Setup">
                   </div>
@@ -117,6 +111,66 @@
                   <div class="swiper-slide">
                     <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png" alt="Processed Image">
                   </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_1.png" alt="1">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_2.png" alt="2">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_3.png" alt="3">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_4.png" alt="4">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_5.png" alt="5">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_6.png" alt="">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_7.png" alt="7">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_8.png" alt="8">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_9.png" alt="9">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_10.png" alt="10">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_11.png" alt="11">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_12.png" alt="12">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_13.png" alt="13">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_14.png" alt="14">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_15.png" alt="15">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_17.png" alt="17">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_18.png" alt="18">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_19.png" alt="19">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_20.png" alt="20">
+		  </div>
+		  <div class="swiper-slide">
+		    <img src="assets/img/slider_rsd/slider_rsd_21.png" alt="21">
+		  </div>
 		</div>
 		<div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div>
@@ -129,7 +183,6 @@
 		<ul>
                   <li><strong>Institution</strong> Swinburne University of Technology</li>
                   <li><strong>Course</strong> RME40003 - Robot System Design</li>
-                  <li><strong>Duration</strong> 3 months</li>
                   <li><strong>Technologies</strong> SolidWorks, MATLAB, ABB, Robot Studio, RAPID, Machine Vision, Inverse Kinematics, TCP/IP</li>
                   <li><strong>Reports</strong></li>
                   <li><a href="https://drive.google.com/file/d/1zDPkOJQaM9i5QZNqlmMmIpOOMM8UC6Oa/view?usp=sharing" class="btn btn-sm btn-outline-primary mt-2">
@@ -655,7 +708,7 @@
                     <div class="mb-4 p-3 bg-light border-start border-success border-4">
                       <h5 class="text-success mb-2">Project Outcome</h5>
                       <p class="mb-0">
-			<strong>Offline Programming & System Validation:</strong> Implemented ABB RobotStudio simulation for offline programming and pre-deployment validation, eliminating production downtime. Developed complete RAPID programs for path planning, coordinated multi-path execution, and system verification—demonstrating practical skills in robot programming, simulation-based validation, and systematic deployment preparation critical for on-site implementation and troubleshooting.
+			<strong>Offline Programming & Simulation:</strong> Implemented ABB RobotStudio simulation and offline programming using RAPID for path planning.
                       </p>
                     </div>
 
@@ -663,20 +716,17 @@
                     <p>
                       Industrial robots must operate in cluttered environments with obstacles while maintaining precise
                       positioning and avoiding collisions.
-                      This project required creating a realistic simulation environment, implementing path planning
-                      algorithms, and validating robot performance
-                      before physical deployment.
-                    </p>
+		      This project required creating a simulation environment and implementing path planning for a robot to guide it in accurately tracing a model design within an assigned workspace.
+		    </p>
 
                     <h4>1. Simulation Environment Setup</h4>
                     <p>
-                      Built a complete virtual workcell in CoppeliaSim representing realistic industrial conditions:
+                      Built a virtual workcell which is a table in SolidWorks and:
                     </p>
                     <ul>
                       <li><strong>ABB IRB 120 Robot:</strong> 6-DOF industrial manipulator with 3kg payload capacity</li>
-                      <li><strong>Workspace Layout:</strong> Two tables (picking and placing), conveyor belt system</li>
-                      <li><strong>Obstacles:</strong> Safety barriers, support columns, and workspace boundaries</li>
-                      <li><strong>Target Objects:</strong> Multiple component types requiring different approach
+                      <li><strong>Workspace Layout:</strong> 1 table (picking and placing)</li>
+                      <li><strong>Obstacles:</strong> CAD model of flag with traceable text "RSD"</li>
 			strategies</li>
                     </ul>
 
@@ -686,14 +736,14 @@
 			<img src="assets/robot_simulation/ABB_IRB_1600.png" class="img-fluid rounded shadow-sm"
                              alt="ABB IRB 1600 Robot">
 			<p class="text-muted small mt-2">
-                          <em>ABB IRB 1600-6/1.2 industrial robot: 6kg payload, 1.2m reach, 0.02mm repeatability - selected for optimal workspace coverage</em>
+                          <em>ABB IRB 1600-6/1.2 industrial robot: 6kg payload, 1.2m reach, 0.02mm repeatability</em>
 			</p>
                       </div>
                       <div class="col-md-6 mb-3">
 			<img src="assets/robot_simulation/manipulator_axes.png" class="img-fluid rounded shadow-sm"
                              alt="Robot Manipulator Axes">
 			<p class="text-muted small mt-2">
-                          <em>ABB IRB 1600 manipulator axes configuration showing 6 degrees of freedom for complex path execution</em>
+                          <em>ABB IRB 1600 manipulator axes configuration showing 6 degrees of freedom</em>
 			</p>
                       </div>
                     </div>
@@ -713,72 +763,27 @@
 		      </div>
 		    </div>
 		    
-                    <!-- CAD Model Design -->
-                    <div class="my-4">
-                      <img src="assets/robot_simulation/RSD_Flag.png" class="img-fluid rounded shadow-sm"
-			   alt="RSD Flag CAD Model">
-                    </div>
-
                     <!-- Simulation Environment -->
                     <div class="my-4">
                       <img src="assets/robot_simulation/robot_studio_simulation.png" class="img-fluid rounded shadow-sm"
 			   alt="RobotStudio Simulation Environment">
                       <p class="text-muted small mt-2">
-			<em>Complete RobotStudio simulation environment showing ABB IRB 1600, table workspace, and RSD flag model positioned for path tracing</em>
+			<em>RobotStudio simulation environment</em>
                       </p>
                     </div>
 
-                    <h4>2. Path Planning & Offline Programming</h4>
-                    <p>
-                      Implemented a comprehensive control system using Python and the CoppeliaSim Remote API:
-                    </p>
 
-                    <h5>Inverse Kinematics Solver</h5>
-                    <ul>
-                      <li>Developed custom IK algorithm for 6-DOF manipulator</li>
-                      <li>Handled multiple solutions and joint limit constraints</li>
-                      <li>Optimized for minimal joint movement and singularity avoidance</li>
-                      <li>Calculation time: <10ms per solution</li>
-						  </ul>
-
-                    <h5>Path Planning Module</h5>
-                    <ul>
-                      <li>Implemented waypoint-based trajectory generation</li>
-                      <li>Smooth acceleration/deceleration profiles</li>
-                      <li>Real-time collision checking using proximity sensors</li>
-                      <li>Dynamic obstacle avoidance with replanning capability</li>
-                    </ul>
-
-                    <h5>Task Sequencing Logic</h5>
-                    <ul>
-                      <li>State machine for pick-place-return cycle</li>
-                      <li>Error handling and recovery behaviors</li>
-                      <li>Gripper control synchronization</li>
-                      <li>Position verification at each waypoint</li>
-                    </ul>
-
-                    <!-- Path Planning Visualization -->
-                    <div class="row my-4">
-                      <div class="col-md-6 mb-3">
-			<img src="assets/robot_simulation/rsdflag-004.png" class="img-fluid rounded shadow-sm"
-                             alt="Multiple Path Planning">
-			<p class="text-muted small mt-2">
-                          <em>Four separate paths created for flag pole and R, S, D letters using Auto Path feature and manual waypoint refinement</em>
-			</p>
-                      </div>
-                      <div class="col-md-6 mb-3">
-			<img src="assets/robot_simulation/rsdflag-006.png" class="img-fluid rounded shadow-sm"
-                             alt="Final Traced Path">
-			<p class="text-muted small mt-2">
-                          <em>Final merged complete path showing successful tracing result with smooth transitions between letters</em>
-			</p>
-                      </div>
-                    </div>
+		    <h4>2. RAPID Code</h2>
+		    <ul>
+		      <li>The four initial paths were merged into a single path named **COMPLETE PATH**. The **RAPID code** was structured to call this path in the main procedure function (`PROC main() COMPLETE_PATH; MOVE_HOME; ENDPROC`), ensuring the entire tracing task executed as a single function call.</li>
+		      <li><strong>Simulation Control:</strong> A `MOVE_HOME` function was implemented, along with a **WaitTime 20** function, allowing the simulation to pause before restarting the task. This enabled the robot to run in **continuous run mode** for recording.</li>
+		      <li><strong>Deliverables:</strong> The project successfully achieved the simulation and tracing goal, with deliverables including a video demonstration and the **Pack and Go file** from RobotStudio, which allows the simulation programme to be accessed on other computers.</li>
+		    </ul>
 
                     <!-- Code Snippet Example -->
                     <div class="my-4 p-3 bg-dark text-light rounded">
-                      <h6 class="text-warning">RAPID Programming: Complete Path Execution</h6>
-                      <pre class="mb-0"><code class="text-light">PROC main()
+                      <h6 class="text-warning">RAPID Code Snippet</h6>
+                      <pre class="mb-1"><code class="text-light">PROC main()
 			  COMPLETE_PATH;
 			  MOVE_HOME;
 			  ENDPROC
@@ -799,7 +804,6 @@
 			  MoveL Target_930_4, v600, fine, MyTool\WObj:=Table_Workobject;
 			  WaitTime 20;  ! Pause before restarting cycle
 			  ENDPROC</code></pre>
-                      <p class="text-muted small mt-2 mb-0"><em>ABB RAPID code showing offline programming approach with merged path execution and continuous run capability</em></p>
                     </div>
 
                     <h4>3. Robot Specifications & Selection Rationale</h4>
@@ -850,111 +854,6 @@
 			</tbody>
                       </table>
                     </div>
-
-                    <h4>4. Offline Programming Benefits</h4>
-                    <p>
-                      Demonstrated key advantages of offline programming with RobotStudio:
-                    </p>
-                    <ul>
-                      <li><strong>Zero Production Downtime:</strong> Programming and testing done entirely offline</li>
-                      <li><strong>Path Optimization:</strong> Auto Path feature with manual refinement for smooth curves</li>
-                      <li><strong>Collision Detection:</strong> Virtual environment testing before physical deployment</li>
-                      <li><strong>Multi-Path Management:</strong> Four separate paths merged into single coordinated program</li>
-                      <li><strong>Simulation Validation:</strong> Verified complete cycle before hardware commissioning</li>
-                    </ul>
-
-                    <h4>5. Performance Testing & Validation</h4>
-                    <p>
-                      Conducted comprehensive testing to validate system performance:
-                    </p>
-
-                    <!-- Performance Results Table -->
-                    <div class="table-responsive my-4">
-                      <table class="table table-striped table-hover">
-			<thead class="table-dark">
-                          <tr>
-                            <th>Test Scenario</th>
-                            <th>Success Rate</th>
-                            <th>Avg Cycle Time</th>
-                            <th>Notes</th>
-                          </tr>
-			</thead>
-			<tbody>
-                          <tr>
-                            <td>Clear Workspace</td>
-                            <td>100% (50/50)</td>
-                            <td>8.2s</td>
-                            <td>Baseline performance</td>
-                          </tr>
-                          <tr>
-                            <td>Single Obstacle</td>
-                            <td>98% (49/50)</td>
-                            <td>9.7s</td>
-                            <td>1 path replanning failure</td>
-                          </tr>
-                          <tr>
-                            <td>Multiple Obstacles</td>
-                            <td>94% (47/50)</td>
-                            <td>11.3s</td>
-                            <td>3 complex path scenarios</td>
-                          </tr>
-                          <tr>
-                            <td>Moving Obstacles</td>
-                            <td>89% (44/50)</td>
-                            <td>13.1s</td>
-                            <td>Dynamic replanning required</td>
-                          </tr>
-                          <tr>
-                            <td>Tight Clearances</td>
-                            <td>92% (46/50)</td>
-                            <td>10.5s</td>
-                            <td>Min clearance: 75mm</td>
-                          </tr>
-			</tbody>
-                      </table>
-                    </div>
-
-                    <h3>Key Results & Insights</h3>
-
-                    <div class="row mb-4">
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-success mb-0">94.6%</h4>
-                          <small class="text-muted">Overall Success Rate</small>
-			</div>
-                      </div>
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-success mb-0">10.6s</h4>
-                          <small class="text-muted">Avg Cycle Time</small>
-			</div>
-                      </div>
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-success mb-0">
-                            <10ms< /h4>
-				   <small class="text-muted">IK Solve Time</small>
-			</div>
-                      </div>
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-success mb-0">0</h4>
-                          <small class="text-muted">Collisions</small>
-			</div>
-                      </div>
-                    </div>
-
-                    <h4>Key Learnings</h4>
-                    <ul>
-                      <li><strong>IK Solution Selection:</strong> Out of multiple valid solutions, choosing the one with
-			minimal joint movement improved cycle time by 23%</li>
-                      <li><strong>Path Smoothing:</strong> Implementing S-curve acceleration profiles reduced mechanical
-			stress and improved positioning accuracy by 15%</li>
-                      <li><strong>Sensor Placement:</strong> Strategic proximity sensor positioning (especially at elbow
-			and wrist) was critical for effective collision avoidance</li>
-                      <li><strong>Simulation vs Reality:</strong> Identified need for friction modeling and payload
-			dynamics for more realistic simulation</li>
-                    </ul>
 
 
                     <!-- <\!-- Download Resources -\-> -->

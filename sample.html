@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Simulation Project Key Portfolio Points</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        h2 { color: #007bff; margin-top: 20px; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        li { margin-bottom: 8px; }
+        .citation { font-size: 0.9em; color: #666; margin-left: 5px; }
+    </style>
+</head>
+<body>
+
+    <h1>Robot Simulation Project: Key Portfolio Points</h1>
+    <p>The following points summarize the essential technical and methodological achievements of the individual Robot Simulation Assignment (RME40003) using ABB RobotStudio®. These highlight skills in offline programming, path planning, and industrial robot operation.</p>
+
+    <h2>1. Project Objective and Core Tools</h2>
+    <ul>
+        <li><strong>Primary Objective:</strong> To emulate the functions of a robot using **ABB RobotStudio®** and guide a robotic arm to accurately trace a model design or symbol (the "RSD" flag) within a defined workspace (on a table).</li>
+        <li><strong>Software Utilization:</strong> Demonstrated proficiency in **ABB RobotStudio®** (utilizing features like **offline programming**) and **SolidWorks** for initial model design.</li>
+        <li><strong>Model Transfer:</strong> Successfully designed the custom **"RSD" flag model** in SolidWorks and managed the file transfer process by exporting the model as a **.sat file** and importing it into RobotStudio using the 'Import Geometry' feature.</li>
+        <li><strong>Workspace Definition:</strong> The imported model was accurately positioned, aligned, and set within the **User Coordinate System (UCS)**, which served as the default reference frame for the robot’s operations.</li>
+    </ul>
+
+    <h2>2. Technical Specifications of the Robot</h2>
+    <p>The project utilized the ABB IRB 1600 model, showcasing understanding of industrial robot capabilities:</p>
+    <ul>
+        <li><strong>Robot Model:</strong> **ABB IRB 1600**.</li>
+        <li><strong>Axes and Versatility:</strong> The IRB 1600 is a versatile robot model with **six axes**.</li>
+        <li><strong>Reach and Payload:</strong> Features a **1.2 meters reach** and a load capacity (payload) of **6kg**.</li>
+        <li><strong>Precision:</strong> High accuracy is evidenced by its **repeatability of 0.02**.</li>
+        <li><strong>End Effector:</strong> The simulation used the **"MyTool"** end effector, which functionally acts as a pen for the tracing task.</li>
+    </ul>
+
+    <h2>3. Advanced Path Planning and Motion Control</h2>
+    <p>Demonstrated complex programming skills beyond simple linear movement:</p>
+    <ul>
+        <li><strong>Handling Complex Features:</strong> For letters with **curvy features** (like 'R' and 'S'), linear paths were merged to implement the **‘MoveC’ command** (circular path motion). This was crucial for ensuring the **smoothness and continuity** of the tracing, avoiding sharp mechanical transitions.</li>
+        <li><strong>Programming Precision:</strong> While using the Auto Path feature, some paths were also created **manually** to improve the **precision and detail** of the pen’s movement.</li>
+        <li><strong>Z-Coordinate Manipulation:</strong> Successfully programmed transitions between figures by creating new targets and paths and **modifying the z-coordinate**. This allowed the tool to **lift off the surface** after tracing one figure and accurately descend to start the next one.</li>
+    </ul>
+
+    <h2>4. RAPID Code Implementation and Simulation Management</h2>
+    <ul>
+        <li><strong>Structured Code Execution:</strong> The four initial paths were merged into a single path named **COMPLETE PATH**. The **RAPID code** was structured to call this path in the main procedure function (`PROC main() COMPLETE_PATH; MOVE_HOME; ENDPROC`), ensuring the entire tracing task executed as a single function call.</li>
+        <li><strong>Simulation Control:</strong> A `MOVE_HOME` function was implemented, along with a **WaitTime 20** function, allowing the simulation to pause before restarting the task. This enabled the robot to run in **continuous run mode** for recording.</li>
+        <li><strong>Deliverables:</strong> The project successfully achieved the simulation and tracing goal, with deliverables including a video demonstration and the **Pack and Go file** from RobotStudio, which allows the simulation programme to be accessed on other computers.</li>
+    </ul>
+
+</body>
+</html>

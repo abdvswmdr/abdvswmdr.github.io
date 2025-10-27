@@ -217,11 +217,11 @@
 
 /* Make the tab content area scrollable with fixed height */
 .tab-content {
-  max-height: calc(100vh - 200px); /* Viewport height minus tabs and spacing */
+  max-height: calc(100vh - 100px); /* Viewport height minus tabs and spacing */
   overflow-y: auto; /* Enable vertical scrolling */
   overflow-x: hidden; /* Prevent horizontal scroll */
   padding-right: 1rem; /* Space for scrollbar */
-  margin-top: 0.5rem !important;
+  margin-top: 0.2rem !important;
 }
 
 /* Style the scrollbar for the content area */
