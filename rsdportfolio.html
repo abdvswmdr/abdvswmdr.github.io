@@ -83,21 +83,21 @@
               <div class="portfolio-details-slider swiper init-swiper">
 		<script type="application/json" class="swiper-config">
                   {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-		  "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "navigation": {
-		  "nextEl": ".swiper-button-next",
-		  "prevEl": ".swiper-button-prev"
-                  },
-                  "pagination": {
-		  "el": ".swiper-pagination",
-		  "type": "bullets",
-		  "clickable": true
-                  }
+                      "loop": true,
+                      "speed": 600,
+                      "autoplay": {
+			  "delay": 5000
+                      },
+                      "slidesPerView": "auto",
+                      "navigation": {
+			  "nextEl": ".swiper-button-next",
+			  "prevEl": ".swiper-button-prev"
+                      },
+                      "pagination": {
+			  "el": ".swiper-pagination",
+			  "type": "bullets",
+			  "clickable": true
+                      }
                   }
 		</script>
 		<div class="swiper-wrapper align-items-center">
@@ -235,7 +235,7 @@
                     <div class="mb-4 p-3 bg-light border-start border-primary border-4">
                       <h5 class="text-primary mb-2">Project Outcome</h5>
                       <p class="mb-0">
-			<strong>System Integration & Implementation:</strong> Designed and deployed a complete automated assembly workcell integrating robotic manipulation, custom feeders, and safety systems. Achieved 32-second cycle time and 8.6-month ROI payback through systematic design-for-automation approach. Demonstrated end-to-end system implementation from component redesign (10→7 parts) through workcell layout, safety compliance (ISO 10218-2), and economic justification—skills directly applicable to robotics system deployment and on-site commissioning.
+			Designed an automated assembly workcell integrating robotic manipulation, custom feeders, and safety systems. Achieved 32-second cycle time and 8.6-month ROI payback through systematic design-for-automation approach. Demonstrated end-to-end system implementation from component redesign (10→7 parts) through workcell layout, safety compliance (ISO 10218-2), and economic justification.
                       </p>
                     </div>
 
@@ -243,7 +243,7 @@
                     <p>
                       Manual assembly of consumer electronics like computer mice is labor-intensive and prone to quality
                       inconsistencies.
-                      The goal was to design a complete automated assembly system that could handle component feeding,
+                      The goal was to design an automated assembly system that could handle component feeding,
                       precise manipulation,
                       and assembly verification while optimizing for cycle time and cost-effectiveness.
                     </p>
@@ -252,7 +252,7 @@
 
                     <h4>1. Design for Automation (DFA)</h4>
                     <p>
-                      The original mouse design was analyzed and completely redesigned for robotic assembly. This
+                      The original mouse design was redesigned for robotic assembly. This
                       involved:
                     </p>
                     <ul>
@@ -267,18 +267,18 @@
                     </ul>
 
                     <!-- DFA Comparison -->
-                    <div class="row my-4">
+		    <div class="row my-4">
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/original_mouse_exploded_view.jpg"
-                             class="img-fluid rounded shadow-sm" alt="Original Design">
-			<p class="text-muted small mt-2"><em><strong>Before:</strong> 10 parts, screw fastening, complex
-                            assembly sequence</em></p>
+                             class="img-fluid rounded shadow-sm" alt="Original Design"
+			     style="width: 53%; max-width: 550px; height: auto;">
+			<p class="text-muted small mt-2"><em><strong>Before:</strong> 10 parts</em></p>
                       </div>
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/redesigned_mouse_exploded_view.jpg"
-                             class="img-fluid rounded shadow-sm" alt="Redesigned for Automation">
-			<p class="text-muted small mt-2"><em><strong>After:</strong> 7 parts, snap-fit assembly, parallel
-                            operations possible</em></p>
+                             class="img-fluid rounded shadow-sm" alt="Redesigned for Automation"
+			     style="width: 70%; max-width: 750px; height: auto;">
+			<p class="text-muted small mt-2"><em><strong>After:</strong> 7 parts</em></p>
                       </div>
                     </div>
 
@@ -300,13 +300,12 @@
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/mouse_click_feeder.jpg"
                              class="img-fluid rounded shadow-sm" alt="Base Shell Feeder">
-			<p class="text-muted small mt-2"><em>Base shell feeder with orientation gates ensuring consistent
-                            part delivery</em></p>
+			<p class="text-muted small mt-2"><em>Base shell feeder</em></p>
                       </div>
                       <div class="col-md-6 mb-3">
-			<img src="assets/automated_assembly_project/scroll_wheel_feeder.jpg"
+			<img src="assets/automated_assembly_project/mm1.jpg"
                              class="img-fluid rounded shadow-sm" alt="Scroll Wheel Feeder">
-			<p class="text-muted small mt-2"><em>Precision channel feeder for scroll wheel components</em></p>
+			<p class="text-muted small mt-2"><em>Feeder Track for scroll wheel</em></p>
                       </div>
                     </div>
 
@@ -316,12 +315,12 @@
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/middle_shell_feeder1.jpg"
                              class="img-fluid rounded shadow-sm" alt="Middle Shell Feeder">
-			<p class="text-muted small mt-2"><em>Middle shell feeder with orientation</em></p>
+			<p class="text-muted small mt-2"><em>Middle shell feeder</em></p>
                       </div>
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/scroll_feeder.jpg" class="img-fluid rounded shadow-sm"
                              alt="Top Shell Feeder">
-			<p class="text-muted small mt-2"><em>Precision channel feeder for scroll wheel components</em></p>
+			<p class="text-muted small mt-2"><em>Channel feeder for scroll wheel</em></p>
                       </div>
                     </div>
 
@@ -335,8 +334,7 @@
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/base_shelll_feeder.jpg"
                              class="img-fluid rounded shadow-sm" alt="Top Shell Feeder">
-			<p class="text-muted small mt-2"><em>Base shell feeder with orientation gates ensuring consistent
-                            part delivery</em></p>
+			<p class="text-muted small mt-2"><em>Base shell feeder</em></p>
                       </div>
                     </div>
 
@@ -416,28 +414,66 @@
                             <img src="assets/automated_assembly_project/output-059.jpg"
 				 class="img-fluid rounded shadow-sm" alt="Another Gripper">
                           </div>
-                          <p class="text-muted small mt-2 text-center mb-0"><em>Vacuum gripper assembly shown from
-                              different angles</em></p>
+                          <p class="text-muted small mt-2 text-center mb-0"><em>Vacuum gripper assembly on mount</em></p>
 			</div>
                       </div>
                     </div>
 
+
+		    
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/eoa1.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Parallel Gripper">
+			<p class="text-muted small mt-2"><em>End of Arm Tooling Adapter</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/eoa2.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Vacuum Gripper"
+			     style="width: 88%; max-width: 750px; height: auto;">
+			<p class="text-muted small mt-2"><em>Material: 304 Stainless Steel</em></p>
+                      </div>
+                    </div>
+
+
+
+		    
                     <div class="row my-4">
                       <div class="col-md-6 mb-3">
 			<img src="assets/automated_assembly_project/parallel_gripper_mouse_base.jpg"
                              class="img-fluid rounded shadow-sm" alt="Parallel Gripper">
-			<p class="text-muted small mt-2"><em>Parallel jaw gripper handling mouse base shell with force
-                            sensing</em></p>
+			<p class="text-muted small mt-2"><em>Parallel jaw gripper handling mouse base shell</em></p>
                       </div>
                       <div class="col-md-6 mb-3">
-			<img src="assets/automated_assembly_project/vacuum_gripper_holding_pcb_and_top_shell.jpg"
-                             class="img-fluid rounded shadow-sm" alt="Vacuum Gripper">
-			<p class="text-muted small mt-2"><em>4-point vacuum gripper for delicate PCB and top shell
-                            manipulation</em></p>
+			<img src="assets/automated_assembly_project/gripper_mount_to_actuator1.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Vacuum Gripper"
+			     style="width: 91%; max-width: 750px; height: auto;">
+			<p class="text-muted small mt-2"><em>Gripper mount to actuator</em></p>
                       </div>
                     </div>
 
-                    <h4>4. Robotic Workcell Layout Optimization</h4>
+		    
+                    <h4>6. Robot Selection & Final Assembly</h4>
+                    <p>
+                      Selected the Elite Robots EC63 based on payload requirements and system integration needs:
+                    </p>
+
+                    <!-- Robot Specs and Final Assembly -->
+                    <div class="row my-4">
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/ec1.jpg"
+                             class="img-fluid rounded shadow-sm" alt="EC63 Robot Specifications"
+			     style="width: 72%; max-width: 750px; height: auto;">
+			<p class="text-muted small mt-2"><em>Elite Robots EC63 specifications: 3kg payload, 624mm reach, ±0.02mm repeatability, 6-axis flexibility</em></p>
+                      </div>
+                      <div class="col-md-6 mb-3">
+			<img src="assets/automated_assembly_project/ec2.jpg"
+                             class="img-fluid rounded shadow-sm" alt="Final Robot Assembly">
+			<p class="text-muted small mt-2"><em>CAD assembly showing EC63 robot with integrated dual-gripper system and adapter mounted on workcell</em></p>
+                      </div>
+                    </div>
+
+                    <h4>5. Robotic Workcell Layout Optimization</h4>
                     <p>
                       Optimized the cell layout to minimize robot travel time and enable efficient material flow:
                     </p>
@@ -451,14 +487,16 @@
                     </ul>
 
                     <!-- Workcell Layout -->
-                    <div class="my-4">
-                      <img src="assets/automated_assembly_project/robotic_cell_layout_2d.jpg"
-			   class="img-fluid rounded shadow-sm" alt="Workcell Layout">
+		    <div class="my-4 d-flex flex-column justify-content-center align-items-center" style="min-height: 40vh;">
+                      <img src="assets/automated_assembly_project/robotic_cell_layout.jpg"
+			   class="img-fluid rounded shadow-sm" alt="Workcell Layout"
+			   style="width: 60%; max-width: 650px; height: auto;">
                       <p class="text-muted small mt-2">
-			<em>Optimized workcell layout showing robot workspace, feeder positions, and assembly fixture.
-                          Total footprint: 2.5m × 2.0m</em>
+			<em>On-scale Robotic Cell Layout in 2D showing robot workspace, feeder positions, and assembly fixture. Total footprint: 3.0m × 2.8m</em>
+			<em></em>
                       </p>
                     </div>
+
 
                     <h4>5. Safety System Design & Implementation</h4>
                     <p>
@@ -472,149 +510,30 @@
                     </ul>
 
                     <!-- Safety Layout -->
-                    <div class="my-4">
-                      <img src="assets/automated_assembly_project/robotic_cell_safety_layout.jpg"
-			   class="img-fluid rounded shadow-sm" alt="Safety System Layout">
+		    <div class="my-4 d-flex flex-column justify-content-center align-items-center" style="min-height: 40vh;">
+                      <img src="assets/automated_assembly_project/safety_system_layout.jpg"
+			   class="img-fluid rounded shadow-sm" alt="Safety System Layout"
+			   style="width: 60%; max-width: 650px; height: auto;">
                       <p class="text-muted small mt-2">
 			<em>Three-zone safety system design with fencing, emergency stops, pressure mats, and safety signage compliant with ISO 10218-2 standards</em>
                       </p>
                     </div>
 
-                    <h4>6. Robot Selection & Final Assembly</h4>
-                    <p>
-                      Selected the Elite Robots EC63 based on payload requirements and system integration needs:
-                    </p>
-
-                    <!-- Robot Specs and Final Assembly -->
-                    <div class="row my-4">
-                      <div class="col-md-6 mb-3">
-			<img src="assets/automated_assembly_project/robot_arm_specifications_2.jpg"
-                             class="img-fluid rounded shadow-sm" alt="EC63 Robot Specifications">
-			<p class="text-muted small mt-2"><em>Elite Robots EC63 specifications: 3kg payload, 624mm reach, ±0.02mm repeatability, 6-axis flexibility</em></p>
-                      </div>
-                      <div class="col-md-6 mb-3">
-			<img src="assets/automated_assembly_project/final_robot_cad_assembly.jpg"
-                             class="img-fluid rounded shadow-sm" alt="Final Robot Assembly">
-			<p class="text-muted small mt-2"><em>Complete CAD assembly showing EC63 robot with integrated dual-gripper system and adapter mounted on workcell</em></p>
-                      </div>
-                    </div>
-
-                    <!-- Payload Calculation -->
-                    <div class="my-4">
-                      <img src="assets/automated_assembly_project/robot_payload_calculation.jpg"
-			   class="img-fluid rounded shadow-sm" alt="Payload Calculation">
-                      <p class="text-muted small mt-2">
-			<em>Component weight analysis totaling 2.42kg (grippers, adapter, parts) - safely within EC63's 3kg payload capacity</em>
-                      </p>
-                    </div>
-
-                    <h3>Key Results & Performance</h3>
-
-                    <div class="row mb-4">
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-primary mb-0">32 sec</h4>
-                          <small class="text-muted">Cycle Time</small>
-			</div>
-                      </div>
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-primary mb-0">30%</h4>
-                          <small class="text-muted">Parts Reduction</small>
-			</div>
-                      </div>
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-primary mb-0">5 m²</h4>
-                          <small class="text-muted">Footprint</small>
-			</div>
-                      </div>
-                      <div class="col-md-3 col-6 text-center mb-3">
-			<div class="p-3 border rounded bg-light">
-                          <h4 class="text-primary mb-0">112/hr</h4>
-                          <small class="text-muted">Production Rate</small>
-			</div>
-                      </div>
-                    </div>
-
                     <!-- Assembly Sequence Breakdown -->
                     <h4>Assembly Sequence & Timing</h4>
-                    <div class="table-responsive my-4">
-                      <table class="table table-striped table-hover">
-			<thead class="table-dark">
-                          <tr>
-                            <th>Step</th>
-                            <th>Operation</th>
-                            <th>Gripper</th>
-                            <th>Time (s)</th>
-                          </tr>
-			</thead>
-			<tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Pick base shell from feeder</td>
-                            <td>Parallel</td>
-                            <td>3.2</td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Place in assembly fixture</td>
-                            <td>Parallel</td>
-                            <td>2.8</td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Pick & place PCB</td>
-                            <td>Vacuum</td>
-                            <td>5.4</td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Pick & insert sensor module</td>
-                            <td>Parallel</td>
-                            <td>4.6</td>
-                          </tr>
-                          <tr>
-                            <td>5</td>
-                            <td>Pick & insert middle shell</td>
-                            <td>Parallel</td>
-                            <td>4.2</td>
-                          </tr>
-                          <tr>
-                            <td>6</td>
-                            <td>Pick & insert scroll wheel</td>
-                            <td>Parallel</td>
-                            <td>3.8</td>
-                          </tr>
-                          <tr>
-                            <td>7</td>
-                            <td>Pick & place top shell (snap-fit)</td>
-                            <td>Vacuum</td>
-                            <td>5.0</td>
-                          </tr>
-                          <tr>
-                            <td>8</td>
-                            <td>Apply press force for clips</td>
-                            <td>Parallel</td>
-                            <td>2.0</td>
-                          </tr>
-                          <tr>
-                            <td>9</td>
-                            <td>Transfer to inspection</td>
-                            <td>Parallel</td>
-                            <td>1.0</td>
-                          </tr>
-                          <tr class="table-info fw-bold">
-                            <td colspan="3">Total Cycle Time</td>
-                            <td>32.0 s</td>
-                          </tr>
-			</tbody>
-                      </table>
-                    </div>
-
-                    <h3>Economic Justification & Business Case</h3>
+		    <div class="my-4 d-flex flex-column justify-content-center align-items-center" style="min-height: 40vh;">
+		      <img src="assets/automated_assembly_project/cycle_time.png"
+			   class="img-fluid rounded shadow-sm"
+			   alt="Safety System Layout"
+			   style="width: 60%; max-width: 650px; height: auto;">
+		      <p class="text-muted small mt-2 text-center">
+			<em>Total Cycle Time in Steps</em>
+		      </p>
+		    </div>
+		    
+                    <h3>Economic Justification</h3>
                     <p>
-                      Conducted comprehensive ROI analysis demonstrating strong business case for automation investment:
+                      Conducted ROI analysis:
                     </p>
 
                     <div class="table-responsive my-4">
@@ -655,30 +574,33 @@
 			</tbody>
                       </table>
                     </div>
+		    
+                    <h3>Key Results & Performance</h3>
 
-                    <h3>Technical Skills Demonstrated</h3>
-                    <div class="row">
-                      <div class="col-md-6">
-			<h5>Design & CAD</h5>
-			<ul>
-                          <li>SolidWorks assembly modeling</li>
-                          <li>Design for Automation (DFA) principles</li>
-                          <li>Custom feeder track design</li>
-                          <li>End effector engineering</li>
-                          <li>Workcell layout optimization</li>
-			</ul>
+                    <div class="row mb-4">
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">32 sec</h4>
+                          <small class="text-muted">Cycle Time</small>
+			</div>
                       </div>
-                      <div class="col-md-6">
-			<h5>Robotics & System Integration</h5>
-			<ul>
-                          <li>Robotic workcell design & implementation</li>
-                          <li>Cycle time analysis & optimization</li>
-                          <li>Robot workspace planning</li>
-                          <li>Gripper selection & specification</li>
-                          <li>Production rate calculations</li>
-                          <li>Safety system design (ISO 10218-2)</li>
-                          <li>Economic justification & ROI analysis</li>
-			</ul>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">30%</h4>
+                          <small class="text-muted">Parts Reduction</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">5 m²</h4>
+                          <small class="text-muted">Footprint</small>
+			</div>
+                      </div>
+                      <div class="col-md-3 col-6 text-center mb-3">
+			<div class="p-3 border rounded bg-light">
+                          <h4 class="text-primary mb-0">112/hr</h4>
+                          <small class="text-muted">Production Rate</small>
+			</div>
                       </div>
                     </div>
 
@@ -727,506 +649,488 @@
                       <li><strong>ABB IRB 120 Robot:</strong> 6-DOF industrial manipulator with 3kg payload capacity</li>
                       <li><strong>Workspace Layout:</strong> 1 table (picking and placing)</li>
                       <li><strong>Obstacles:</strong> CAD model of flag with traceable text "RSD"</li>
-			strategies</li>
-                    </ul>
+		      strategies</li>
+</ul>
 
-                    <!-- Robot Selection -->
-                    <div class="row my-4">
-                      <div class="col-md-6 mb-3">
-			<img src="assets/robot_simulation/ABB_IRB_1600.png" class="img-fluid rounded shadow-sm"
-                             alt="ABB IRB 1600 Robot">
-			<p class="text-muted small mt-2">
-                          <em>ABB IRB 1600-6/1.2 industrial robot: 6kg payload, 1.2m reach, 0.02mm repeatability</em>
-			</p>
-                      </div>
-                      <div class="col-md-6 mb-3">
-			<img src="assets/robot_simulation/manipulator_axes.png" class="img-fluid rounded shadow-sm"
-                             alt="Robot Manipulator Axes">
-			<p class="text-muted small mt-2">
-                          <em>ABB IRB 1600 manipulator axes configuration showing 6 degrees of freedom</em>
-			</p>
-                      </div>
-                    </div>
-
-
-		    <!-- Demo GIF Section -->
-		    <div class="my-4 p-4 border rounded demo-section" style="background-color: #f8f9fa;">
-		      <!-- <h5><i class="bi bi-camera-video"></i>Demo</h5> -->
-		      <div class="text-center my-3">
-			<img src="assets/img/portfolio/outputc.gif"
-			     alt="Robot Navigation Demo"
-			     class="img-fluid rounded shadow-sm"
-			     style="max-width: 80%;">
-			<p class="text-muted small mt-3">
-			  Custom "RSD" flag design created in SolidWorks, exported as .SAT format for RobotStudio import
-			</p>
-		      </div>
-		    </div>
-		    
-                    <!-- Simulation Environment -->
-                    <div class="my-4">
-                      <img src="assets/robot_simulation/robot_studio_simulation.png" class="img-fluid rounded shadow-sm"
-			   alt="RobotStudio Simulation Environment">
-                      <p class="text-muted small mt-2">
-			<em>RobotStudio simulation environment</em>
-                      </p>
-                    </div>
+<!-- Robot Selection -->
+<div class="row my-4">
+  <div class="col-md-6 mb-3">
+    <img src="assets/robot_simulation/ABB_IRB_1600.png" class="img-fluid rounded shadow-sm"
+         alt="ABB IRB 1600 Robot">
+    <p class="text-muted small mt-2">
+      <em>ABB IRB 1600-6/1.2 industrial robot: 6kg payload, 1.2m reach, 0.02mm repeatability</em>
+    </p>
+  </div>
+  <div class="col-md-6 mb-3">
+    <img src="assets/robot_simulation/manipulator_axes.png" class="img-fluid rounded shadow-sm"
+         alt="Robot Manipulator Axes">
+    <p class="text-muted small mt-2">
+      <em>ABB IRB 1600 manipulator axes configuration showing 6 degrees of freedom</em>
+    </p>
+  </div>
+</div>
 
 
-		    <h4>2. RAPID Code</h2>
-		    <ul>
-		      <li>The four initial paths were merged into a single path named **COMPLETE PATH**. The **RAPID code** was structured to call this path in the main procedure function (`PROC main() COMPLETE_PATH; MOVE_HOME; ENDPROC`), ensuring the entire tracing task executed as a single function call.</li>
-		      <li><strong>Simulation Control:</strong> A `MOVE_HOME` function was implemented, along with a **WaitTime 20** function, allowing the simulation to pause before restarting the task. This enabled the robot to run in **continuous run mode** for recording.</li>
-		      <li><strong>Deliverables:</strong> The project successfully achieved the simulation and tracing goal, with deliverables including a video demonstration and the **Pack and Go file** from RobotStudio, which allows the simulation programme to be accessed on other computers.</li>
-		    </ul>
+<!-- Demo GIF Section -->
+<div class="my-4 p-4 border rounded demo-section" style="background-color: #f8f9fa;">
+  <!-- <h5><i class="bi bi-camera-video"></i>Demo</h5> -->
+  <div class="text-center my-3">
+    <img src="assets/img/portfolio/outputc.gif"
+	 alt="Robot Navigation Demo"
+	 class="img-fluid rounded shadow-sm"
+	 style="max-width: 80%;">
+    <p class="text-muted small mt-3">
+      Custom "RSD" flag design created in SolidWorks, exported as .SAT format for RobotStudio import
+    </p>
+  </div>
+</div>
 
-                    <!-- Code Snippet Example -->
-                    <div class="my-4 p-3 bg-dark text-light rounded">
-                      <h6 class="text-warning">RAPID Code Snippet</h6>
-                      <pre class="mb-1"><code class="text-light">PROC main()
-			  COMPLETE_PATH;
-			  MOVE_HOME;
-			  ENDPROC
-
-			  PROC COMPLETE_PATH()
-			  ! Trace flag pole and letters R, S, D
-			  MoveL Target_Flag_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-			  ! ... (path targets for flag)
-			  MoveL Target_R_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-			  ! ... (path targets for letter R)
-			  MoveL Target_S_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-			  ! ... (path targets for letter S)
-			  MoveL Target_D_Start, v600, fine, MyTool\WObj:=Table_Workobject;
-			  ! ... (path targets for letter D)
-			  ENDPROC
-
-			  PROC MOVE_HOME()
-			  MoveL Target_930_4, v600, fine, MyTool\WObj:=Table_Workobject;
-			  WaitTime 20;  ! Pause before restarting cycle
-			  ENDPROC</code></pre>
-                    </div>
-
-                    <h4>3. Robot Specifications & Selection Rationale</h4>
-                    <p>
-                      Selected ABB IRB 1600-6/1.2 for its balanced specifications and workspace coverage:
-                    </p>
-
-                    <div class="table-responsive my-4">
-                      <table class="table table-striped table-hover">
-			<thead class="table-dark">
-                          <tr>
-                            <th>Specification</th>
-                            <th>Value</th>
-                            <th>Relevance to Project</th>
-                          </tr>
-			</thead>
-			<tbody>
-                          <tr>
-                            <td><strong>Payload Capacity</strong></td>
-                            <td>6 kg</td>
-                            <td>More than sufficient for pen tool end effector</td>
-                          </tr>
-                          <tr>
-                            <td><strong>Maximum Reach</strong></td>
-                            <td>1200 mm</td>
-                            <td>Covers entire table workspace for flag tracing</td>
-                          </tr>
-                          <tr>
-                            <td><strong>Repeatability</strong></td>
-                            <td>±0.02 mm</td>
-                            <td>Ensures precise path following for accurate tracing</td>
-                          </tr>
-                          <tr>
-                            <td><strong>Degrees of Freedom</strong></td>
-                            <td>6 axes</td>
-                            <td>Enables complex curved paths for letters R and S</td>
-                          </tr>
-                          <tr>
-                            <td><strong>Weight</strong></td>
-                            <td>225 kg</td>
-                            <td>Stable base for dynamic movements</td>
-                          </tr>
-                          <tr>
-                            <td><strong>Programming Method</strong></td>
-                            <td>RAPID (offline)</td>
-                            <td>Enables simulation validation before deployment</td>
-                          </tr>
-			</tbody>
-                      </table>
-                    </div>
+<!-- Simulation Environment -->
+<div class="my-4">
+  <img src="assets/robot_simulation/robot_studio_simulation.png" class="img-fluid rounded shadow-sm"
+       alt="RobotStudio Simulation Environment">
+  <p class="text-muted small mt-2">
+    <em>RobotStudio simulation environment</em>
+  </p>
+</div>
 
 
-                    <!-- <\!-- Download Resources -\-> -->
-                      <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
-			<!--   <h5>Project Resources</h5> -->
-			<!--   <div class="d-flex gap-3 flex-wrap"> -->
-			  <!--     <a href="assets/robot_simulation/101229220_Robot_Simulation_Individual_Assignment.pdf" -->
-			  <!--       class="btn btn-sm btn-outline-success" target="_blank"> -->
-			    <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
-			    <!--     </a> -->
-			  <!--     <a href="assets/robot_simulation/python_code.zip" class="btn btn-sm btn-outline-success"> -->
-			    <!--       <i class="bi bi-file-code"></i> Python Code -->
-			    <!--     </a> -->
-			  <!--     <a href="assets/robot_simulation/coppeliasim_scene.ttt" class="btn btn-sm btn-outline-success"> -->
-			    <!--       <i class="bi bi-file-earmark-zip"></i> CoppeliaSim Scene -->
-			    <!--     </a> -->
-			  <!--   </div> -->
-			<!-- </div> -->
+<h4>2. RAPID Code</h2>
+<ul>
+  <li>The four initial paths were merged into a single path named **COMPLETE PATH**. The **RAPID code** was structured to call this path in the main procedure function (`PROC main() COMPLETE_PATH; MOVE_HOME; ENDPROC`), ensuring the entire tracing task executed as a single function call.</li>
+  <li><strong>Simulation Control:</strong> A `MOVE_HOME` function was implemented, along with a **WaitTime 20** function, allowing the simulation to pause before restarting the task. This enabled the robot to run in **continuous run mode** for recording.</li>
+  <li><strong>Deliverables:</strong> The project successfully achieved the simulation and tracing goal, with deliverables including a video demonstration and the **Pack and Go file** from RobotStudio, which allows the simulation programme to be accessed on other computers.</li>
+</ul>
 
-                  </div>
-		</div>
+<!-- Code Snippet Example -->
+<div class="my-4 p-3 bg-dark text-light rounded">
+  <h6 class="text-warning">RAPID Code Snippet</h6>
+  <pre class="mb-1"><code class="text-light">PROC main()
+      COMPLETE_PATH;
+      MOVE_HOME;
+      ENDPROC
 
-		<!-- Hand-Eye Coordination Tab -->
-		<div class="tab-pane fade" id="handeye" role="tabpanel">
+      PROC COMPLETE_PATH()
+      ! Trace flag pole and letters R, S, D
+      MoveL Target_Flag_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+      ! ... (path targets for flag)
+      MoveL Target_R_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+      ! ... (path targets for letter R)
+      MoveL Target_S_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+      ! ... (path targets for letter S)
+      MoveL Target_D_Start, v600, fine, MyTool\WObj:=Table_Workobject;
+      ! ... (path targets for letter D)
+      ENDPROC
 
-                  <div class="portfolio-description">
+      PROC MOVE_HOME()
+      MoveL Target_930_4, v600, fine, MyTool\WObj:=Table_Workobject;
+      WaitTime 20;  ! Pause before restarting cycle
+      ENDPROC</code></pre>
+</div>
 
-                    <!-- Outcome Summary -->
-                    <div class="mb-4 p-3 bg-light border-start border-info border-4">
-                      <h5 class="text-info mb-2">Project Outcome</h5>
-                      <p class="mb-0">
-			<strong>Multi-System Integration & Deployment:</strong> Integrated vision system, MATLAB processing, TCP/IP communication, and ABB robot control into unified pick-and-place system achieving <5mm positioning accuracy. Demonstrated complete system integration workflow including hardware setup, software development, communication protocol implementation, and systematic testing/validation—essential capabilities for robotics system deployment, troubleshooting, and technical documentation in real-world implementations.
-																											   </p>
-                    </div>
+<h4>3. Robot Specifications & Selection Rationale</h4>
+<p>
+  Selected ABB IRB 1600-6/1.2 for its balanced specifications and workspace coverage:
+</p>
 
-                    <h3>The Challenge</h3>
-                    <p>
-                      Modern industrial robots require vision systems to handle unstructured environments where object
-                      positions are not predetermined.
-                      This project involved creating a complete hand-eye coordination system capable of detecting,
-                      localizing, and grasping objects of
-                      varying sizes and orientations using computer vision and coordinate transformation.
-                    </p>
+<div class="table-responsive my-4">
+  <table class="table table-striped table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th>Specification</th>
+        <th>Value</th>
+        <th>Relevance to Project</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Payload Capacity</strong></td>
+        <td>6 kg</td>
+        <td>More than sufficient for pen tool end effector</td>
+      </tr>
+      <tr>
+        <td><strong>Maximum Reach</strong></td>
+        <td>1200 mm</td>
+        <td>Covers entire table workspace for flag tracing</td>
+      </tr>
+      <tr>
+        <td><strong>Repeatability</strong></td>
+        <td>±0.02 mm</td>
+        <td>Ensures precise path following for accurate tracing</td>
+      </tr>
+      <tr>
+        <td><strong>Degrees of Freedom</strong></td>
+        <td>6 axes</td>
+        <td>Enables complex curved paths for letters R and S</td>
+      </tr>
+      <tr>
+        <td><strong>Weight</strong></td>
+        <td>225 kg</td>
+        <td>Stable base for dynamic movements</td>
+      </tr>
+      <tr>
+        <td><strong>Programming Method</strong></td>
+        <td>RAPID (offline)</td>
+        <td>Enables simulation validation before deployment</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-                    <h3>Project Planning & Team Collaboration</h3>
-                    <p>
-                      Executed as a 3-person team project with structured task distribution and timeline management:
-                    </p>
+</div>
+</div>
 
-                    <!-- Project Timeline -->
-                    <div class="my-4">
-                      <img src="assets/hand_eye_coordination/project_timeline.png"
-			   class="img-fluid rounded shadow-sm" alt="Project Timeline">
-                      <p class="text-muted small mt-2">
-			<em>Project timeline and work distribution showing coordinated effort across image processing, robot programming, and kinematics analysis modules</em>
-                      </p>
-                    </div>
+<!-- Hand-Eye Coordination Tab -->
+<div class="tab-pane fade" id="handeye" role="tabpanel">
 
-		    <!-- small brand-logo rule -->
-		    <style>
-		      /* match the Bootstrap icon size (2rem) and center logo above caption */
-		      .brand-logo { height: 2rem; width: auto; display: block; }
-		      .brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
-		    </style>
+  <div class="portfolio-description">
 
-                    <h3>My System Architecture</h3>
-                    <!-- System Block Diagram -->
-                    <div class="my-4">
-                      <div class="p-3 border rounded bg-light">
-			<h5>System Components</h5>
-			<div class="row text-center">
-                          <div class="col-md-3">
-                            <i class="bi bi-camera-video" style="font-size: 2rem; color: #0dcaf0;"></i>
-                            <p class="mt-2 mb-0 fw-bold">Webcam</p>
-                            <small class="text-muted">Image Acquisition</small>
-                          </div>
-                          <div class="col-md-3">
-			    <div class="brand-item">
-			      <img src="assets/img/portfolio/matlabsvg.svg" alt="MATLAB logo" class="brand-logo" />
-			      <p class="mt-2 mb-0 fw-bold">MATLAB</p>
-			      <small class="text-muted">Image Processing</small>
-			    </div>
-                          </div>
-                          <div class="col-md-3">
-                            <i class="bi bi-ethernet" style="font-size: 2rem; color: #0dcaf0;"></i>
-                            <p class="mt-2 mb-0 fw-bold">TCP/IP</p>
-                            <small class="text-muted">Communication</small>
-                          </div>
-                          <div class="col-md-3">
-                            <i class="bi bi-robot" style="font-size: 2rem; color: #0dcaf0;"></i>
-                            <p class="mt-2 mb-0 fw-bold">ABB IRB 120</p>
-                            <small class="text-muted">Robot Execution</small>
-                          </div>
-			</div>
-                      </div>
-                    </div>
+    <!-- Outcome Summary -->
+    <div class="mb-4 p-3 bg-light border-start border-info border-4">
+      <h5 class="text-info mb-2">Project Outcome</h5>
+      <p class="mb-0">
+	<strong>Multi-System Integration & Deployment:</strong> Integrated vision system, MATLAB processing, TCP/IP communication, and ABB robot control into unified pick-and-place system achieving <5mm positioning accuracy. Demonstrated system integration workflow including hardware setup, software development, communication protocol implementation, and systematic testing/validation—essential capabilities for robotics system deployment, troubleshooting, and technical documentation in real-world implementations.
+																									   </p>
+    </div>
 
-                    <h4>1. Camera Calibration & Setup</h4>
-                    <p>
-                      Performed comprehensive camera calibration to ensure accurate coordinate mapping:
-                    </p>
-                    <ul>
-                      <li><strong>Calibration Method:</strong> Zhang's checkerboard-based camera calibration</li>
-                      <li><strong>Parameters Determined:</strong> Intrinsic matrix (focal length, principal point),
-			distortion coefficients (radial & tangential)</li>
-                      <li><strong>Calibration Accuracy:</strong> Mean reprojection error <0.3 pixels</li>
-											      <li><strong>Camera Mounting:</strong> Fixed overhead position at 800mm height, 45° viewing angle
-											      </li>
-                    </ul>
+    <h3>The Challenge</h3>
+    <p>
+      Modern industrial robots require vision systems to handle unstructured environments where object
+      positions are not predetermined.
+      This project involved creating a hand-eye coordination system capable of detecting,
+      localizing, and grasping objects of
+      varying sizes and orientations using computer vision and coordinate transformation.
+    </p>
 
-                    <!-- Calibration Images -->
-                    <div class="row my-4">
-                      <div class="col-md-6 mb-3">
-			<img src="assets/hand_eye_coordination/checkerboard_calibration.png"
-                             class="img-fluid rounded shadow-sm" alt="Checkerboard Calibration">
-			<p class="text-muted small mt-2"><em>Multiple checkerboard views captured for camera calibration.
-                            Grid: 9×6 corners, square size: 25mm</em></p>
-                      </div>
-                      <div class="col-md-6 mb-3">
-			<img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
-                             class="img-fluid rounded shadow-sm" alt="Physical Setup">
-			<p class="text-muted small mt-2"><em>Complete physical setup showing ABB IRB 120 robot, overhead
-                            camera,
-                            workspace, and target objects</em></p>
-                      </div>
-                    </div>
+    <h3>Project Planning & Team Collaboration</h3>
+    <p>
+      Executed as a 3-person team project with structured task distribution and timeline management:
+    </p>
 
-                    <h4>2. Image Processing Pipeline</h4>
-                    <p>
-                      Developed a robust MATLAB-based vision processing pipeline:
-                    </p>
+    <!-- Project Timeline -->
+    <div class="my-4">
+      <img src="assets/hand_eye_coordination/project_timeline.png"
+	   class="img-fluid rounded shadow-sm" alt="Project Timeline">
+      <p class="text-muted small mt-2">
+	<em>Project timeline and work distribution showing coordinated effort across image processing, robot programming, and kinematics analysis modules</em>
+      </p>
+    </div>
 
-                    <h5>Image Acquisition & Preprocessing</h5>
-                    <ul>
-                      <li><strong>Undistortion:</strong> Applied calibration parameters to remove lens distortion</li>
-                      <li><strong>Color Space Conversion:</strong> RGB → Grayscale for intensity-based processing</li>
-                      <li><strong>Noise Reduction:</strong> Gaussian filtering (5×5 kernel, σ=1.0)</li>
-                      <li><strong>Contrast Enhancement:</strong> Adaptive histogram equalization (CLAHE)</li>
-                    </ul>
+    <!-- small brand-logo rule -->
+    <style>
+      /* match the Bootstrap icon size (2rem) and center logo above caption */
+      .brand-logo { height: 2rem; width: auto; display: block; }
+      .brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
+    </style>
 
-                    <h5>Object Detection & Segmentation</h5>
-                    <ul>
-                      <li><strong>Thresholding:</strong> Adaptive binary thresholding (Otsu's method)</li>
-                      <li><strong>Morphological Operations:</strong> Opening (erosion + dilation) to remove noise</li>
-                      <li><strong>Connected Components:</strong> Blob analysis for individual object identification</li>
-                      <li><strong>Contour Analysis:</strong> Boundary extraction using Canny edge detection</li>
-                    </ul>
+    <h3>My System Architecture</h3>
+    <!-- System Block Diagram -->
+    <div class="my-4">
+      <div class="p-3 border rounded bg-light">
+	<h5>System Components</h5>
+	<div class="row text-center">
+          <div class="col-md-3">
+            <i class="bi bi-camera-video" style="font-size: 2rem; color: #0dcaf0;"></i>
+            <p class="mt-2 mb-0 fw-bold">Webcam</p>
+            <small class="text-muted">Image Acquisition</small>
+          </div>
+          <div class="col-md-3">
+	    <div class="brand-item">
+	      <img src="assets/img/portfolio/matlabsvg.svg" alt="MATLAB logo" class="brand-logo" />
+	      <p class="mt-2 mb-0 fw-bold">MATLAB</p>
+	      <small class="text-muted">Image Processing</small>
+	    </div>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-ethernet" style="font-size: 2rem; color: #0dcaf0;"></i>
+            <p class="mt-2 mb-0 fw-bold">TCP/IP</p>
+            <small class="text-muted">Communication</small>
+          </div>
+          <div class="col-md-3">
+            <i class="bi bi-robot" style="font-size: 2rem; color: #0dcaf0;"></i>
+            <p class="mt-2 mb-0 fw-bold">ABB IRB 120</p>
+            <small class="text-muted">Robot Execution</small>
+          </div>
+	</div>
+      </div>
+    </div>
 
-                    <h5>Feature Extraction</h5>
-                    <ul>
-                      <li><strong>Centroid Calculation:</strong> Geometric center using image moments</li>
-                      <li><strong>Bounding Box:</strong> Minimum area rectangle for object dimensions</li>
-                      <li><strong>Orientation:</strong> Principal axis angle using second-order moments</li>
-                      <li><strong>Area & Perimeter:</strong> For object classification</li>
-                    </ul>
+    <h4>1. Camera Calibration & Setup</h4>
+    <p>
+      Performed comprehensive camera calibration to ensure accurate coordinate mapping:
+    </p>
+    <ul>
+      <li><strong>Calibration Method:</strong> Zhang's checkerboard-based camera calibration</li>
+      <li><strong>Parameters Determined:</strong> Intrinsic matrix (focal length, principal point),
+	distortion coefficients (radial & tangential)</li>
+      <li><strong>Calibration Accuracy:</strong> Mean reprojection error <0.3 pixels</li>
+									      <li><strong>Camera Mounting:</strong> Fixed overhead position at 800mm height, 45° viewing angle
+									      </li>
+    </ul>
 
-                    <!-- Image Processing Pipeline Steps -->
-                    <h5>Processing Pipeline Visualization</h5>
-                    <p class="small text-muted">Step-by-step transformation from raw capture to feature extraction:</p>
+    <!-- Calibration Images -->
+    <div class="row my-4">
+      <div class="col-md-6 mb-3">
+	<img src="assets/hand_eye_coordination/checkerboard_calibration.png"
+             class="img-fluid rounded shadow-sm" alt="Checkerboard Calibration">
+	<p class="text-muted small mt-2"><em>Multiple checkerboard views captured for camera calibration.
+            Grid: 9×6 corners, square size: 25mm</em></p>
+      </div>
+      <div class="col-md-6 mb-3">
+	<img src="assets/hand_eye_coordination/hand_eye_coordination_physical_setup.jpg"
+             class="img-fluid rounded shadow-sm" alt="Physical Setup">
+	<p class="text-muted small mt-2"><em>Physical setup showing ABB IRB 120 robot, overhead
+            camera,
+            workspace, and target objects</em></p>
+      </div>
+    </div>
 
-                    <div class="row my-4">
-                      <div class="col-md-3 mb-3">
-			<img src="assets/hand_eye_coordination/original_image_capture.png"
-                             class="img-fluid rounded shadow-sm" alt="Step 1: Original">
-			<p class="text-muted small mt-2 text-center"><em><strong>1.</strong> Original capture</em></p>
-                      </div>
-                      <div class="col-md-3 mb-3">
-			<img src="assets/hand_eye_coordination/grayscale_image.png"
-                             class="img-fluid rounded shadow-sm" alt="Step 2: Grayscale">
-			<p class="text-muted small mt-2 text-center"><em><strong>2.</strong> Grayscale conversion</em></p>
-                      </div>
-                      <div class="col-md-3 mb-3">
-			<img src="assets/hand_eye_coordination/thresholded_image.png"
-                             class="img-fluid rounded shadow-sm" alt="Step 3: Thresholding">
-			<p class="text-muted small mt-2 text-center"><em><strong>3.</strong> Binary thresholding</em></p>
-                      </div>
-                      <div class="col-md-3 mb-3">
-			<img src="assets/hand_eye_coordination/image_masking.png"
-                             class="img-fluid rounded shadow-sm" alt="Step 4: Masking">
-			<p class="text-muted small mt-2 text-center"><em><strong>4.</strong> Object masking</em></p>
-                      </div>
-                    </div>
+    <h4>2. Image Processing Pipeline</h4>
+    <p>
+      Developed a robust MATLAB-based vision processing pipeline:
+    </p>
 
-                    <!-- Final Processing Results -->
-                    <div class="my-4">
-                      <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png"
-			   class="img-fluid rounded shadow-sm" alt="Final: Processed with Detections">
-                      <p class="text-muted small mt-2">
-			<em><strong>Final Result:</strong> Detected objects with centroids, bounding boxes, and orientation vectors overlaid. Object properties (position, rotation, area) extracted for robot control.</em>
-                      </p>
-                    </div>
+    <h5>Image Acquisition & Preprocessing</h5>
+    <ul>
+      <li><strong>Undistortion:</strong> Applied calibration parameters to remove lens distortion</li>
+      <li><strong>Color Space Conversion:</strong> RGB → Grayscale for intensity-based processing</li>
+      <li><strong>Noise Reduction:</strong> Gaussian filtering (5×5 kernel, σ=1.0)</li>
+      <li><strong>Contrast Enhancement:</strong> Adaptive histogram equalization (CLAHE)</li>
+    </ul>
 
-                    <h4>3. Coordinate Transformation</h4>
-                    <p>
-                      Implemented precise transformation from image coordinates to robot base coordinates:
-                    </p>
+    <h5>Object Detection & Segmentation</h5>
+    <ul>
+      <li><strong>Thresholding:</strong> Adaptive binary thresholding (Otsu's method)</li>
+      <li><strong>Morphological Operations:</strong> Opening (erosion + dilation) to remove noise</li>
+      <li><strong>Connected Components:</strong> Blob analysis for individual object identification</li>
+      <li><strong>Contour Analysis:</strong> Boundary extraction using Canny edge detection</li>
+    </ul>
 
-                    <h5>Transformation Chain</h5>
-                    <ol>
-                      <li><strong>Image → Camera Frame:</strong> Using intrinsic calibration matrix and known Z-height
-			(workspace plane)</li>
-                      <li><strong>Camera → Robot Base:</strong> Homogeneous transformation matrix from hand-eye
-			calibration</li>
-                      <li><strong>Validation:</strong> Physical measurement verification (target grid points)</li>
-                    </ol>
+    <h5>Feature Extraction</h5>
+    <ul>
+      <li><strong>Centroid Calculation:</strong> Geometric center using image moments</li>
+      <li><strong>Bounding Box:</strong> Minimum area rectangle for object dimensions</li>
+      <li><strong>Orientation:</strong> Principal axis angle using second-order moments</li>
+      <li><strong>Area & Perimeter:</strong> For object classification</li>
+    </ul>
 
-                    <!-- Transformation Visualization -->
-                    <div class="my-4 p-3 bg-dark text-light rounded">
-                      <h6 class="text-warning">Coordinate Transformation Matrix</h6>
-                      <pre class="mb-0 text-center"><code class="text-light">    [R₁₁  R₁₂  R₁₃  Tx]     [Xrobot]
-			  T = [R₂₁  R₂₂  R₂₃  Ty]  →  [Yrobot]
-			  [R₃₁  R₃₂  R₃₃  Tz]     [Zrobot]
-			  [ 0    0    0    1]     [  1  ]
+    <!-- Image Processing Pipeline Steps -->
+    <h5>Processing Pipeline Visualization</h5>
+    <p class="small text-muted">Step-by-step transformation from raw capture to feature extraction:</p>
 
-			  Rotation Component (R): Camera → Robot orientation
-			  Translation (T): Camera → Robot position offset
+    <div class="row my-4">
+      <div class="col-md-3 mb-3">
+	<img src="assets/hand_eye_coordination/original_image_capture.png"
+             class="img-fluid rounded shadow-sm" alt="Step 1: Original">
+	<p class="text-muted small mt-2 text-center"><em><strong>1.</strong> Original capture</em></p>
+      </div>
+      <div class="col-md-3 mb-3">
+	<img src="assets/hand_eye_coordination/grayscale_image.png"
+             class="img-fluid rounded shadow-sm" alt="Step 2: Grayscale">
+	<p class="text-muted small mt-2 text-center"><em><strong>2.</strong> Grayscale conversion</em></p>
+      </div>
+      <div class="col-md-3 mb-3">
+	<img src="assets/hand_eye_coordination/thresholded_image.png"
+             class="img-fluid rounded shadow-sm" alt="Step 3: Thresholding">
+	<p class="text-muted small mt-2 text-center"><em><strong>3.</strong> Binary thresholding</em></p>
+      </div>
+      <div class="col-md-3 mb-3">
+	<img src="assets/hand_eye_coordination/image_masking.png"
+             class="img-fluid rounded shadow-sm" alt="Step 4: Masking">
+	<p class="text-muted small mt-2 text-center"><em><strong>4.</strong> Object masking</em></p>
+      </div>
+    </div>
 
-			  Example: Camera at X=450mm, Y=300mm, Z=800mm above robot base</code></pre>
-                      <p class="text-muted small mt-2 mb-0"><em>4×4 homogeneous transformation matrix mapping camera
-                          coordinates to robot base frame</em></p>
-                    </div>
+    <!-- Final Processing Results -->
+    <div class="my-4">
+      <img src="assets/hand_eye_coordination/processed_image_with_bounding_boxes.png"
+	   class="img-fluid rounded shadow-sm" alt="Final: Processed with Detections">
+      <p class="text-muted small mt-2">
+	<em><strong>Final Result:</strong> Detected objects with centroids, bounding boxes, and orientation vectors overlaid. Object properties (position, rotation, area) extracted for robot control.</em>
+      </p>
+    </div>
 
-                    <h4>4. Robot Control Integration</h4>
-                    <p>
-                      Developed seamless communication between MATLAB vision system and ABB robot controller:
-                    </p>
+    <h4>3. Coordinate Transformation</h4>
+    <p>
+      Implemented precise transformation from image coordinates to robot base coordinates:
+    </p>
 
-                    <h5>Communication Protocol (TCP/IP)</h5>
-                    <ul>
-                      <li><strong>Socket Connection:</strong> MATLAB client → ABB IRC5 controller server</li>
-                      <li><strong>IP Address:</strong> 192.168.125.1 (robot controller)</li>
-                      <li><strong>Port:</strong> 1025 (custom RAPID socket server)</li>
-                      <li><strong>Data Format:</strong> ASCII string "X,Y,Z,RX,RY,RZ" (comma-delimited coordinates)</li>
-                      <li><strong>Acknowledgment:</strong> Robot returns "OK" upon successful move completion</li>
-                    </ul>
+    <h5>Transformation Chain</h5>
+    <ol>
+      <li><strong>Image → Camera Frame:</strong> Using intrinsic calibration matrix and known Z-height
+	(workspace plane)</li>
+      <li><strong>Camera → Robot Base:</strong> Homogeneous transformation matrix from hand-eye
+	calibration</li>
+      <li><strong>Validation:</strong> Physical measurement verification (target grid points)</li>
+    </ol>
 
-                    <h5>RAPID Programming (Robot-Side)</h5>
-                    <ul>
-                      <li><strong>Socket Server:</strong> Listens for incoming coordinate data</li>
-                      <li><strong>Motion Planning:</strong> Generates safe trajectory to target pose</li>
-                      <li><strong>Execution:</strong> MoveL (linear) or MoveJ (joint) motion commands</li>
-                      <li><strong>Error Handling:</strong> Timeout detection, unreachable position checks</li>
-                    </ul>
+    <!-- Transformation Visualization -->
+    <div class="my-4 p-3 bg-dark text-light rounded">
+      <h6 class="text-warning">Coordinate Transformation Matrix</h6>
+      <pre class="mb-0 text-center"><code class="text-light">    [R₁₁  R₁₂  R₁₃  Tx]     [Xrobot]
+	  T = [R₂₁  R₂₂  R₂₃  Ty]  →  [Yrobot]
+	  [R₃₁  R₃₂  R₃₃  Tz]     [Zrobot]
+	  [ 0    0    0    1]     [  1  ]
 
-                    <!-- Robot Kinematics Diagrams -->
-                    <div class="row my-4">
-                      <div class="col-md-6 mb-3">
-			<img src="assets/hand_eye_coordination/abb_irb_120_coordinate_frames1.png"
-                             class="img-fluid rounded shadow-sm" alt="DH Parameters">
-			<p class="text-muted small mt-2"><em>Denavit-Hartenberg coordinate frames for ABB IRB 120
-                            kinematic model showing link assignments</em></p>
-                      </div>
-                      <div class="col-md-6 mb-3">
-			<img src="assets/hand_eye_coordination/abb_irb_120_dimensions.png"
-                             class="img-fluid rounded shadow-sm" alt="Robot Dimensions">
-			<p class="text-muted small mt-2"><em>ABB IRB 120 dimensional specifications for kinematic calculations and workspace analysis</em></p>
-                      </div>
-                    </div>
+	  Rotation Component (R): Camera → Robot orientation
+	  Translation (T): Camera → Robot position offset
 
-                    <!-- DH Parameters Table -->
-                    <h5>Denavit-Hartenberg Parameters</h5>
-                    <p>Complete DH table for ABB IRB 120 forward/inverse kinematics implementation:</p>
-                    <div class="table-responsive my-4">
-                      <table class="table table-striped table-hover">
-			<thead class="table-dark">
-                          <tr>
-                            <th>Joint</th>
-                            <th>θ (rad)</th>
-                            <th>d (mm)</th>
-                            <th>a (mm)</th>
-                            <th>α (rad)</th>
-                          </tr>
-			</thead>
-			<tbody>
-                          <tr>
-                            <td><strong>1</strong></td>
-                            <td>θ₁</td>
-                            <td>290</td>
-                            <td>0</td>
-                            <td>-π/2</td>
-                          </tr>
-                          <tr>
-                            <td><strong>2</strong></td>
-                            <td>θ₂ - π/2</td>
-                            <td>0</td>
-                            <td>270</td>
-                            <td>0</td>
-                          </tr>
-                          <tr>
-                            <td><strong>3</strong></td>
-                            <td>θ₃</td>
-                            <td>0</td>
-                            <td>70</td>
-                            <td>-π/2</td>
-                          </tr>
-                          <tr>
-                            <td><strong>4</strong></td>
-                            <td>θ₄</td>
-                            <td>302</td>
-                            <td>0</td>
-                            <td>π/2</td>
-                          </tr>
-                          <tr>
-                            <td><strong>5</strong></td>
-                            <td>θ₅</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>-π/2</td>
-                          </tr>
-                          <tr>
-                            <td><strong>6</strong></td>
-                            <td>θ₆ + π</td>
-                            <td>72</td>
-                            <td>0</td>
-                            <td>0</td>
-                          </tr>
-			</tbody>
-                      </table>
-                    </div>
+	  Example: Camera at X=450mm, Y=300mm, Z=800mm above robot base</code></pre>
+      <p class="text-muted small mt-2 mb-0"><em>4×4 homogeneous transformation matrix mapping camera
+          coordinates to robot base frame</em></p>
+    </div>
 
-                    <!-- MATLAB Visualization -->
-                    <div class="row my-4">
-                      <div class="col-md-6 mb-3">
-			<img src="assets/hand_eye_coordination/robot_3d_model_visualization.png"
-                             class="img-fluid rounded shadow-sm" alt="MATLAB Visualization">
-			<p class="text-muted small mt-2"><em>3D robot model in MATLAB Robotics Toolbox using DH parameters for forward/inverse kinematics validation</em></p>
-                      </div>
-                      <div class="col-md-6 mb-3">
-			<img src="assets/hand_eye_coordination/robot_studio_joint_jog_interface.png"
-                             class="img-fluid rounded shadow-sm" alt="RobotStudio Joint Jog">
-			<p class="text-muted small mt-2"><em>RobotStudio joint jog interface showing end-effector position verification for kinematics accuracy (error <1%)</em></p>
-																					 </div>
-                    </div>
+    <h4>4. Robot Control Integration</h4>
+    <p>
+      Developed seamless communication between MATLAB vision system and ABB robot controller:
+    </p>
 
-                    <h4>5. System Testing & Performance</h4>
-                    <p>
-                      Conducted extensive testing to evaluate positioning accuracy and system reliability:
-                    </p>
+    <h5>Communication Protocol (TCP/IP)</h5>
+    <ul>
+      <li><strong>Socket Connection:</strong> MATLAB client → ABB IRC5 controller server</li>
+      <li><strong>IP Address:</strong> 192.168.125.1 (robot controller)</li>
+      <li><strong>Port:</strong> 1025 (custom RAPID socket server)</li>
+      <li><strong>Data Format:</strong> ASCII string "X,Y,Z,RX,RY,RZ" (comma-delimited coordinates)</li>
+      <li><strong>Acknowledgment:</strong> Robot returns "OK" upon successful move completion</li>
+    </ul>
 
-                    <!-- Performance Results -->
-                    <div class="table-responsive my-4">
-                      <table class="table table-striped table-hover">
-			<thead class="table-dark">
-                          <tr>
-                            <th>Test Parameter</th>
-                            <th>Measured Value</th>
-                            <th>Target Spec</th>
-                            <th>Status</th>
-                          </tr>
-			</thead>
-			<tbody>
-                          <tr>
-                            <td>X-axis positioning accuracy</td>
-                            <td>±3.2 mm</td>
-                            <td>±5.0 mm</td>
-                            <td><span class="badge bg-success">Pass</span></td>
-                          </tr>
-                          <tr>
-                            <td>Y-axis positioning accuracy</td>
-                            <td>±4.1 mm</td>
-                            <td>±5.0 mm</td>
-                            <td><span class="badge bg-success">Pass</span></td>
-                          </tr>
-                          <tr>
-                            <td>Repeatability (10 trials)</td>
-                            <td>±1.8 mm</td>
-                            <td>±3.0 mm</td>
-                            <td><span class="badge bg-success">Pass</span></td>
-                          </tr>
-                          <tr>
-                            <td>Detection success rate</td>
-                            <td>97.5% (39/40)</td>
-                            <td>>95%</td>
+    <h5>RAPID Programming (Robot-Side)</h5>
+    <ul>
+      <li><strong>Socket Server:</strong> Listens for incoming coordinate data</li>
+      <li><strong>Motion Planning:</strong> Generates safe trajectory to target pose</li>
+      <li><strong>Execution:</strong> MoveL (linear) or MoveJ (joint) motion commands</li>
+      <li><strong>Error Handling:</strong> Timeout detection, unreachable position checks</li>
+    </ul>
+
+    <!-- Robot Kinematics Diagrams -->
+    <div class="row my-4">
+      <div class="col-md-6 mb-3">
+	<img src="assets/hand_eye_coordination/abb_irb_120_coordinate_frames1.png"
+             class="img-fluid rounded shadow-sm" alt="DH Parameters">
+	<p class="text-muted small mt-2"><em>Denavit-Hartenberg coordinate frames for ABB IRB 120
+            kinematic model showing link assignments</em></p>
+      </div>
+      <div class="col-md-6 mb-3">
+	<img src="assets/hand_eye_coordination/abb_irb_120_dimensions.png"
+             class="img-fluid rounded shadow-sm" alt="Robot Dimensions">
+	<p class="text-muted small mt-2"><em>ABB IRB 120 dimensional specifications for kinematic calculations and workspace analysis</em></p>
+      </div>
+    </div>
+
+    <!-- DH Parameters Table -->
+    <h5>Denavit-Hartenberg Parameters</h5>
+    <p>DH table for ABB IRB 120 forward/inverse kinematics implementation:</p>
+    <div class="table-responsive my-4">
+      <table class="table table-striped table-hover">
+	<thead class="table-dark">
+          <tr>
+            <th>Joint</th>
+            <th>θ (rad)</th>
+            <th>d (mm)</th>
+            <th>a (mm)</th>
+            <th>α (rad)</th>
+          </tr>
+	</thead>
+	<tbody>
+          <tr>
+            <td><strong>1</strong></td>
+            <td>θ₁</td>
+            <td>290</td>
+            <td>0</td>
+            <td>-π/2</td>
+          </tr>
+          <tr>
+            <td><strong>2</strong></td>
+            <td>θ₂ - π/2</td>
+            <td>0</td>
+            <td>270</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td>θ₃</td>
+            <td>0</td>
+            <td>70</td>
+            <td>-π/2</td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td>θ₄</td>
+            <td>302</td>
+            <td>0</td>
+            <td>π/2</td>
+          </tr>
+          <tr>
+            <td><strong>5</strong></td>
+            <td>θ₅</td>
+            <td>0</td>
+            <td>0</td>
+            <td>-π/2</td>
+          </tr>
+          <tr>
+            <td><strong>6</strong></td>
+            <td>θ₆ + π</td>
+            <td>72</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+	</tbody>
+      </table>
+    </div>
+
+    <!-- MATLAB Visualization -->
+    <div class="row my-4">
+      <div class="col-md-6 mb-3">
+	<img src="assets/hand_eye_coordination/robot_3d_model_visualization.png"
+             class="img-fluid rounded shadow-sm" alt="MATLAB Visualization">
+	<p class="text-muted small mt-2"><em>3D robot model in MATLAB Robotics Toolbox using DH parameters for forward/inverse kinematics validation</em></p>
+      </div>
+      <div class="col-md-6 mb-3">
+	<img src="assets/hand_eye_coordination/robot_studio_joint_jog_interface.png"
+             class="img-fluid rounded shadow-sm" alt="RobotStudio Joint Jog">
+	<p class="text-muted small mt-2"><em>RobotStudio joint jog interface showing end-effector position verification for kinematics accuracy (error <1%)</em></p>
+																			 </div>
+    </div>
+
+    <h4>5. System Testing & Performance</h4>
+    <p>
+      Conducted extensive testing to evaluate positioning accuracy and system reliability:
+    </p>
+
+    <!-- Performance Results -->
+    <div class="table-responsive my-4">
+      <table class="table table-striped table-hover">
+	<thead class="table-dark">
+          <tr>
+            <th>Test Parameter</th>
+            <th>Measured Value</th>
+            <th>Target Spec</th>
+            <th>Status</th>
+          </tr>
+	</thead>
+	<tbody>
+          <tr>
+            <td>X-axis positioning accuracy</td>
+            <td>±3.2 mm</td>
+            <td>±5.0 mm</td>
+            <td><span class="badge bg-success">Pass</span></td>
+          </tr>
+          <tr>
+            <td>Y-axis positioning accuracy</td>
+            <td>±4.1 mm</td>
+            <td>±5.0 mm</td>
+            <td><span class="badge bg-success">Pass</span></td>
+          </tr>
+          <tr>
+            <td>Repeatability (10 trials)</td>
+            <td>±1.8 mm</td>
+            <td>±3.0 mm</td>
+            <td><span class="badge bg-success">Pass</span></td>
+          </tr>
+          <tr>
+            <td>Detection success rate</td>
+            <td>97.5% (39/40)</td>
+            <td>>95%</td>
 <td><span class="badge bg-success">Pass</span></td>
 </tr>
 <tr>
@@ -1288,46 +1192,6 @@
     Priority-based selection implemented (nearest-first strategy).</li>
 </ul>
 
-<h3>Technical Skills Demonstrated</h3>
-<div class="row">
-  <div class="col-md-6">
-    <h5>Computer Vision</h5>
-    <ul>
-      <li>Camera calibration (intrinsic/extrinsic)</li>
-      <li>Image processing (filtering, thresholding)</li>
-      <li>Object detection & segmentation</li>
-      <li>Feature extraction (moments, contours)</li>
-      <li>Coordinate transformation (2D→3D)</li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h5>Robot Integration</h5>
-    <ul>
-      <li>MATLAB image processing toolbox</li>
-      <li>TCP/IP socket programming</li>
-      <li>ABB RAPID programming</li>
-      <li>Forward & inverse kinematics</li>
-      <li>Hand-eye calibration methods</li>
-    </ul>
-  </div>
-</div>
-
-<!-- <\!-- Download Resources -\-> -->
-  <!-- <div class="mt-4 p-3 bg-light border rounded"> -->
-    <!--   <h5>Project Resources</h5> -->
-    <!--   <div class="d-flex gap-3 flex-wrap"> -->
-      <!--     <a href="assets/hand_eye_coordination/rme40003_hand_eye_coordination_project.pdf" -->
-      <!--       class="btn btn-sm btn-outline-info" target="_blank"> -->
-        <!--       <i class="bi bi-file-pdf"></i> Full Report (PDF) -->
-        <!--     </a> -->
-      <!--     <a href="assets/hand_eye_coordination/matlab_code.zip" class="btn btn-sm btn-outline-info"> -->
-        <!--       <i class="bi bi-file-code"></i> MATLAB Code -->
-        <!--     </a> -->
-      <!--     <a href="assets/hand_eye_coordination/rapid_program.mod" class="btn btn-sm btn-outline-info"> -->
-        <!--       <i class="bi bi-filetype-txt"></i> RAPID Program -->
-        <!--     </a> -->
-      <!--   </div> -->
-    <!-- </div> -->
 
 </div>
 </div>
