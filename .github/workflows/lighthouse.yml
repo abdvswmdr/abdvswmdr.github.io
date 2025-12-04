@@ -1,0 +1,66 @@
+name: Lighthouse CI
+
+# Security: Least privilege permissions
+permissions:
+  contents: read
+  # Need to write comments on PRs with Lighthouse results
+  pull-requests: write
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # Wait for deployment (GitHub Pages needs time to deploy)
+      - name: Wait for deployment
+        run: |
+          echo "Waiting 30 seconds for GitHub Pages deployment..."
+          sleep 30
+
+      # Run Lighthouse CI
+      - name: Run Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://www.arsalim.dev/
+            https://www.arsalim.dev/index.html
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+          runs: 3
+
+      # Save Lighthouse reports as artifacts
+      - name: Upload Lighthouse reports
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse-reports
+          path: '.lighthouseci'
+          retention-days: 30
+
+      # Print summary
+      - name: Lighthouse Summary
+        run: |
+          echo "================================================"
+          echo "Lighthouse CI Complete!"
+          echo "================================================"
+          echo "View detailed reports in the workflow artifacts"
+          echo "Scores for recruiters:"
+          echo "  - Performance: Check artifacts"
+          echo "  - Accessibility: Check artifacts"
+          echo "  - Best Practices: Check artifacts"
+          echo "  - SEO: Check artifacts"
+          echo "================================================"

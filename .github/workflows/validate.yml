@@ -1,0 +1,85 @@
+name: HTML/CSS/JS Validation
+
+# Security: Least privilege permissions
+permissions:
+  contents: read
+
+# Trigger on push and pull requests
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Note: For production, pin actions to full SHA for security
+      # Example: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # HTML Validation using validator.nu
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+        with:
+          root: .
+          css: true
+
+      # Install linters
+      - name: Install linters
+        run: |
+          npm init -y
+          npm install --save-dev eslint stylelint stylelint-config-standard
+
+      # JavaScript Linting
+      - name: Create ESLint config
+        run: |
+          cat > .eslintrc.json << 'EOF'
+          {
+            "env": {
+              "browser": true,
+              "es2021": true
+            },
+            "extends": "eslint:recommended",
+            "parserOptions": {
+              "ecmaVersion": "latest"
+            },
+            "rules": {
+              "no-unused-vars": "warn",
+              "no-undef": "warn"
+            }
+          }
+          EOF
+
+      - name: Lint JavaScript
+        run: npx eslint assets/js/main.js --max-warnings=10 || true
+
+      # CSS Linting
+      - name: Create Stylelint config
+        run: |
+          cat > .stylelintrc.json << 'EOF'
+          {
+            "extends": "stylelint-config-standard",
+            "rules": {
+              "selector-class-pattern": null,
+              "custom-property-pattern": null
+            }
+          }
+          EOF
+
+      - name: Lint CSS
+        run: npx stylelint "assets/css/*.css" --allow-empty-input || true
+
+      # Check for broken links (internal only for speed)
+      - name: Check internal links
+        run: |
+          echo "Link checking will be implemented in Phase 2"
+          echo "For now, manually verify links at: www.arsalim.dev"

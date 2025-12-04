@@ -80,3 +80,19 @@ my_resume/
 FYP_DOCS/
 Starkville_beamer_theme/
 VehicleSys/
+
+# Node modules (for future automation)
+node_modules/
+package-lock.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+.cache/
+
+# Lighthouse reports
+lighthouse-report/
+*.lighthouse.html

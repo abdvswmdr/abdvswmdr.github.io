@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(git checkout:*)"
+    ],
+    "deny": []
+  }
+}
