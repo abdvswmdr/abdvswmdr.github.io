@@ -352,7 +352,7 @@
 			force: 50N)</li>
                       <li><strong>Vacuum Gripper Array:</strong> For delicate PCB and top shell (4-point suction, 0.5 bar
 			vacuum)</li>
-                      <li><strong>Quick-Change Mechanism:</strong> Allows gripper switching in <2 seconds if needed</li>
+                      <li><strong>Quick-Change Mechanism:</strong> Allows gripper switching in &lt;2 seconds if needed</li>
 												  <li><strong>Sensor Integration:</strong> Force sensors for grip verification and part-present
 												    detection</li>
                     </ul>
@@ -699,7 +699,7 @@
 </div>
 
 
-<h4>2. RAPID Code</h2>
+<h4>2. RAPID Code</h4>
 <ul>
   <li>The four initial paths were merged into a single path named **COMPLETE PATH**. The **RAPID code** was structured to call this path in the main procedure function (`PROC main() COMPLETE_PATH; MOVE_HOME; ENDPROC`), ensuring the entire tracing task executed as a single function call.</li>
   <li><strong>Simulation Control:</strong> A `MOVE_HOME` function was implemented, along with a **WaitTime 20** function, allowing the simulation to pause before restarting the task. This enabled the robot to run in **continuous run mode** for recording.</li>
@@ -820,12 +820,7 @@
       </p>
     </div>
 
-    <!-- small brand-logo rule -->
-    <style>
-      /* match the Bootstrap icon size (2rem) and center logo above caption */
-      .brand-logo { height: 2rem; width: auto; display: block; }
-      .brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
-    </style>
+    <!-- small brand-logo rule moved to `assets/css/portfolio-enhancements.css` to satisfy validator -->
 
     <h3>My System Architecture</h3>
     <!-- System Block Diagram -->
@@ -1092,7 +1087,7 @@
       <div class="col-md-6 mb-3">
 	<img src="assets/hand_eye_coordination/robot_studio_joint_jog_interface.png"
              class="img-fluid rounded shadow-sm" alt="RobotStudio Joint Jog">
-	<p class="text-muted small mt-2"><em>RobotStudio joint jog interface showing end-effector position verification for kinematics accuracy (error <1%)</em></p>
+  <p class="text-muted small mt-2"><em>RobotStudio joint jog interface showing end-effector position verification for kinematics accuracy (error &lt;1%)</em></p>
 																			 </div>
     </div>
 
@@ -1134,21 +1129,21 @@
           <tr>
             <td>Detection success rate</td>
             <td>97.5% (39/40)</td>
-            <td>>95%</td>
+            <td>&gt;95%</td>
 <td><span class="badge bg-success">Pass</span></td>
 </tr>
 <tr>
   <td>Processing time (vision)</td>
   <td>0.38 s</td>
   <td>
-    <0.5 s</td>
+    &lt;0.5 s</td>
          <td><span class="badge bg-success">Pass</span></td>
 </tr>
 <tr>
   <td>Total cycle time (detect→move→grasp)</td>
   <td>4.2 s</td>
   <td>
-    <5.0 s</td>
+    &lt;5.0 s</td>
          <td><span class="badge bg-success">Pass</span></td>
 </tr>
 </tbody>
@@ -1216,7 +1211,7 @@
   <div class="container">
     <div class="container">
       <div class="copyright">
-        <span>&#169</span> <strong class="px-1 sitename"> 2025 Abdulswamad Rama</strong>
+        <span>&#169;</span> <strong class="px-1 sitename"> 2025 Abdulswamad Rama</strong>
       </div>
       <br>
       <div class="social-links d-flex justify-content-center">

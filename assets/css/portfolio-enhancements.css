@@ -352,3 +352,7 @@ html {
     max-height: calc(100vh - 20px);
   }
 }
+
+/* Small brand logo and item (moved from in-page <style> blocks) */
+.brand-logo { height: 2rem; width: auto; display: block; }
+.brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
