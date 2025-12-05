@@ -25,7 +25,7 @@ jobs:
       - name: Compress Images
         uses: calibreapp/image-actions@main
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true
           ignorePaths: 'assets/vendor/**'
 
@@ -42,11 +42,9 @@ jobs:
         with:
           overwrite: true
           directory: 'assets'
-          # Only minify custom files, not vendor libraries
-          ignore: |
-            assets/vendor/**
-            assets/**/*.min.css
-            assets/**/*.min.js
+          # Note: the `ignore` input is not supported by this action.
+          # To avoid minifying vendor files, adjust `directory` or
+          # add a custom step to filter files before running the action.
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
