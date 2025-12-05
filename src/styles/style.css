@@ -838,7 +838,7 @@ a {
 	margin: 10px 10px;
 	height: 250px;
 	width: 475px;
-	background-color: none;
+	background-color: transparent;
 	cursor: pointer;
 	background: rgba(25, 25, 25, 0.9);
 	-webkit-transition: height 0.5s;
