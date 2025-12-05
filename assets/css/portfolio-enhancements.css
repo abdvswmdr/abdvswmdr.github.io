@@ -356,3 +356,18 @@ html {
 /* Small brand logo and item (moved from in-page <style> blocks) */
 .brand-logo { height: 2rem; width: auto; display: block; }
 .brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
+
+/* ================================
+   ✅ VIDEO EMBED SAFETY OVERRIDE
+   Fix iframe clipping in portfolio
+   ================================ */
+
+section:has(iframe),
+.section:has(iframe) {
+  overflow: visible !important;
+}
+
+iframe {
+  display: block;
+  max-width: 100%;
+}
