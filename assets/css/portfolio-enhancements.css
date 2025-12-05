@@ -41,7 +41,7 @@
 }
 
 /* First h3 shouldn't have top margin */
-.portfolio-description > h3:first-of-type {
+.portfolio-description>h3:first-of-type {
   margin-top: 1rem;
 }
 
@@ -121,7 +121,7 @@
 
 .portfolio-description .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ========== Card Enhancements ========== */
@@ -163,7 +163,7 @@
 
 .demo-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .demo-icon {
@@ -183,13 +183,13 @@
   padding-bottom: 0.5rem;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border-bottom: 2px solid #dee2e6;
 }
 
 /* For pages WITHOUT tabs - make the portfolio-description container scrollable */
-.col-lg-8 > .portfolio-description:not(:has(.nav-tabs)),
-.col-lg-7 > .portfolio-description:not(:has(.nav-tabs)) {
+.col-lg-8>.portfolio-description:not(:has(.nav-tabs)),
+.col-lg-7>.portfolio-description:not(:has(.nav-tabs)) {
   max-height: calc(100vh - 150px);
   overflow-y: auto;
   overflow-x: hidden;
@@ -217,10 +217,14 @@
 
 /* Make the tab content area scrollable with fixed height */
 .tab-content {
-  max-height: calc(100vh - 100px); /* Viewport height minus tabs and spacing */
-  overflow-y: auto; /* Enable vertical scrolling */
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  padding-right: 1rem; /* Space for scrollbar */
+  max-height: calc(100vh - 100px);
+  /* Viewport height minus tabs and spacing */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+  padding-right: 1rem;
+  /* Space for scrollbar */
   margin-top: 0.2rem !important;
 }
 
@@ -246,16 +250,21 @@
 /* Make Project Information sidebar/box fixed with its own scroll */
 .portfolio-info {
   position: sticky;
-  top: 0; /* Align with tabs horizontally */
-  max-height: calc(100vh - 20px); /* Viewport height minus small padding */
-  overflow-y: auto; /* Allow scrolling within sidebar if content is long */
+  top: 0;
+  /* Align with tabs horizontally */
+  max-height: calc(100vh - 20px);
+  /* Viewport height minus small padding */
+  overflow-y: auto;
+  /* Allow scrolling within sidebar if content is long */
   overflow-x: hidden;
-  padding-top: 0.5rem; /* Match tabs padding */
+  padding-top: 0.5rem;
+  /* Match tabs padding */
 }
 
 /* For col-lg-5 layout (like pcb-details), info box appears after slider */
 .col-lg-5 .portfolio-info {
-  position: relative; /* Don't stick in left column, just scroll naturally */
+  position: relative;
+  /* Don't stick in left column, just scroll naturally */
   top: auto;
   max-height: none;
 }
@@ -287,6 +296,7 @@ html {
 /* ========== Responsive Adjustments ========== */
 
 @media (max-width: 768px) {
+
   .portfolio-description p,
   .portfolio-description ul li,
   .portfolio-description ol li {
@@ -315,13 +325,14 @@ html {
   }
 
   .tab-content {
-    max-height: none; /* Allow natural height on mobile */
+    max-height: none;
+    /* Allow natural height on mobile */
     overflow-y: visible;
   }
 
   /* Disable fixed scroll for non-tab pages on mobile */
-  .col-lg-8 > .portfolio-description:not(:has(.nav-tabs)),
-  .col-lg-7 > .portfolio-description:not(:has(.nav-tabs)) {
+  .col-lg-8>.portfolio-description:not(:has(.nav-tabs)),
+  .col-lg-7>.portfolio-description:not(:has(.nav-tabs)) {
     max-height: none;
     overflow-y: visible;
   }
@@ -336,26 +347,39 @@ html {
 
 /* For tablets and larger - enable fixed scroll containers */
 @media (min-width: 992px) {
+
   /* For pages with tabs */
   .tab-content {
     max-height: calc(100vh - 200px);
   }
 
   /* For pages without tabs */
-  .col-lg-8 > .portfolio-description:not(:has(.nav-tabs)),
-  .col-lg-7 > .portfolio-description:not(:has(.nav-tabs)) {
+  .col-lg-8>.portfolio-description:not(:has(.nav-tabs)),
+  .col-lg-7>.portfolio-description:not(:has(.nav-tabs)) {
     max-height: calc(100vh - 150px);
   }
 
   .portfolio-info {
-    top: 0; /* Keep aligned with tabs or content */
+    top: 0;
+    /* Keep aligned with tabs or content */
     max-height: calc(100vh - 20px);
   }
 }
 
 /* Small brand logo and item (moved from in-page <style> blocks) */
-.brand-logo { height: 2rem; width: auto; display: block; }
-.brand-item { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.25rem; }
+.brand-logo {
+  height: 2rem;
+  width: auto;
+  display: block;
+}
+
+.brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+}
 
 /* ================================
    ✅ VIDEO EMBED SAFETY OVERRIDE
@@ -368,6 +392,15 @@ section:has(iframe),
 }
 
 iframe {
+  display: block;
+  max-width: 100%;
+}
+
+.video-embed {
+  overflow: visible !important;
+}
+
+.video-embed iframe {
   display: block;
   max-width: 100%;
 }
