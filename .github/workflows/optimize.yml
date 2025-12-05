@@ -39,12 +39,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Auto Minify
-        uses: nizarmah/auto-minify@v3
-        with:
-          overwrite: true
-          # Copy only non-vendor assets to a temporary folder and run
-          # the minifier against that folder so vendor files are left alone.
       - name: Prepare assets for minification
         run: |
           rm -rf assets-filtered
