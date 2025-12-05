@@ -41,10 +41,19 @@ jobs:
         uses: nizarmah/auto-minify@v3
         with:
           overwrite: true
-          directory: 'assets'
-          # Note: the `ignore` input is not supported by this action.
-          # To avoid minifying vendor files, adjust `directory` or
-          # add a custom step to filter files before running the action.
+          # Copy only non-vendor assets to a temporary folder and run
+          # the minifier against that folder so vendor files are left alone.
+      - name: Prepare assets for minification
+        run: |
+          rm -rf assets-filtered
+          mkdir -p assets-filtered
+          rsync -a --exclude='vendor' assets/ assets-filtered/
+
+      - name: Auto Minify
+        uses: nizarmah/auto-minify@v3
+        with:
+          overwrite: true
+          directory: 'assets-filtered'
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
