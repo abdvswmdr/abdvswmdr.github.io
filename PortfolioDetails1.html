@@ -6,7 +6,7 @@
 
   <!-- Security Headers -->
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';">
+    content="default-src 'self'; frame-src https://www.youtube.com https://www.youtube-nocookie.com; child-src https://www.youtube.com https://www.youtube-nocookie.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Project Details</title>
@@ -217,43 +217,23 @@
 
               <br>
 
-              <div class="video-embed">
+              <div class="video-embed-container">
                 <figure style="text-align:center;">
-                  <iframe src="https://www.youtube.com/embed/68v-wcS-ZZU" width="90%" height="600"
-                    title="Smart Home Fan Demo"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                  </iframe>
-
+                  <iframe class="responsive-iframe" src="https://www.youtube.com/embed/68v-wcS-ZZU" width="90%" height="600"
+                      title="Smart Home Fan Demo"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen loading="lazy">
+                    </iframe>
+                    
                   <figcaption style="font-style: italic; font-size: smaller;">
                     Smart Home Fan in action.
                   </figcaption>
                 </figure>
               </div>
 
-
-
               <br>
               <ul>
               </ul>
-
-
-              <!-- Testimonial section -->
-              <!--
-		    <div class="testimonial-item">
-                      <p>
-			<i class="bi bi-quote quote-icon-left"></i>
-			<span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram
-			  malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-			<i class="bi bi-quote quote-icon-right"></i>
-                      </p>
-                      <div>
-			<img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-			<h3>Sara Wilsson</h3>
-			<h4>Designer</h4>
-                      </div>
-		    </div>
-		    -->
 
             </div>
           </div>
