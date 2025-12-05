@@ -53,22 +53,50 @@
     fetch(action, {
       method: 'POST',
       body: formData,
-      headers: {'X-Requested-With': 'XMLHttpRequest'}
+      mode: 'cors',
+      // Ask the server for JSON response. Avoid custom headers that may
+      // trigger stricter CORS preflight restrictions.
+      headers: {'Accept': 'application/json'}
     })
     .then(response => {
-      if( response.ok ) {
-        return response.text();
-      } else {
-        throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
+      if (!response.ok) {
+        // propagate server error text if available
+        return response.text().then(t => { throw new Error(`${response.status} ${response.statusText} ${response.url} ${t}`); });
       }
+      // Try to detect JSON response (Formspree returns JSON on success)
+      const ct = response.headers.get('content-type') || '';
+      if (ct.indexOf('application/json') !== -1) {
+        return response.json().then(j => ({__json: true, body: j}));
+      }
+      return response.text().then(t => ({__json: false, body: t}));
     })
-    .then(data => {
+    .then(result => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
+      if (result.__json) {
+        const j = result.body;
+        // Formspree v2 returns { ok: true } on success; check common success signals
+        if (j && (j.ok === true || j.success === true)) {
+          thisForm.querySelector('.sent-message').classList.add('d-block');
+          thisForm.reset();
+          return;
+        }
+        // If errors provided, surface them
+        const msg = (j && (j.error || j.message || JSON.stringify(j))) || ('Form submission failed for: ' + action);
+        throw new Error(msg);
       } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        const data = result.body;
+        if (typeof data === 'string' && data.trim() === 'OK') {
+          thisForm.querySelector('.sent-message').classList.add('d-block');
+          thisForm.reset();
+          return;
+        }
+        // If empty response with 200, treat as success
+        if (!data || (typeof data === 'string' && data.trim() === '')) {
+          thisForm.querySelector('.sent-message').classList.add('d-block');
+          thisForm.reset();
+          return;
+        }
+        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action);
       }
     })
     .catch((error) => {
