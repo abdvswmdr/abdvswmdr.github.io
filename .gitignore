@@ -58,8 +58,6 @@ cmake_build_release/
 Thumbs.db
 
 # Ignore prompt files or personal notes
-CLAUDE.md
-GEMINI.md
 *.prompt.md
 task.md
 sample.html
