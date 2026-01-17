@@ -74,7 +74,7 @@ rules_for_ai/
 *.pdf
 *.xlsx
 *.docx
-my_resume/
+resumes/
 FYP_DOCS/
 Starkville_beamer_theme/
 VehicleSys/
