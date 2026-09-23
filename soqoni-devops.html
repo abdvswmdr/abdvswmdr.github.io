@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Soqoni Platform - DevOps Portfolio</title>
+    <meta content="Microservices e-commerce platform deployed on Azure Kubernetes Service with Jenkins CI/CD, managed databases, and full observability stack." name="description">
+    <meta content="Kubernetes, AKS, Docker, Jenkins, Go, Node.js, Java, Spring Boot, Azure, DevOps, CI/CD" name="keywords">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/portfolio-enhancements.css" rel="stylesheet">
+  </head>
+
+  <body class="portfolio-details-page">
+
+    <header id="header" class="header d-flex flex-column justify-content-center">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span>Home</span></a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i><span>Projects</span></a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i><span>Experiences</span></a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container">
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Home</a></li>
+              <li class="current">Soqoni Platform</li>
+            </ol>
+          </nav>
+          <h1>Soqoni Platform (2025–2026)</h1>
+        </div>
+      </div>
+
+      <!-- Project Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-between gy-4 mt-4">
+
+            <!-- Left column: Slider + Info -->
+            <div class="col-lg-5" data-aos="fade-up">
+
+              <div class="portfolio-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": { "delay": 5000 },
+                    "slidesPerView": "auto",
+                    "navigation": {
+                      "nextEl": ".swiper-button-next",
+                      "prevEl": ".swiper-button-prev"
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/soqoni-platform.png" alt="Soqoni Platform — live on AKS">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/soqoni-canary.gif" alt="Canary deployment in action">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/soqoni-kiali-fault.gif" alt="Fault injection — HTTP 500 abort, monitored in Kiali">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/soqoni-kiali-latency.gif" alt="Latency injection — 3s delay on catalogue, monitored in Kiali">
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <!-- Project Info Box -->
+              <div class="portfolio-info mb-4 mt-4">
+                <h3>Project Information</h3>
+                <ul>
+                  <li><strong>Category:</strong> DevOps / Cloud Engineering</li>
+                  <li><strong>Platform:</strong> Azure Kubernetes Service (AKS)</li>
+                  <li><strong>CI/CD:</strong> Jenkins + Azure DevOps Pipelines</li>
+                  <li><strong>Status:</strong> Live &amp; In Progress</li>
+                  <li>
+                    <a href="http://20.24.112.153" target="_blank" class="btn btn-sm btn-success mt-2 me-2">
+                      <i class="bi bi-box-arrow-up-right"></i> Live Site
+                    </a>
+                    <a href="https://github.com/abdvswmdr/soqoni" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                      <i class="bi bi-github"></i> Source Code
+                    </a>
+                  </li>
+                </ul>
+
+                <h5 class="mt-4">Skills Demonstrated</h5>
+                <ul style="font-size: 0.9em;">
+                  <li>Container orchestration with Kubernetes (AKS)</li>
+                  <li>CI/CD pipeline design (Jenkins + Azure DevOps)</li>
+                  <li>Docker multi-stage builds &amp; image tagging strategy</li>
+                  <li>Managed cloud databases (Azure MySQL, Cosmos DB)</li>
+                  <li>Infrastructure as Code (Ansible, k8s manifests)</li>
+                  <li>Observability (Datadog APM, Kiali, Prometheus)</li>
+                  <li>Service mesh (Istio — traffic management, fault injection)</li>
+                </ul>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="mt-2">
+                <h5>Tech Stack</h5>
+                <div class="d-flex flex-wrap gap-2" style="font-size: 0.82em;">
+                  <span class="badge bg-secondary">Kubernetes</span>
+                  <span class="badge bg-secondary">AKS</span>
+                  <span class="badge bg-secondary">Docker</span>
+                  <span class="badge bg-secondary">Jenkins</span>
+                  <span class="badge bg-secondary">Ansible</span>
+                  <span class="badge bg-secondary">Go 1.25</span>
+                  <span class="badge bg-secondary">Node.js 20</span>
+                  <span class="badge bg-secondary">Java 17 / Spring Boot</span>
+                  <span class="badge bg-secondary">Azure MySQL</span>
+                  <span class="badge bg-secondary">Azure Cosmos DB</span>
+                  <span class="badge bg-secondary">Istio</span>
+                  <span class="badge bg-secondary">Datadog</span>
+                  <span class="badge bg-secondary">nginx Ingress</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right column: Technical Details -->
+            <div class="col-lg-7" data-aos="fade-up">
+              <div class="portfolio-description">
+
+                <h3>Project Overview</h3>
+                <p>
+                  <strong>Soqoni</strong> is a four-microservice e-commerce platform built as a hands-on DevOps portfolio project. Starting from bare application code, the platform was Dockerized, wired up with a full CI/CD pipeline, deployed to Kubernetes, migrated to managed cloud databases, and instrumented with an observability stack — demonstrating the full lifecycle of a production-grade cloud deployment.
+                </p>
+
+                <h3>System Architecture</h3>
+                <p>
+                  The platform follows a microservices pattern with each service independently deployed, scaled, and monitored. Traffic enters through an nginx Ingress controller and is routed to the appropriate service based on path.
+                </p>
+                <!-- C2 architecture diagram — add image once rendered from soqoni/docs/c2-containers.puml -->
+                <div class="text-center my-3" style="background:#111; padding: 16px; border-radius:8px; color: #888; font-size:0.85em;">
+                  [ Architecture diagram — C2 Container View ]
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Services</h4>
+                    <ul>
+                      <li><strong>soqonifrontend</strong> — Node.js 20, serves UI + reverse proxies to backend</li>
+                      <li><strong>soqonicatalogue</strong> — Go 1.25, REST API for product catalogue</li>
+                      <li><strong>soqonicart</strong> — Java 17 / Spring Boot, shopping cart management</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Infrastructure</h4>
+                    <ul>
+                      <li>Azure Kubernetes Service — managed control plane</li>
+                      <li>Azure MySQL Flexible Server — catalogue database</li>
+                      <li>Azure Cosmos DB (MongoDB API) — cart state</li>
+                      <li>nginx Ingress + cert-manager — TLS termination</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>CI/CD Pipeline</h3>
+                <p>
+                  Each service has a <code>Jenkinsfile</code> defining a four-stage pipeline: build the Docker image, run tests, package a release image using a multi-stage Dockerfile, then push a SHA-tagged image to Docker Hub. Images are never tagged <code>:latest</code> in Kubernetes manifests — every deployment references an immutable SHA tag to preserve rollback capability.
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Jenkins Pipeline Stages</h4>
+                    <ul>
+                      <li>Build — compile + dev image</li>
+                      <li>Test — unit tests (go test / Maven)</li>
+                      <li>Package — multi-stage release image</li>
+                      <li>Push — SHA-tagged image to Docker Hub</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Kubernetes Deployment</h4>
+                    <ul>
+                      <li>Rolling updates — zero downtime deploys</li>
+                      <li>HPA — CPU-based autoscaling (frontend: 2–5 replicas)</li>
+                      <li>Resource requests &amp; limits on all workloads</li>
+                      <li>Liveness &amp; readiness probes per service</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <h3>Advanced Kubernetes — Traffic Management</h3>
+
+                <h4>Canary Deployment</h4>
+                <p>
+                  A canary release was implemented for the catalogue service — routing 20% of traffic to a new image version while 80% continued on the stable version, verified by watching request distribution in Kiali before promoting the new version.
+                </p>
+                <!-- GIF placeholder — replace with actual recording -->
+                <div class="text-center my-3" style="background:#111; padding: 16px; border-radius:8px; color: #888; font-size:0.85em;">
+                  [ GIF: canary deployment — traffic split in Kiali ]
+                </div>
+
+                <h4>Fault Injection — HTTP Abort</h4>
+                <p>
+                  Using Istio VirtualService fault injection, 50% of requests to the catalogue service were configured to return HTTP 500. The failure rate was observed live in Kiali's service graph, validating the resilience testing workflow.
+                </p>
+                <div class="text-center my-3" style="background:#111; padding: 16px; border-radius:8px; color: #888; font-size:0.85em;">
+                  [ GIF: fault injection — 50% HTTP 500, Kiali error rate spike ]
+                </div>
+
+                <h4>Fault Injection — Latency Delay</h4>
+                <p>
+                  A 3-second artificial delay was injected into 100% of catalogue requests to simulate downstream degradation. Latency was visible in Kiali's distributed tracing view, demonstrating how a single slow service propagates to the frontend response time.
+                </p>
+                <div class="text-center my-3" style="background:#111; padding: 16px; border-radius:8px; color: #888; font-size:0.85em;">
+                  [ GIF: latency injection — 3s delay visible in Kiali tracing ]
+                </div>
+
+                <h3>Observability</h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Implemented</h4>
+                    <ul>
+                      <li>Kiali — service mesh topology + traffic flows</li>
+                      <li>Datadog APM — traces, logs, dashboards (Student Pack)</li>
+                      <li>Azure Monitor — AKS container insights</li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>In Progress</h4>
+                    <ul>
+                      <li>Prometheus — metrics scraping from all pods</li>
+                      <li>Grafana — custom dashboards (latency, error rate, HPA events)</li>
+                      <li>Sentry — error tracking for the Node.js frontend</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>© <strong class="px-1 sitename">Abdulswamad Rama</strong> <span>All Rights Reserved</span></p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
